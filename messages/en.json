@@ -1,0 +1,27 @@
+{
+  "homeHero": {
+    "title1": "Welcome to the 3D <br/>Wonderland",
+    "description": "Where pixels meet possibilities, from 3D models to mind-blowing <br/>animations and sleek UI/UX designs, we’re here to bring your <br/>ideas to life. The dream begins here.",
+    "button": "Unleash the Magic"
+  },
+  "request": {
+    "successTitle": "¡Gracias!",
+    "successDescription": "Agradecemos que te pongas en contacto con nosotros. Nuestro equipo está emocionado de ayudarte a dar el primer paso hacia el logro de tus objetivos de trading. ¡Nos pondremos en contacto pronto!",
+    "title": "Póngase en Contacto con Nosotros",
+    "description": "¡Estamos ansiosos por conectarnos contigo! Rellena el formulario a continuación, y uno de nuestros miembros del equipo se pondrá en contacto contigo para discutir cómo podemos ayudarte en tu camino de trading:"
+  },
+  "header": {
+    "home": "Home",
+    "shop": "Shop",
+    "work": "Work",
+    "services": "Services",
+    "impact": "Impact",
+    "prices": "Prices",
+    "deals": "Deals",
+    "trends": "Trends",
+    "careers": "Careers",
+    "contacts": "Contacts",
+    "login": "Login",
+    "signup": "Sign Up"
+  }
+}

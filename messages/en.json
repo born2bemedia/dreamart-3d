@@ -4,11 +4,86 @@
     "description": "Where pixels meet possibilities, from 3D models to mind-blowing <br/>animations and sleek UI/UX designs, we’re here to bring your <br/>ideas to life. The dream begins here.",
     "button": "Unleash the Magic"
   },
-  "request": {
-    "successTitle": "¡Gracias!",
-    "successDescription": "Agradecemos que te pongas en contacto con nosotros. Nuestro equipo está emocionado de ayudarte a dar el primer paso hacia el logro de tus objetivos de trading. ¡Nos pondremos en contacto pronto!",
-    "title": "Póngase en Contacto con Nosotros",
-    "description": "¡Estamos ansiosos por conectarnos contigo! Rellena el formulario a continuación, y uno de nuestros miembros del equipo se pondrá en contacto contigo para discutir cómo podemos ayudarte en tu camino de trading:"
+  "letsCreate": {
+    "title": "Let’s Create Something Epic Together",
+    "description": "Starting a new project or looking to elevate an existing one, we’re here to help. Let’s turn your vision into a masterpiece."
+  },
+  "ourSolutions": {
+    "title": "Our Solutions",
+    "label": "We Solve Problems Like Superheroes (Just With Better Gadgets)",
+    "description": "No challenge is too big, no model too complex. Whether you need 3D printing models, epic animations, or intuitive UI/UX design, we’ve got the superpowers to turn your dreams into digital reality. We create solutions that aren’t just functional — they’re works of art.",
+    "card1": "3D Modelling for Printing",
+    "card1Label": "From Concept to Reality: <br/>If you can dream it, we can model it. Literally.",
+    "card1Text": "Our 3D models are more than just designs — they’re high-quality creations ready to be printed in the real world. Whether it’s for prototyping, art, or retail, we build models that are ready for action.",
+    "card2": "Animation Creation",
+    "card2Label": "Lights, Camera, Action... <br/>We Bring the Drama!",
+    "card2Text": "Need a captivating animation? Whether it’s for marketing, entertainment, or education, we deliver animations that keep people on the edge of their seats. Grab attention, tell stories, and leave an impression with every frame.",
+    "card3": "Video Production ",
+    "card3Label": "Your Story, <br/>Our Lens",
+    "card3Text": "From explainer videos to promotional content, we create videos that tell your story in a way that sticks. You think it, we shoot it — bringing your vision into motion with precision and flair.",
+    "card4": "UI/UX",
+    "card4Label": "Your Website Deserves to <br/>Look Like a Million Bucks",
+    "card4Text": "We don’t just design websites; we design experiences. Our UI/UX design process ensures that your users will love navigating your site as much as they love the results. Beautiful, intuitive, and functional, all in one."
+  },
+  "specialOffers": {
+    "title": "Special Offers",
+    "label": "Limited Time Magic! Don’t Let It Disappear!",
+    "text": "We’re offering exclusive deals to help bring your digital dreams to life. <br/>Don’t wait around — these offers won’t last forever.",
+    "button": "Grab the Offer Before It Vanishes"
+  },
+  "whatWeDo": {
+    "title": "What We Do",
+    "label": "We Turn Your Ideas Into 3D Realities... (No, Seriously)",
+    "description": "At Dreamart 3D, we’re not just designers — we’re magicians. We craft everything from detailed 3D models to animations that make you say “WOW.” Need a digital experience that users won’t forget? We’ve got you covered with stunning UI/UX design. Think of us as the fairy godmothers of digital content, only way cooler."
+  },
+  "whyChoose": {
+    "title1": "Innovation",
+    "description1": "We’re always ahead of the curve, bringing the latest techniques to our work.",
+    "title2": "Customization",
+    "description2": "Your vision, our designs. Everything we do is tailored to your needs.",
+    "title3": "Quality",
+    "description3": "Your vision, our designs. Everything we do is tailored to your needs.",
+    "title4": "Creativity",
+    "description4": "Your vision, our designs. Everything we do is tailored to your needs.",
+    "title": "Why Choose <br/>Dreamart 3D?",
+    "label": "We’re Not Just a 3D Studio — We’re Your Creative Powerhouse",
+    "description": "Our crew combines creativity, technology, and a touch of brilliance. We’re the team you call when you need more than just a 3D model or a pretty animation. You need a partner who can deliver stunning, high-quality content with a sprinkle of fun and creativity.",
+    "button": "See How We Inspire"
+  },
+  "requestForm": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "message": "Message",
+    "agree": "I agree to the Terms of Use and Privacy Policy.",
+    "loading": "Loading...",
+    "submit": "Grab the Offer Before It Vanishes",
+    "agreement": "We respect your privacy. <br/>Your information will never be shared.",
+    "success": "Request sent successfully"
+  },
+  "footer": {
+    "cultureTitle": "Culture",
+    "culture1": "Work",
+    "culture2": "Impact",
+    "culture3": "Careers",
+    "offersTitle": "Offers",
+    "offers1": "Services",
+    "offers2": "Prices",
+    "offers3": "Deals",
+    "connectTitle": "Connect",
+    "connect1": "Trends",
+    "connect2": "Contacts",
+    "regulationsTitle": "Regulations",
+    "regulations1": "Terms of Use",
+    "regulations2": "Privacy Policy",
+    "regulations3": "Cookie Policy",
+    "regulations4": "Refund Policy",
+    "infoTitle": "Info",
+    "infoOfficeTitle": "Office address:",
+    "infoOfficeAddress": "address",
+    "infoRegisteredTitle": "Registered address:",
+    "infoRegisteredAddress": "address",
+    "copyright": "© {year} [COMPANY] All Legal Rights Reserved."
   },
   "header": {
     "home": "Home",

@@ -1,0 +1,18 @@
+@use '@/shared/lib/styles/mixin.scss' as *;
+
+.label {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 24px;
+  background: #14263d;
+  width: fit-content;
+  color: #2583ff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

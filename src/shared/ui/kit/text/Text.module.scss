@@ -1,0 +1,16 @@
+@use '@/shared/lib/styles/mixin.scss' as *;
+
+.text {
+  color: #717173;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  &.alignLeft {
+    text-align: left;
+  }
+  &.alignRight {
+    text-align: right;
+  }
+}

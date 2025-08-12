@@ -1,0 +1,130 @@
+@use '@/shared/lib/styles/mixin.scss' as *;
+
+.requestForm {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 16px;
+
+  .submit {
+    display: flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    background: #2583ff;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .success {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 16px;
+  }
+
+  .respect {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    span {
+      color: #717173;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      width: calc(100% - 32px);
+    }
+  }
+
+  .inputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: calc(50% - 8px);
+    @include tablet {
+      width: 100%;
+    }
+    &.full {
+      width: 100%;
+    }
+    &.error {
+      input:not([type='checkbox']),
+      textarea {
+        border: 1px solid #ff5c5c;
+      }
+    }
+
+    .error {
+      color: #ff5c5c;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    input:not([type='checkbox']),
+    textarea {
+      display: flex;
+      padding: 0 24px;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      color: #717173;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      border-radius: 24px;
+      background: #1b1c1e;
+      height: 52px;
+      border: 1px solid #1b1c1e;
+    }
+    textarea {
+      border-radius: 24px;
+      height: 150px;
+      padding: 16px 24px;
+    }
+
+    .agree {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      align-self: stretch;
+      input {
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        border: 1px solid #222325;
+        background: #1b1c1e;
+        appearance: none;
+        &:checked {
+          background-image: url('/images/checkmark.svg');
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      span {
+        width: calc(100% - 36px);
+        color: #717173;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+}

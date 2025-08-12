@@ -63,6 +63,7 @@ img {
 * {
   outline: none !important;
   -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
 }
 
 ._container {

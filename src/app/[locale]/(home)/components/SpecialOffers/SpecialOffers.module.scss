@@ -1,0 +1,53 @@
+@use '@/shared/lib/styles/mixin.scss' as *;
+
+.specialOffers {
+  padding: 128px 0;
+  @include tablet {
+    padding:32px 0;
+  }
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(18, 19, 22, 0.7) 0%, #121316 100%);
+    z-index: 1;
+  }
+  &__content {
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 48px 24px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    p {
+      margin: 8px 0 32px;
+    }
+  }
+}

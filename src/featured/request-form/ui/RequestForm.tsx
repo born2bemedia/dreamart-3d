@@ -12,10 +12,13 @@ import { PhoneField } from '@/shared/ui/kit/phone-field/phone-field';
 import { type RequestFormSchema, requestFormSchema } from '../model/schema';
 import styles from './RequestForm.module.scss';
 
+import { useThanksPopupStore } from '@/featured/thanks-popup/store/store';
+
 export const RequestForm = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const t = useTranslations('requestForm');
+  const { setIsOpen } = useThanksPopupStore();
 
   const countryCode = useCountryCode();
 
@@ -38,6 +41,7 @@ export const RequestForm = () => {
         setIsSuccess(true);
         reset();
         setIsLoading(false);
+        setIsOpen(true);
       }, 1000);
     } catch (error) {
       console.error(error);

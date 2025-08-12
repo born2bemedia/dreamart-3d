@@ -9,6 +9,8 @@ import { LenisScrollProvider } from '@/shared/ui/kit';
 import '@/shared/lib/styles/null.scss';
 import '@/shared/lib/styles/base.scss';
 
+import { ThanksPopup } from '@/featured/thanks-popup/ui/ThanksPopup';
+
 const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin'],
@@ -49,6 +51,7 @@ export default async function RootLayout({
             {children}
             <Footer />
           </LenisScrollProvider>
+          <ThanksPopup />
         </NextIntlClientProvider>
       </body>
     </html>

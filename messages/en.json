@@ -50,6 +50,15 @@
     "description": "Our crew combines creativity, technology, and a touch of brilliance. We’re the team you call when you need more than just a 3D model or a pretty animation. You need a partner who can deliver stunning, high-quality content with a sprinkle of fun and creativity.",
     "button": "See How We Inspire"
   },
+  "getInTouch": {
+    "title": "Get in Touch: Let’s Make Something Incredible!",
+    "description": "Got a question, a project idea, or need a custom quote? Don’t be shy — we’re all ears! At Dreamart 3D, we believe every great project begins with a conversation. Reach out to us and let’s turn your wildest ideas into digital masterpieces!",
+    "detailsTitle": "How to Reach Us",
+    "socialsTitle": "Stay Social",
+    "socialsDescription": "We’re always creating, and we want you to be part of it! Follow us on social media for the latest on our projects, industry trends, and some serious creative inspo. Get involved, stay updated, and let’s start something amazing!",
+    "title2": "Ready to Make Some Magic Happen?",
+    "description2": "Got a project waiting to be brought to life? Or maybe you’re just craving to start something new and exciting? We’ve got you covered! Let’s team up and turn your ideas into digital masterpieces that’ll leave a lasting impression."
+  },
   "requestForm": {
     "firstName": "First Name",
     "lastName": "Last Name",

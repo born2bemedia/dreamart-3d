@@ -82,7 +82,7 @@ export const Footer = () => {
                     fallback: 'Trends',
                   })}
                 </Link>
-                <Link href="#">
+                <Link href="/contacts">
                   {t('connect2', {
                     fallback: 'Contacts',
                   })}

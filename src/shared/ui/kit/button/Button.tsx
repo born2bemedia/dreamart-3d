@@ -1,6 +1,5 @@
 'use client';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
 
 import styles from './Button.module.scss';
 
@@ -15,7 +14,6 @@ export const Button = ({
   type: 'link' | 'button';
   href?: string;
 }) => {
-  const t = useTranslations('button');
 
   const scrollToFooter = () => {
     const footer = document.getElementById('footer');

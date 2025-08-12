@@ -1,4 +1,4 @@
-import { Fira_Sans, Inter } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';

@@ -1,9 +1,6 @@
 'use client';
 
-import Image from 'next/image';
-import Link from 'next/link';
-
-import { useTranslations } from 'next-intl';
+//import { useTranslations } from 'next-intl';
 
 import styles from './Footer.module.scss';
 
@@ -11,12 +8,8 @@ import styles from './Footer.module.scss';
 //import { ThankyouModal } from '@/featured/contact-popup/ui/ThankyouModal/ThankyouModal';
 
 export const Footer = () => {
-  const t = useTranslations('footer');
-  const year = new Date().getFullYear();
+  //const t = useTranslations('footer');
+  //const year = new Date().getFullYear();
 
-  return (
-    <footer className={styles.footer} id="footer">
-      
-    </footer>
-  );
+  return <footer className={styles.footer} id="footer"></footer>;
 };

@@ -4,8 +4,9 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+
 import { useLenis } from 'lenis/react';
+import { useTranslations } from 'next-intl';
 
 import { BurgerMenu, Cart, Facebook, Instagram, X } from '@/shared/ui/icons';
 

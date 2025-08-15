@@ -16,11 +16,23 @@
     line-height: normal;
   }
 
+  h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+  }
+
   .text {
     color: #717173;
     font-size: 16px;
     font-weight: 500;
     line-height: normal;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 24px;
   }
 }
 
@@ -33,5 +45,5 @@
 .formFlex {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 22px;
 }

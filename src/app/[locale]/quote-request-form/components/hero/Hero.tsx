@@ -8,7 +8,9 @@ export const Hero = () => {
   return (
     <section className={st.layout}>
       <div className={st.titleLayout}>
-        <Tag>From Sketch to Spectacular, Let’s Get Started!</Tag>
+        <Tag>
+          From Sketch to Spectacular, <br className={st.br} /> Let’s Get Started!
+        </Tag>
         <h1 className={st.title}>Get Your Custom Quote</h1>
       </div>
       <p>

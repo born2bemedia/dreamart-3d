@@ -12,6 +12,18 @@
     font-weight: 500;
     line-height: normal;
   }
+
+  .br {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+
+    .br {
+      display: block;
+    }
+  }
 }
 
 .titleLayout {
@@ -26,5 +38,11 @@
     font-size: 48px;
     font-weight: 700;
     line-height: normal;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 32px;
+    }
   }
 }

@@ -1,0 +1,34 @@
+.layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  input {
+    border-radius: 24px;
+    background: #1b1c1e;
+    padding: 16px 24px;
+    color: #717173;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    width: 100%;
+  }
+}
+
+.hint {
+  color: #ff5c5c;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  position: absolute;
+  top: -22px;
+}
+
+.defaultIntent {
+  border: 1px solid #1b1c1e;
+}
+
+.dangerIntent {
+  border: 1px solid #ff5c5c;
+}

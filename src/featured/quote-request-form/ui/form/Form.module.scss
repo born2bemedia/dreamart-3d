@@ -1,0 +1,37 @@
+.layout {
+  width: 650px;
+  margin: 0 auto;
+  padding: 32px;
+  border-radius: 42px;
+  border: 1px solid #222325;
+  background: #141517;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .text {
+    color: #717173;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

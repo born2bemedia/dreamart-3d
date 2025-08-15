@@ -4,7 +4,7 @@ import { defaultCountries, PhoneInput, type PhoneInputProps } from 'react-intern
 
 import { excludedCountries } from '@/shared/lib/countries';
 
-import st from './phone-field.module.scss';
+import st from './PhoneField.module.scss';
 
 import 'react-international-phone/style.css';
 

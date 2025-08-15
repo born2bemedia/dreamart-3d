@@ -8,4 +8,11 @@
   font-weight: 500;
   line-height: normal;
   text-align: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 100%;
+    word-break: break-word;
+    white-space: normal;
+  }
 }

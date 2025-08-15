@@ -3,8 +3,9 @@
 import { defaultCountries, PhoneInput, type PhoneInputProps } from 'react-international-phone';
 
 import { excludedCountries } from '@/shared/lib/countries';
+import { cn } from '@/shared/lib/utils/cn';
 
-import st from './phone-field.module.scss';
+import st from './PhoneField.module.scss';
 
 import 'react-international-phone/style.css';
 
@@ -18,6 +19,7 @@ export const PhoneField = ({
 }) => {
   return (
     <label className={st.layout}>
+      {hint && <p className={st.hint}>{hint}</p>}
       <PhoneInput
         defaultCountry={
           defaultCountries.some(([, iso2]) => iso2 === country && !excludedCountries.includes(iso2))
@@ -25,10 +27,10 @@ export const PhoneField = ({
             : 'us'
         }
         className={st.container}
-        inputClassName={st.phoneField}
+        inputClassName={cn(st.phoneField, hint && st.dangerIntent)}
         countries={defaultCountries.filter(([, iso2]) => !excludedCountries.includes(iso2))}
         countrySelectorStyleProps={{
-          buttonClassName: st.dropdown,
+          buttonClassName: cn(st.dropdown, hint && st.dropdownDangerIntent),
           dropdownStyleProps: {
             className: st.dropdownList,
           },
@@ -36,7 +38,6 @@ export const PhoneField = ({
         }}
         {...args}
       />
-      {hint && <p className={st.hint}>{hint}</p>}
     </label>
   );
 };

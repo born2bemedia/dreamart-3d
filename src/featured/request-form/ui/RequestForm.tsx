@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl';
 import { Controller, useForm } from 'react-hook-form';
 
 import { useCountryCode } from '@/shared/lib/hooks/use-country';
-import { PhoneField } from '@/shared/ui/kit/phone-field/phone-field';
+import { PhoneField } from '@/shared/ui/kit/phone-field';
 
 import { type RequestFormSchema, requestFormSchema } from '../model/schema';
 import styles from './RequestForm.module.scss';

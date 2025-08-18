@@ -37,7 +37,7 @@ export const Header = () => {
     <>
       <header className={styles.header}>
         <div className={styles.header__top}>
-          <div className={'_container-large'}>
+          <div className={'_container'}>
             <div className={styles.header__top_row}>
               <div className={styles.socials}>
                 <Link href="#">
@@ -58,14 +58,14 @@ export const Header = () => {
           </div>
         </div>
         <div className={styles.header__main}>
-          <div className={'_container-large'}>
+          <div className={'_container'}>
             <div className={styles.header__main_row}>
               <Link href="/" className={styles.header__logo}>
                 <Image src="/images/logo.svg" alt="DreamArt 3D" width={125} height={24} />
               </Link>
               <nav className={styles.nav}>
                 <Link href="/">{t('home', { fallback: 'Home' })}</Link>
-                <Link href="#">{t('shop', { fallback: 'Shop' })}</Link>
+                <Link href="/shop">{t('shop', { fallback: 'Shop' })}</Link>
                 <Link href="#">{t('work', { fallback: 'Work' })}</Link>
                 <Link href="#">{t('services', { fallback: 'Services' })}</Link>
                 <Link href="/impact">{t('impact', { fallback: 'Impact' })}</Link>
@@ -99,13 +99,13 @@ export const Header = () => {
       <div className={`${styles.mobileMenu} ${isMobileMenuOpen ? styles.active : ''}`}>
         <nav className={styles.nav}>
           <Link href="/">{t('home', { fallback: 'Home' })}</Link>
-          <Link href="#">{t('shop', { fallback: 'Shop' })}</Link>
+          <Link href="/shop">{t('shop', { fallback: 'Shop' })}</Link>
           <Link href="#">{t('work', { fallback: 'Work' })}</Link>
           <Link href="#">{t('services', { fallback: 'Services' })}</Link>
-          <Link href="#">{t('impact', { fallback: 'Impact' })}</Link>
-          <Link href="#">{t('prices', { fallback: 'Prices' })}</Link>
-          <Link href="#">{t('deals', { fallback: 'Deals' })}</Link>
-          <Link href="#">{t('trends', { fallback: 'Trends' })}</Link>
+          <Link href="/impact">{t('impact', { fallback: 'Impact' })}</Link>
+          <Link href="/prices">{t('prices', { fallback: 'Prices' })}</Link>
+          <Link href="/deals">{t('deals', { fallback: 'Deals' })}</Link>
+          <Link href="/trends">{t('trends', { fallback: 'Trends' })}</Link>
           <Link href="#">{t('careers', { fallback: 'Careers' })}</Link>
           <Link href="/contacts">{t('contacts', { fallback: 'Contacts' })}</Link>
         </nav>

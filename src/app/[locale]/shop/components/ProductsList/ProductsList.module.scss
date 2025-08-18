@@ -1,0 +1,21 @@
+@use '@/shared/lib/styles/mixin.scss' as *;
+
+.productsList {
+  padding: 128px 0;
+  @include tablet {
+    padding: 32px 0;
+  }
+  &__products {
+    display: flex;
+    flex-wrap: wrap;
+    > div {
+      width: 25%;
+      @include tablet {
+        width: 50%;
+      }
+      @include mobile {
+        //width: 100%;
+      }
+    }
+  }
+}

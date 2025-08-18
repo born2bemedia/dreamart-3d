@@ -34,7 +34,7 @@ export const Footer = () => {
                     fallback: 'Work',
                   })}
                 </Link>
-                <Link href="#">
+                <Link href="/impact">
                   {t('culture2', {
                     fallback: 'Impact',
                   })}
@@ -58,12 +58,12 @@ export const Footer = () => {
                     fallback: 'Services',
                   })}
                 </Link>
-                <Link href="#">
+                <Link href="/prices">
                   {t('offers2', {
                     fallback: 'Prices',
                   })}
                 </Link>
-                <Link href="#">
+                <Link href="/deals">
                   {t('offers3', {
                     fallback: 'Deals',
                   })}

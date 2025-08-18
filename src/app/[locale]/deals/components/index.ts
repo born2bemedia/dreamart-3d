@@ -1,0 +1,1 @@
+export * from './DealsHero/DealsHero';

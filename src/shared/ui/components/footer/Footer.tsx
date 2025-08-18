@@ -16,7 +16,7 @@ export const Footer = () => {
 
   return (
     <footer className={styles.footer} id="footer">
-      <div className={'_container-large'}>
+      <div className={'_container'}>
         <div className={styles.footer__top}>
           <Link href="/">
             <Image src="/images/logo.svg" alt="logo" width={125} height={24} />

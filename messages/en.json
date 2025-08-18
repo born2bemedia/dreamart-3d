@@ -91,6 +91,16 @@
     "agreement": "We respect your privacy. <br/>Your information will never be shared.",
     "success": "Request sent successfully"
   },
+  "packageRequestForm": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "estimatedBudget": "Estimated Budget",
+    "message": "Project Details",
+    "loading": "Loading...",
+    "submit": "Claim Your Creative Power!",
+    "success": "Request sent successfully"
+  },
   "thanksPopup": {
     "title": "Your Creative <br/>Journey Begins Here!",
     "description": "Thank you for reaching out to Dreamart 3D. We’re thrilled to bring your vision to life and collaborate on something extraordinary. Our team will be in touch soon to start crafting the perfect solution for your project. Let",

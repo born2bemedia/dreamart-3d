@@ -41,7 +41,11 @@ export const ThanksPopup = () => {
               "Thank you for reaching out to Dreamart 3D. We’re thrilled to bring your vision to life and collaborate on something extraordinary. Our team will be in touch soon to start crafting the perfect solution for your project. Let's create something amazing together!",
           })}
         />
-        <Button text={t('close', { fallback: 'Continue' })} type="link" href="/" />
+        <Button
+          text={t('close', { fallback: 'Continue' })}
+          type="button"
+          onClick={() => setIsOpen(false)}
+        />
       </div>
     </div>
   );

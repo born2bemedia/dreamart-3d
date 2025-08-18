@@ -8,11 +8,13 @@ export const Button = ({
   text,
   type,
   href,
+  onClick,
 }: {
   className?: string;
   text: string;
   type: 'link' | 'button';
   href?: string;
+  onClick?: () => void;
 }) => {
 
   const scrollToFooter = () => {
@@ -23,7 +25,7 @@ export const Button = ({
   };
 
   return type === 'button' ? (
-    <button className={`${className ? styles[className] : styles.button}`} onClick={scrollToFooter}>
+    <button className={`${className ? styles[className] : styles.button}`} onClick={onClick || scrollToFooter}>
       {text}
     </button>
   ) : (

@@ -8,6 +8,7 @@ import { Button } from '@/shared/ui/kit';
 import styles from './PricingItem.module.scss';
 
 import type { PricingItem as PricingItemType } from '@/featured/prices/model/types';
+import { useRequestPackagePopupStore } from '@/featured/request-package-popup/model/store';
 
 export const PricingItem = ({
   title,
@@ -17,6 +18,12 @@ export const PricingItem = ({
   button_text,
 }: PricingItemType) => {
   const t = useTranslations('prices');
+  const { setIsPopupOpen, setPackage } = useRequestPackagePopupStore();
+
+  const handleClick = () => {
+    setIsPopupOpen(true);
+    setPackage(title);
+  };
 
   return (
     <div className={styles.pricingItem}>
@@ -38,7 +45,7 @@ export const PricingItem = ({
         <div className={styles.pricingItem__price}>
           {t('price', { fallback: 'From' })} <span>€{price}</span>
         </div>
-        <Button text={button_text} type="button" />
+        <Button text={button_text} type="button" onClick={handleClick} />
       </div>
     </div>
   );

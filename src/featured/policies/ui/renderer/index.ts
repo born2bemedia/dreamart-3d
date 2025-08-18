@@ -1,1 +1,1 @@
-export * from './ArticleRenderer';
+export * from './PolicyRenderer';

@@ -10,6 +10,7 @@ import { CloseIcon } from '@/shared/ui/icons';
 import { Title } from '@/shared/ui/kit';
 import { PhoneField } from '@/shared/ui/kit/phone-field';
 
+import { sendRequestPackageForm } from '../api/send-request-form';
 import { type RequestFormSchema, requestFormSchema } from '../model/schema';
 import { useRequestPackagePopupStore } from '../model/store';
 import styles from './RequestPackagePopup.module.scss';
@@ -37,8 +38,14 @@ export const RequestPackagePopup = () => {
   const onSubmit = async (data: RequestFormSchema) => {
     try {
       setIsLoading(true);
-      //await sendContactForm(data);
-      console.log(data);
+
+      const dataToSend = {
+        ...data,
+        packageName: packageName || '',
+      };
+
+      await sendRequestPackageForm(dataToSend);
+
       setTimeout(() => {
         reset();
         setIsLoading(false);
@@ -95,8 +102,12 @@ export const RequestPackagePopup = () => {
               render={({ field }) => <PhoneField {...field} country={countryCode} />}
             />
           </div>
-          <div className={`${styles.inputWrapper} ${styles.full} ${errors.estimatedBudget ? styles.error : ''}`}>
-            {errors.estimatedBudget && <p className={styles.error}>{errors.estimatedBudget.message}</p>}
+          <div
+            className={`${styles.inputWrapper} ${styles.full} ${errors.estimatedBudget ? styles.error : ''}`}
+          >
+            {errors.estimatedBudget && (
+              <p className={styles.error}>{errors.estimatedBudget.message}</p>
+            )}
             <input
               {...register('estimatedBudget')}
               placeholder={t('estimatedBudget', {

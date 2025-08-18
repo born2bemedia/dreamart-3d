@@ -6,7 +6,25 @@ import { Text, Title } from '@/shared/ui/kit';
 import type { Product } from '../../model/types';
 import styles from './ProductCard.module.scss';
 
+import { useCartStore } from '@/featured/cart/model/store';
+
 export const ProductCard = ({ title, image, excerpt, price }: Product) => {
+  const { addToCart, setTotal, total } = useCartStore();
+
+  const handleAddToCart = () => {
+    addToCart({
+      id: title,
+      name: title,
+      price,
+      image: image.url,
+      quantity: 1,
+      subtotal: price,
+      
+    });
+    setTotal(total + price);
+
+  };
+
   return (
     <div className={styles.productCard}>
       <div className={styles.top}>
@@ -18,7 +36,7 @@ export const ProductCard = ({ title, image, excerpt, price }: Product) => {
       </div>
       <div className={styles.bottom}>
         <h4>€{price}</h4>
-        <button>
+        <button onClick={handleAddToCart}>
           <Plus />
         </button>
       </div>

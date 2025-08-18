@@ -2,33 +2,37 @@ import { NextResponse } from 'next/server';
 
 import sgMail from '@sendgrid/mail';
 
-type FundRequestData = {
+type ContactRequestData = {
   firstName: string;
   lastName: string;
   email: string;
   phone: string;
   message?: string;
+  estimatedBudget?: string;
+  packageName?: string;
 };
 
 export async function POST(request: Request): Promise<NextResponse> {
   try {
-    const bodyJSON = (await request.json()) as FundRequestData;
-    const { firstName, lastName, email, phone, message } = bodyJSON;
+    const bodyJSON = (await request.json()) as ContactRequestData;
+    console.log(bodyJSON);
+    const { firstName, lastName, email, phone, message, estimatedBudget, packageName } = bodyJSON;
 
-    // Initialize SendGrid with API key
     sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
-
-    // Create email content
+    
     const msg = {
-      to: process.env.ADMIN_EMAIL!, // Your admin email address
-      from: process.env.FROM_EMAIL!, // Verified sender email
-      subject: 'Nueva solicitud',
+      to: process.env.ADMIN_EMAIL!,
+      from: process.env.FROM_EMAIL!,
+      subject: 'New package request',
       html: `
-        <h2>Nueva solicitud</h2>
-        <p><strong>Nombre:</strong> ${firstName} ${lastName}</p>
-        <p><strong>Correo Electrónico:</strong> ${email}</p>
-        <p><strong>Teléfono:</strong> ${phone}</p>
-        ${message ? `<p><strong>Mensaje:</strong> ${message}</p>` : ''}
+        <h2>New package request</h2>
+        <p><strong>First Name:</strong> ${firstName}</p>
+        <p><strong>Last Name:</strong> ${lastName}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Estimated Budget:</strong> ${estimatedBudget}</p>
+        <p><strong>Package:</strong> ${packageName}</p>
+        ${message ? `<p><strong>Message:</strong> ${message}</p>` : ''}
       `,
     };
 

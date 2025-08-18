@@ -9,6 +9,7 @@ import { Controller, useForm } from 'react-hook-form';
 import { useCountryCode } from '@/shared/lib/hooks/use-country';
 import { PhoneField } from '@/shared/ui/kit/phone-field';
 
+import { sendContactForm } from '../api/send-contact-form';
 import { type RequestFormSchema, requestFormSchema } from '../model/schema';
 import styles from './RequestForm.module.scss';
 
@@ -35,7 +36,7 @@ export const RequestForm = () => {
   const onSubmit = async (data: RequestFormSchema) => {
     try {
       setIsLoading(true);
-      //await sendContactForm(data);
+      await sendContactForm(data);
       console.log(data);
       setTimeout(() => {
         setIsSuccess(true);

@@ -76,7 +76,7 @@ export const Header = () => {
                 <Link href="/contacts">{t('contacts', { fallback: 'Contacts' })}</Link>
               </nav>
               <div className={styles.actions}>
-                <Link href="#" className={styles.cart}>
+                <Link href="/cart" className={styles.cart}>
                   <Cart />
                 </Link>
                 <Link href="#" className={styles.login}>

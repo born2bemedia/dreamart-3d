@@ -12,10 +12,12 @@ import 'react-international-phone/style.css';
 export const PhoneField = ({
   country,
   hint,
+  size = 'sm',
   ...args
 }: PhoneInputProps & {
   country?: string;
   hint?: string;
+  size?: 'sm' | 'md';
 }) => {
   return (
     <label className={st.layout}>
@@ -26,7 +28,7 @@ export const PhoneField = ({
             ? country
             : 'us'
         }
-        className={st.container}
+        className={cn(st.container, st[`${size}Container`])}
         inputClassName={cn(st.phoneField, hint && st.dangerIntent)}
         countries={defaultCountries.filter(([, iso2]) => !excludedCountries.includes(iso2))}
         countrySelectorStyleProps={{

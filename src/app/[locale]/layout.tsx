@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
+import { Toaster } from 'sonner';
 
 import { Footer, Header } from '@/shared/ui/components';
 import { LenisScrollProvider } from '@/shared/ui/kit';
@@ -52,6 +53,7 @@ export default async function RootLayout({
             <Footer />
           </LenisScrollProvider>
           <ThanksPopup />
+          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>

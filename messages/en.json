@@ -59,6 +59,10 @@
     "title2": "Ready to Make Some Magic Happen?",
     "description2": "Got a project waiting to be brought to life? Or maybe you’re just craving to start something new and exciting? We’ve got you covered! Let’s team up and turn your ideas into digital masterpieces that’ll leave a lasting impression."
   },
+  "dealsHero": {
+    "title": "Hot Deals, Cool Models!",
+    "description": "Why pay full price when you can get the best 3D models at a discounted rate? Our limited-time offers are too good to miss! Whether you’re looking for stunning decor, custom keychains, or unique jewelry pieces, we’ve got you covered with amazing deals on high-quality, print-ready models. But hurry — these deals won’t last forever! Get them while you can, and make your ideas come to life with incredible savings."
+  },
   "priceList": {
     "title": "Get the Full Picture",
     "label": "Download Our Complete Price List",
@@ -71,6 +75,10 @@
   "prices": {
     "includes": "Includes",
     "price": "From"
+  },
+  "deals": {
+    "discount": "Discount ",
+    "models": "3D Models:"
   },
   "requestForm": {
     "firstName": "First Name",

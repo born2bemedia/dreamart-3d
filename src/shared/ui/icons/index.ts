@@ -1,3 +1,6 @@
+export * from './arrows/arrow-left';
+export * from './arrows/arrow-right';
+export * from './blue-check';
 export * from './burger-menu/burger.menu';
 export * from './cart/cart';
 export * from './close/close';

@@ -1,0 +1,50 @@
+.layout {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.description {
+  color: #717173;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.item {
+  display: flex;
+  gap: 10px;
+
+  p {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    a {
+      color: #2583ff;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-skip-ink: auto;
+      text-decoration-thickness: auto;
+      text-underline-offset: auto;
+      text-underline-position: from-font;
+    }
+  }
+}

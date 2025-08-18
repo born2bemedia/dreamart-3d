@@ -1,0 +1,91 @@
+.heading {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 48px;
+}
+
+.heading2 {
+  display: block;
+  margin-top: 12px;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text {
+  color: #717173;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 12px;
+}
+
+.link {
+  color: #2583ff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.bold {
+  color: #717173;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: normal;
+}
+
+.list {
+  margin-top: 12px;
+  margin-left: 18px;
+  color: #717173;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.listDisc {
+  list-style-type: disc;
+}
+
+.listDecimal {
+  list-style-type: decimal;
+}
+
+.listItem {
+  color: #717173;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.listUrl {
+  color: #2583ff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}

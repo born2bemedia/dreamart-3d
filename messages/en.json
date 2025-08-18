@@ -275,5 +275,25 @@
         "text": "The mastermind behind those unforgettable videos that capture hearts and minds."
       }
     }
+  },
+  "termsOfUse": {
+    "contactTitle": "Contact Information",
+    "contactDescription": "For any questions, contact us at:"
+  },
+  "contactInfoPolicy": {
+    "email": "Email",
+    "phone": "Phone",
+    "website": "Website"
+  },
+  "privacyPolicy": {
+    "contactTitle": "13. Contact Information",
+    "contactDescription": "If you have any questions about this Privacy Policy, please contact us at:"
+  },
+  "cookiePolicy": {
+    "contactTitle": "Contact Us",
+    "contactDescription": "If you have questions regarding this Cookie Policy, you can contact us at:"
+  },
+  "refundPolicy": {
+    "contactTitle": "Contact Information"
   }
 }

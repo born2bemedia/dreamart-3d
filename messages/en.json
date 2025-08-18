@@ -112,5 +112,147 @@
     "contacts": "Contacts",
     "login": "Login",
     "signup": "Sign Up"
+  },
+  "quoteRequestForm": {
+    "yourInfo": "Your Info",
+    "dontWorry": "Don’t Worry, We’ll Keep It Private",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "preferredContactMethod": "Preferred Contact Method",
+    "whatsapp": "WhatsApp",
+    "projectDetails": "Project Details",
+    "weAreAllEars": "We’re All Ears",
+    "whatServiceDoYouNeed": "What Service Do You Need?",
+    "3DModelling": "3D Modelling",
+    "animation": "Animation",
+    "videoProduction": "Video Production",
+    "uiuxDesign": "UI/UX Design",
+    "other": "Other",
+    "pleaseSpecify": "Please Specify",
+    "projectType": "Project Type",
+    "newProject": "New Project",
+    "ongoingProject": "Ongoing Project",
+    "consultationOnly": "Consultation Only",
+    "doYouHaveAReferenceOrMoodBoard": "Do You Have a Reference or Mood Board?",
+    "describeYourProject": "Describe Your Project",
+    "description": "Description",
+    "budgetAndTimeline": "Budget & Timeline",
+    "letsMakeItWork": "Let’s Make It Work!",
+    "estimatedBudget": "Estimated Budget",
+    "flexible": "Flexible",
+    "urgencyLevel": "Urgency Level",
+    "standard": "Standard",
+    "rush": "Rush",
+    "asap": "ASAP",
+    "justExploring": "Just Exploring",
+    "projectDeadline": "Project Deadline",
+    "preferredFileFormatForDelivery": "Preferred File Format for Delivery",
+    "anythingElse": "Anything Else?",
+    "weLovePreferences": "We Love Preferences",
+    "openToSuggestions": "Open to Suggestions",
+    "strictGuidelines": "Strict Guidelines",
+    "collaborationBased": "Collaboration-Based",
+    "wouldCall": "Would You Like a Free Consultation Call?",
+    "yes": "Yes",
+    "no": "No",
+    "iAgree": {
+      "0": "I agree to the",
+      "1": "Terms of Use",
+      "2": "and",
+      "3": "Privacy Policy"
+    },
+    "startTheProjectToday": "Start the Project Today"
+  },
+  "trends": {
+    "readMore": "Read more",
+    "hero": {
+      "title": "The Future of 3D Creativity",
+      "description": "At Dreamart 3D, we’re all about staying ahead of the curve. This is where we talk trends, share insights, and keep you updated on everything exciting in the world of 3D modelling, animation, UI/UX design, and video production. Explore the latest innovations and see how they’re shaping the future of digital creativity."
+    }
+  },
+  "impact": {
+    "hero": {
+      "title": {
+        "0": "Making an Impact,",
+        "1": "One Pixel at a Time"
+      },
+      "description": "At Dreamart 3D, we’re all about staying ahead of the curve. This is where we talk trends, share insights, and keep you updated on everything exciting in the world of 3D modelling, animation, UI/UX design, and video production. Explore the latest innovations and see how they’re shaping the future of digital creativity."
+    },
+    "whoWeAre": {
+      "title": "Who We Are",
+      "text": "We’re a quirky team of 3D artists, animators, designers, and tech enthusiasts who believe that creativity has no limits. We’re not just experts at what we do — we love doing it. Whether it’s bringing a concept to life with a 3D-printed model, designing an intuitive app, or animating characters that make people smile, we’re always pushing boundaries.",
+      "tag": "A Team of Dreamers, Doers, and Digital Wizards"
+    },
+    "whatWeDo": {
+      "title": "What We Do",
+      "text": "From 3D models for printing to stunning animations and next-level UI/UX designs, we make digital content that’s as bold as your ideas. Need a video that will make everyone stop scrolling? We’ve got you covered. Our work isn’t just about getting the job done — it’s about doing it in a way that wows.",
+      "tag": "We Make Stuff Awesome"
+    },
+    "ourPhilosophy": {
+      "title": "Our Philosophy",
+      "text": "We believe in action. We’re not the type of agency that spends days writing reports about how great we are. Instead, we let our work speak for itself. Every project we take on is an opportunity to learn, innovate, and deliver something amazing. It’s not just about fulfilling a brief — it’s about making your brand shine in ways you didn’t even imagine.",
+      "tag": "Less Talk, More Action (and Cool Designs)"
+    },
+    "byTheNumbers": {
+      "title": "By the Numbers",
+      "text": "Here’s a Quick Glimpse of What We’ve Achieved",
+      "stat1": {
+        "title": "3D Models Created",
+        "text": "From prototypes to art, we’ve designed models for various industries."
+      },
+      "stat2": {
+        "title": "Successful Animations",
+        "text": "From prototypes to art, we’ve designed models for various industries."
+      },
+      "stat3": {
+        "title": "UI/UX Designs",
+        "text": "Crafting intuitive, visually stunning designs for websites and apps."
+      },
+      "stat4": {
+        "title": "Video Productions",
+        "text": "Creating high-impact videos that drive results and tell powerful stories."
+      },
+      "stat5": {
+        "title": "Happy Clients",
+        "text": "Artists, creators, and businesses who trust us to bring their ideas to life."
+      }
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Us?",
+      "text": {
+        "0": "Let’s face it, there are plenty of agencies out there. So why choose us? Simple: we bring a unique blend of creativity, precision, and a little bit of fun. We don’t just follow trends — we set them. We’re obsessed with the details, but we also know when to step back and let the big picture take the stage.",
+        "1": "We take pride in our work, and we’re excited to work with clients who share our passion for creativity and innovation. Whether you’re an artist, creator, or brand ready to stand out, we’re the team to bring your vision to life."
+      },
+      "tag": "We’re More Than Just “Another Agency”"
+    },
+    "whatMakesUsDifferent": {
+      "title": "What Makes Us Different",
+      "text": "We think differently. We push limits. We’re not afraid to get weird with it (in the best way possible). Our quirky approach to design and animation is what sets us apart from the sea of generic agencies. We see potential in every project and find fun in every challenge.",
+      "tag": "We’re a Little Unconventional, and That’s Our Superpower"
+    },
+    "aboutDreamart": {
+      "tag": "aka the Digital Avengers",
+      "title": "About Dreamart",
+      "text": "We’re a quirky team of 3D artists, animators, designers, and tech enthusiasts who believe that creativity has no limits. We’re not just experts at what we do — we love doing it. Whether it’s bringing a concept to life with a 3D-printed model, designing an intuitive app, or animating characters that make people smile, we’re always pushing boundaries.",
+      "button": "Want to Join the Fun?",
+      "card1": {
+        "title": "The 3D Magician",
+        "text": "The one who can turn any sketch into a 3D model that’s print-ready."
+      },
+      "card2": {
+        "title": "The Animator Ninja",
+        "text": "Fast, precise, and always ready to bring life to your ideas, frame by frame."
+      },
+      "card3": {
+        "title": "The Design Genius",
+        "text": "They’ve got an eye for aesthetics and an obsession with functionality — perfect for UI/UX that’s both beautiful and intuitive."
+      },
+      "card4": {
+        "title": "The Storyteller",
+        "text": "The mastermind behind those unforgettable videos that capture hearts and minds."
+      }
+    }
   }
 }

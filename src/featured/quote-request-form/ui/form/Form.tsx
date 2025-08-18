@@ -1,6 +1,7 @@
 'use client';
 
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useTranslations } from 'next-intl';
 import { Controller, useForm } from 'react-hook-form';
 
 import { DropdownCalendar } from '@/shared/ui/components/dropdown-calendar';
@@ -19,6 +20,8 @@ import { quoteRequestFormSchema } from '../../model/schema';
 import st from './Form.module.scss';
 
 export const Form = () => {
+  const t = useTranslations('quoteRequestForm');
+
   const {
     register,
     handleSubmit,
@@ -56,44 +59,54 @@ export const Form = () => {
   return (
     <form className={st.layout} onSubmit={onSubmit}>
       <section className={st.section}>
-        <h2>Your Info</h2>
-        <p className={st.text}>Don’t Worry, We’ll Keep It Private</p>
+        <h2>{t('yourInfo', { fallback: 'Your Info' })}</h2>
+        <p className={st.text}>
+          {t('dontWorry', { fallback: 'Don’t Worry, We’ll Keep It Private' })}
+        </p>
       </section>
       <section className={st.formFlex}>
         <FormRow>
           <TextField
-            placeholder="First Name"
+            placeholder={t('firstName', { fallback: 'First Name' })}
             hint={errors.firstName?.message}
             {...register('firstName')}
           />
           <TextField
-            placeholder="Last Name"
+            placeholder={t('lastName', { fallback: 'Last Name' })}
             hint={errors.lastName?.message}
             {...register('lastName')}
           />
         </FormRow>
         <FormRow>
-          <TextField placeholder="Email" hint={errors.email?.message} {...register('email')} />
+          <TextField
+            placeholder={t('email', { fallback: 'Email' })}
+            hint={errors.email?.message}
+            {...register('email')}
+          />
           <Controller
             control={control}
             name="phone"
             render={({ field }) => (
-              <PhoneField placeholder="Phone" hint={errors.phone?.message} {...field} />
+              <PhoneField
+                placeholder={t('phone', { fallback: 'Phone' })}
+                hint={errors.phone?.message}
+                {...field}
+              />
             )}
           />
         </FormRow>
       </section>
       <section className={st.formFlex}>
-        <h3>Preferred Contact Method</h3>
+        <h3>{t('preferredContactMethod', { fallback: 'Preferred Contact Method' })}</h3>
         <Controller
           control={control}
           name="contactMethod"
           render={({ field }) => (
             <CheckboxGroup
               options={[
-                { label: 'Email', value: 'email' },
-                { label: 'Phone', value: 'phone' },
-                { label: 'WhatsApp', value: 'whatsapp' },
+                { label: t('email', { fallback: 'Email' }), value: 'email' },
+                { label: t('phone', { fallback: 'Phone' }), value: 'phone' },
+                { label: t('whatsapp', { fallback: 'WhatsApp' }), value: 'whatsapp' },
               ]}
               value={field.value}
               onChange={field.onChange}
@@ -105,22 +118,25 @@ export const Form = () => {
       </section>
       <Divider />
       <section className={st.section}>
-        <h2>Project Details</h2>
-        <p className={st.text}>We’re All Ears</p>
+        <h2>{t('projectDetails', { fallback: 'Project Details' })}</h2>
+        <p className={st.text}>{t('weAreAllEars', { fallback: 'We’re All Ears' })}</p>
       </section>
       <section className={st.formFlex}>
-        <h3>What Service Do You Need?</h3>
+        <h3>{t('whatServiceDoYouNeed', { fallback: 'What Service Do You Need?' })}</h3>
         <Controller
           control={control}
           name="service"
           render={({ field }) => (
             <CheckboxGroup
               options={[
-                { label: '3D modelling', value: '3D-modelling' },
-                { label: 'Animation', value: 'animation' },
-                { label: 'Video Production', value: 'video-production' },
-                { label: 'UI/UX Design', value: 'ui-ux-design' },
-                { label: 'Other', value: 'other' },
+                { label: t('3DModelling', { fallback: '3D Modelling' }), value: '3D-modelling' },
+                { label: t('animation', { fallback: 'Animation' }), value: 'animation' },
+                {
+                  label: t('videoProduction', { fallback: 'Video Production' }),
+                  value: 'video-production',
+                },
+                { label: t('uiuxDesign', { fallback: 'UI/UX Design' }), value: 'ui-ux-design' },
+                { label: t('other', { fallback: 'Other' }), value: 'other' },
               ]}
               value={field.value}
               onChange={field.onChange}
@@ -130,20 +146,29 @@ export const Form = () => {
           )}
         />
         {serviceValue === 'other' && (
-          <TextField placeholder="Please specify" {...register('otherService')} />
+          <TextField
+            placeholder={t('pleaseSpecify', { fallback: 'Please Specify' })}
+            {...register('otherService')}
+          />
         )}
       </section>
       <section className={st.formFlex}>
-        <h3>Project Type</h3>
+        <h3>{t('projectType', { fallback: 'Project Type' })}</h3>
         <Controller
           control={control}
           name="projectType"
           render={({ field }) => (
             <CheckboxGroup
               options={[
-                { label: 'New Project', value: 'new-project' },
-                { label: 'Ongoing Project', value: 'ongoing-project' },
-                { label: 'Consultation Only', value: 'consultation-only' },
+                { label: t('newProject', { fallback: 'New Project' }), value: 'new-project' },
+                {
+                  label: t('ongoingProject', { fallback: 'Ongoing Project' }),
+                  value: 'ongoing-project',
+                },
+                {
+                  label: t('consultationOnly', { fallback: 'Consultation Only' }),
+                  value: 'consultation-only',
+                },
               ]}
               value={field.value}
               onChange={field.onChange}
@@ -154,7 +179,11 @@ export const Form = () => {
         />
       </section>
       <section className={st.formFlex}>
-        <h3>Do You Have a Reference or Mood Board?</h3>
+        <h3>
+          {t('doYouHaveAReferenceOrMoodBoard', {
+            fallback: 'Do You Have a Reference or Mood Board?',
+          })}
+        </h3>
         <Controller
           name="files"
           control={control}
@@ -164,20 +193,20 @@ export const Form = () => {
         />
       </section>
       <section className={st.formFlex}>
-        <h3>Describe Your Project</h3>
+        <h3>{t('describeYourProject', { fallback: 'Describe Your Project' })}</h3>
         <TextArea
-          placeholder="Description"
+          placeholder={t('description', { fallback: 'Description' })}
           hint={errors.description?.message}
           {...register('description')}
         />
       </section>
       <Divider />
       <section className={st.section}>
-        <h2>Budget & Timeline</h2>
-        <p className={st.text}>Let’s Make It Work!</p>
+        <h2>{t('budgetAndTimeline', { fallback: 'Budget & Timeline' })}</h2>
+        <p className={st.text}>{t('letsMakeItWork', { fallback: 'Let’s Make It Work!' })}</p>
       </section>
       <section className={st.formFlex}>
-        <h3>Estimated Budget</h3>
+        <h3>{t('estimatedBudget', { fallback: 'Estimated Budget' })}</h3>
         <Controller
           control={control}
           name="budget"
@@ -188,7 +217,7 @@ export const Form = () => {
                 { label: '€500-€2,000', value: '€500-€2,000' },
                 { label: '€2,000-€5,000', value: '€2,000-€5,000' },
                 { label: '€5,000+', value: '€5,000+' },
-                { label: 'Flexible', value: 'Flexible' },
+                { label: t('flexible', { fallback: 'Flexible' }), value: 'flexible' },
               ]}
               value={field.value}
               onChange={field.onChange}
@@ -199,17 +228,20 @@ export const Form = () => {
         />
       </section>
       <section className={st.formFlex}>
-        <h3>Urgency Level</h3>
+        <h3>{t('urgencyLevel', { fallback: 'Urgency Level' })}</h3>
         <Controller
           control={control}
           name="urgencyLevel"
           render={({ field }) => (
             <CheckboxGroup
               options={[
-                { label: 'Standard', value: 'standard' },
-                { label: 'Rush', value: 'rush' },
-                { label: 'ASAP', value: 'asap' },
-                { label: 'Just Exploring+', value: 'just-exploring' },
+                { label: t('standard', { fallback: 'Standard' }), value: 'standard' },
+                { label: t('rush', { fallback: 'Rush' }), value: 'rush' },
+                { label: t('asap', { fallback: 'ASAP' }), value: 'asap' },
+                {
+                  label: t('justExploring', { fallback: 'Just Exploring' }),
+                  value: 'just-exploring',
+                },
               ]}
               value={field.value}
               onChange={field.onChange}
@@ -220,7 +252,7 @@ export const Form = () => {
         />
       </section>
       <section className={st.formFlex}>
-        <h3>Project Deadline</h3>
+        <h3>{t('projectDeadline', { fallback: 'Project Deadline' })}</h3>
         <Controller
           control={control}
           name="projectDeadline"
@@ -233,7 +265,9 @@ export const Form = () => {
         />
       </section>
       <section className={st.formFlex}>
-        <h3>Preferred File Format for Delivery</h3>
+        <h3>
+          {t('preferredFileFormatForDelivery', { fallback: 'Preferred File Format for Delivery' })}
+        </h3>
         <Controller
           control={control}
           name="urgencyLevel"
@@ -246,7 +280,7 @@ export const Form = () => {
                 { label: 'OBJ', value: 'obj' },
                 { label: 'STL', value: 'stl' },
                 { label: 'Figma', value: 'figma' },
-                { label: 'Other', value: 'other' },
+                { label: t('other', { fallback: 'Other' }), value: 'other' },
               ]}
               value={field.value}
               onChange={field.onChange}
@@ -258,20 +292,29 @@ export const Form = () => {
       </section>
       <Divider />
       <section className={st.section}>
-        <h2>Anything Else?</h2>
-        <p className={st.text}>We Love Preferences</p>
+        <h2>{t('anythingElse', { fallback: 'Anything Else?' })}</h2>
+        <p className={st.text}>{t('weLovePreferences', { fallback: 'We Love Preferences' })}</p>
       </section>
       <section className={st.formFlex}>
-        <h3>Anything Else?</h3>
+        <h3>{t('anythingElse', { fallback: 'Anything Else?' })}</h3>
         <Controller
           control={control}
           name="revision"
           render={({ field }) => (
             <CheckboxGroup
               options={[
-                { label: 'Open to Suggestions', value: 'open-to-suggestions' },
-                { label: 'Strict Guidelines', value: 'strict-guidelines' },
-                { label: 'Collaboration-Based', value: 'collaboration-based' },
+                {
+                  label: t('openToSuggestions', { fallback: 'Open to Suggestions' }),
+                  value: 'open-to-suggestions',
+                },
+                {
+                  label: t('strictGuidelines', { fallback: 'Strict Guidelines' }),
+                  value: 'strict-guidelines',
+                },
+                {
+                  label: t('collaborationBased', { fallback: 'Collaboration-Based' }),
+                  value: 'collaboration-based',
+                },
               ]}
               value={field.value}
               onChange={field.onChange}
@@ -282,15 +325,15 @@ export const Form = () => {
         />
       </section>
       <section className={st.formFlex}>
-        <h3>Would You Like a Free Consultation Call?</h3>
+        <h3>{t('wouldCall', { fallback: 'Would You Like a Free Consultation Call?' })}</h3>
         <Controller
           control={control}
           name="wouldCall"
           render={({ field }) => (
             <CheckboxGroup
               options={[
-                { label: 'Yes', value: 'yes' },
-                { label: 'No', value: 'no' },
+                { label: t('yes', { fallback: 'Yes' }), value: 'yes' },
+                { label: t('no', { fallback: 'No' }), value: 'no' },
               ]}
               value={field.value}
               onChange={field.onChange}
@@ -309,8 +352,10 @@ export const Form = () => {
           <Checkbox
             label={
               <>
-                I agree to the <Url href="/terms-of-use">Terms of Use</Url> and{' '}
-                <Url href="/privacy-policy">Privacy Policy</Url>.
+                {t('iAgree.0', { fallback: 'I agree to the' })}{' '}
+                <Url href="/terms-of-use">{t('iAgree.1', { fallback: 'Terms of Use' })}</Url>{' '}
+                {t('iAgree.2', { fallback: 'and' })}{' '}
+                <Url href="/privacy-policy">{t('iAgree.3', { fallback: 'Privacy Policy' })}</Url>.
               </>
             }
             checked={field.value}
@@ -320,7 +365,7 @@ export const Form = () => {
         )}
       />
       <Btn type="submit" fullWidth>
-        Start the Project Today
+        {t('startTheProjectToday', { fallback: 'Start the Project Today' })}
       </Btn>
     </form>
   );

@@ -3,10 +3,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { useTranslations } from 'next-intl';
+
 import type { TrendPreview } from '../../model/types';
 import st from './Card.module.scss';
 
 export const TrendPreviewCard = ({ description, image, slug, title }: TrendPreview) => {
+  const t = useTranslations('trends');
+
   return (
     <article className={st.layout}>
       <Image className={st.img} src={image} alt={title} width={338} height={200} />
@@ -15,7 +19,7 @@ export const TrendPreviewCard = ({ description, image, slug, title }: TrendPrevi
         <p>{description}</p>
       </div>
       <Link href={`/trends/${slug}`}>
-        Read more <ArrowRight />
+        {t('readMore', { fallback: 'Read more' })} <ArrowRight />
       </Link>
     </article>
   );

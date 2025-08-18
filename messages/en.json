@@ -316,5 +316,37 @@
     "contacts": "Contacts",
     "login": "Login",
     "signup": "Sign Up"
+  },
+  "registrationForm": {
+    "success": "You have successfully registered. Please login to continue.",
+    "error": "Something went wrong. Please try again later.",
+    "title": "Join the Dreamart 3D Family!",
+    "description": "Ready to unlock the full potential of your creativity? Sign up today and get exclusive updates, fresh new features, and sweet deals that’ll take your design projects to the next level. Let’s make some 3D magic happen!",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "creating": "Creating...",
+    "isAgree": {
+      "0": "By signing up, you confirm that you are over 18 years old and agree to our",
+      "1": "Terms and Conditions",
+      "2": "and",
+      "3": "Privacy Policy"
+    },
+    "createAccount": "Create Account"
+  },
+  "loginForm": {
+    "error": "Something went wrong. Please try again later.",
+    "title": "Welcome Back, Creator!",
+    "description": "Ready to jump back into the world of 3D magic? Just pop in your username, email, and password to get started! Forgot your password? No worries, just hit “Forgot Password?” and we’ll help you out!",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "dontHaveAccount": "Don’t have an account?",
+    "create": "Create",
+    "loggingIn": "Logging in...",
+    "login": "Login"
   }
 }

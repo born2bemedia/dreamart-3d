@@ -1,1 +1,1 @@
-export * from './ArticleStrategies';
+export * from './PolicyStrategies';

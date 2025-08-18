@@ -1,5 +1,5 @@
 import type { Children } from '../../model/types';
-import { PolicyStrategies } from '../strategies/PolicyStrategies';
+import { PolicyStrategies } from '../strategies';
 
 export const PolicyRenderer = ({ content }: { content: Children[] }) => (
   <>

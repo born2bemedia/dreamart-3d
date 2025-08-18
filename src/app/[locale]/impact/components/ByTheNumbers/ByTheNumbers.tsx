@@ -1,46 +1,60 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import { Tag } from '@/shared/ui/kit/tag';
 
 import st from './ByTheNumbers.module.scss';
 
-const getStats = () => [
+const getStats = (t: ReturnType<typeof useTranslations>) => [
   {
     stat: '500+',
-    title: '3D Models Created',
-    text: 'From prototypes to art, we’ve designed models for various industries.',
+    title: t('stat1.title', { fallback: '3D Models Created' }),
+    text: t('stat1.text', {
+      fallback: 'From prototypes to art, we’ve designed models for various industries.',
+    }),
   },
   {
     stat: '300+',
-    title: 'Successful Animations',
-    text: 'From prototypes to art, we’ve designed models for various industries.',
+    title: t('stat2.title', { fallback: 'Successful Animations' }),
+    text: t('stat2.text', {
+      fallback: 'From prototypes to art, we’ve designed models for various industries.',
+    }),
   },
   {
     stat: '200+',
-    title: 'UI/UX Designs',
-    text: 'Crafting intuitive, visually stunning designs for websites and apps.',
+    title: t('stat3.title', { fallback: 'UI/UX Designs' }),
+    text: t('stat3.text', {
+      fallback: 'Crafting intuitive, visually stunning designs for websites and apps.',
+    }),
   },
   {
     stat: '150+',
-    title: 'Video Productions',
-    text: 'Creating high-impact videos that drive results and tell powerful stories.',
+    title: t('stat4.title', { fallback: 'Video Productions' }),
+    text: t('stat4.text', {
+      fallback: 'Creating high-impact videos that drive results and tell powerful stories.',
+    }),
   },
   {
     stat: '50+',
-    title: 'Happy Clients',
-    text: 'Artists, creators, and businesses who trust us to bring their ideas to life.',
+    title: t('stat5.title', { fallback: 'Happy Clients' }),
+    text: t('stat5.text', {
+      fallback: 'Artists, creators, and businesses who trust us to bring their ideas to life.',
+    }),
   },
 ];
 
 export const ByTheNumbers = () => {
-  const stats = getStats();
+  const t = useTranslations('impact.byTheNumbers');
+
+  const stats = getStats(t);
 
   return (
     <div className="_container">
       <section className={st.layout}>
         <section className={st.titleLayout}>
-          <h3>By the Numbers</h3>
-          <Tag>Here’s a Quick Glimpse of What We’ve Achieved</Tag>
+          <h3>{t('title', { fallback: 'By the Numbers' })}</h3>
+          <Tag>{t('text', { fallback: 'Here’s a Quick Glimpse of What We’ve Achieved' })}</Tag>
         </section>
         <section className={st.cardLayout}>
           <div className={st.cardRow}>

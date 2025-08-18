@@ -59,9 +59,96 @@
     "title2": "Ready to Make Some Magic Happen?",
     "description2": "Got a project waiting to be brought to life? Or maybe you’re just craving to start something new and exciting? We’ve got you covered! Let’s team up and turn your ideas into digital masterpieces that’ll leave a lasting impression."
   },
+  "cookiePolicy": {
+    "contactTitle": "Contact Information",
+    "contactDescription": "For any questions, contact us at:"
+  },
   "dealsHero": {
     "title": "Hot Deals, Cool Models!",
     "description": "Why pay full price when you can get the best 3D models at a discounted rate? Our limited-time offers are too good to miss! Whether you’re looking for stunning decor, custom keychains, or unique jewelry pieces, we’ve got you covered with amazing deals on high-quality, print-ready models. But hurry — these deals won’t last forever! Get them while you can, and make your ideas come to life with incredible savings."
+  },
+  "impact": {
+    "aboutDreamart": {
+      "card1": {
+        "title": "The 3D Magician",
+        "text": "The one who can turn any sketch into a 3D model that’s print-ready."
+      },
+      "card2": {
+        "title": "The Animator Ninja",
+        "text": "Fast, precise, and always ready to bring life to your ideas, frame by frame."
+      },
+      "card3": {
+        "title": "The Design Genius",
+        "text": "They’ve got an eye for aesthetics and an obsession with functionality — perfect for UI/UX that’s both beautiful and intuitive."
+      },
+      "card4": {
+        "title": "The Storyteller",
+        "text": "The mastermind behind those unforgettable videos that capture hearts and minds."
+      },
+      "tag": "aka the Digital Avengers",
+      "title": "About Dreamart",
+      "text": "We’re a quirky team of 3D artists, animators, designers, and tech enthusiasts who believe that creativity has no limits.",
+      "button": "Want to Join the Fun?"
+    },
+    "byTheNumbers": {
+      "stat1": {
+        "title": "3D Models Created",
+        "text": "From prototypes to art, we’ve designed models for various industries."
+      },
+      "stat2": {
+        "title": "Successful Animations",
+        "text": "From prototypes to art, we’ve designed models for various industries."
+      },
+      "stat3": {
+        "title": "UI/UX Designs",
+        "text": "Crafting intuitive, visually stunning designs for websites and apps."
+      },
+      "stat4": {
+        "title": "Video Productions",
+        "text": "Creating high-impact videos that drive results and tell powerful stories."
+      },
+      "stat5": {
+        "title": "Happy Clients",
+        "text": "Artists, creators, and businesses who trust us to bring their ideas to life."
+      },
+      "title": "By the Numbers",
+      "text": "Here’s a Quick Glimpse of What We’ve Achieved"
+    },
+    "hero": {
+      "title": {
+        "0": "Making an Impact,",
+        "1": "One Pixel at a Time"
+      },
+      "description": "Welcome to Dreamart 3D — the place where ideas turn into tangible reality, imagination is our superpower, and creativity is our secret weapon. We don’t just create 3D models, animations, and designs — we craft experiences that make your brand unforgettable."
+    },
+    "whoWeAre": {
+      "title": "Who We Are",
+      "text": "We’re a quirky team of 3D artists, animators, designers, and tech enthusiasts who believe that creativity has no limits. We’re not just experts at what we do — we love doing it. Whether it’s bringing a concept to life with a 3D-printed model, designing an intuitive app, or animating characters that make people smile, we’re always pushing boundaries.",
+      "tag": "A Team of Dreamers, Doers, and Digital Wizards"
+    },
+    "whatWeDo": {
+      "title": "What We Do",
+      "text": "From 3D models for printing to stunning animations and next-level UI/UX designs, we make digital content that’s as bold as your ideas. Need a video that will make everyone stop scrolling? We’ve got you covered. Our work isn’t just about getting the job done — it’s about doing it in a way that wows.",
+      "tag": "We Make Stuff Awesome"
+    },
+    "ourPhilosophy": {
+      "title": "Our Philosophy",
+      "text": "We believe in action. We’re not the type of agency that spends days writing reports about how great we are. Instead, we let our work speak for itself. Every project we take on is an opportunity to learn, innovate, and deliver something amazing. It’s not just about fulfilling a brief — it’s about making your brand shine in ways you didn’t even imagine.",
+      "tag": "Less Talk, More Action (and Cool Designs)"
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Us?",
+      "text": {
+        "0": "Let’s face it, there are plenty of agencies out there. So why choose us? Simple: we bring a unique blend of creativity, precision, and a little bit of fun. We don’t just follow trends — we set them. We’re obsessed with the details, but we also know when to step back and let the big picture take the stage.",
+        "1": "We take pride in our work, and we’re excited to work with clients who share our passion for creativity and innovation. Whether you’re an artist, creator, or brand ready to stand out, we’re the team to bring your vision to life."
+      },
+      "tag": "We’re More Than Just “Another Agency”"
+    },
+    "whatMakesUsDifferent": {
+      "title": "What Makes Us Different",
+      "text": "We think differently. We push limits. We’re not afraid to get weird with it (in the best way possible). Our quirky approach to design and animation is what sets us apart from the sea of generic agencies. We see potential in every project and find fun in every challenge.",
+      "tag": "We’re a Little Unconventional, and That’s Our Superpower”"
+    }
   },
   "priceList": {
     "title": "Get the Full Picture",
@@ -76,6 +163,13 @@
     "includes": "Includes",
     "price": "From"
   },
+  "privacyPolicy": {
+    "contactTitle": "Contact Information",
+    "contactDescription": "For any questions, contact us at:"
+  },
+  "refundPolicy": {
+    "contactTitle": "Contact Information"
+  },
   "shopHero": {
     "back": "Back"
   },
@@ -84,76 +178,25 @@
     "description": "Welcome to Dreamart 3D’s playground, where your wildest ideas go from “just a thought” to “look at that!” in a few clicks. From quirky home decor to iconic movie characters, our 3D models are designed to bring your creative visions to life without the complexity. Browse through our collection, pick your favorite, and let’s turn those brilliant ideas into tangible prints.",
     "label": "Who knew 3D printing could be this fun?"
   },
+  "termsOfUse": {
+    "contactTitle": "Contact Information",
+    "contactDescription": "For any questions, contact us at:"
+  },
+  "trendsHero": {
+    "title": "The Future of 3D Creativity",
+    "description": "At Dreamart 3D, we’re all about staying ahead of the curve. This is where we talk trends, share insights, and keep you updated on everything exciting in the world of 3D modelling, animation, UI/UX design, and video production. Explore the latest innovations and see how they’re shaping the future of digital creativity."
+  },
   "deals": {
     "discount": "Discount ",
     "models": "3D Models:"
   },
+  "contactInfoPolicy": {
+    "email": "Email",
+    "phone": "Phone",
+    "website": "Website"
+  },
   "featuredCategory": {
     "viewAll": "See All Our 3D Wonders"
-  },
-  "requestForm": {
-    "firstName": "First Name",
-    "lastName": "Last Name",
-    "email": "Email",
-    "message": "Message",
-    "agree": "I agree to the Terms of Use and Privacy Policy.",
-    "loading": "Loading...",
-    "submit": "Grab the Offer Before It Vanishes",
-    "agreement": "We respect your privacy. <br/>Your information will never be shared.",
-    "success": "Request sent successfully"
-  },
-  "packageRequestForm": {
-    "firstName": "First Name",
-    "lastName": "Last Name",
-    "email": "Email",
-    "estimatedBudget": "Estimated Budget",
-    "message": "Project Details",
-    "loading": "Loading...",
-    "submit": "Claim Your Creative Power!",
-    "success": "Request sent successfully"
-  },
-  "thanksPopup": {
-    "title": "Your Creative <br/>Journey Begins Here!",
-    "description": "Thank you for reaching out to Dreamart 3D. We’re thrilled to bring your vision to life and collaborate on something extraordinary. Our team will be in touch soon to start crafting the perfect solution for your project. Let",
-    "close": "Continue"
-  },
-  "footer": {
-    "cultureTitle": "Culture",
-    "culture1": "Work",
-    "culture2": "Impact",
-    "culture3": "Careers",
-    "offersTitle": "Offers",
-    "offers1": "Services",
-    "offers2": "Prices",
-    "offers3": "Deals",
-    "connectTitle": "Connect",
-    "connect1": "Trends",
-    "connect2": "Contacts",
-    "regulationsTitle": "Regulations",
-    "regulations1": "Terms of Use",
-    "regulations2": "Privacy Policy",
-    "regulations3": "Cookie Policy",
-    "regulations4": "Refund Policy",
-    "infoTitle": "Info",
-    "infoOfficeTitle": "Office address:",
-    "infoOfficeAddress": "address",
-    "infoRegisteredTitle": "Registered address:",
-    "infoRegisteredAddress": "address",
-    "copyright": "© {year} [COMPANY] All Legal Rights Reserved."
-  },
-  "header": {
-    "home": "Home",
-    "shop": "Shop",
-    "work": "Work",
-    "services": "Services",
-    "impact": "Impact",
-    "prices": "Prices",
-    "deals": "Deals",
-    "trends": "Trends",
-    "careers": "Careers",
-    "contacts": "Contacts",
-    "login": "Login",
-    "signup": "Sign Up"
   },
   "quoteRequestForm": {
     "yourInfo": "Your Info",
@@ -207,114 +250,71 @@
     },
     "startTheProjectToday": "Start the Project Today"
   },
-  "trends": {
-    "readMore": "Read more",
-    "hero": {
-      "title": "The Future of 3D Creativity",
-      "description": "At Dreamart 3D, we’re all about staying ahead of the curve. This is where we talk trends, share insights, and keep you updated on everything exciting in the world of 3D modelling, animation, UI/UX design, and video production. Explore the latest innovations and see how they’re shaping the future of digital creativity."
-    }
-  },
-  "impact": {
-    "hero": {
-      "title": {
-        "0": "Making an Impact,",
-        "1": "One Pixel at a Time"
-      },
-      "description": "At Dreamart 3D, we’re all about staying ahead of the curve. This is where we talk trends, share insights, and keep you updated on everything exciting in the world of 3D modelling, animation, UI/UX design, and video production. Explore the latest innovations and see how they’re shaping the future of digital creativity."
-    },
-    "whoWeAre": {
-      "title": "Who We Are",
-      "text": "We’re a quirky team of 3D artists, animators, designers, and tech enthusiasts who believe that creativity has no limits. We’re not just experts at what we do — we love doing it. Whether it’s bringing a concept to life with a 3D-printed model, designing an intuitive app, or animating characters that make people smile, we’re always pushing boundaries.",
-      "tag": "A Team of Dreamers, Doers, and Digital Wizards"
-    },
-    "whatWeDo": {
-      "title": "What We Do",
-      "text": "From 3D models for printing to stunning animations and next-level UI/UX designs, we make digital content that’s as bold as your ideas. Need a video that will make everyone stop scrolling? We’ve got you covered. Our work isn’t just about getting the job done — it’s about doing it in a way that wows.",
-      "tag": "We Make Stuff Awesome"
-    },
-    "ourPhilosophy": {
-      "title": "Our Philosophy",
-      "text": "We believe in action. We’re not the type of agency that spends days writing reports about how great we are. Instead, we let our work speak for itself. Every project we take on is an opportunity to learn, innovate, and deliver something amazing. It’s not just about fulfilling a brief — it’s about making your brand shine in ways you didn’t even imagine.",
-      "tag": "Less Talk, More Action (and Cool Designs)"
-    },
-    "byTheNumbers": {
-      "title": "By the Numbers",
-      "text": "Here’s a Quick Glimpse of What We’ve Achieved",
-      "stat1": {
-        "title": "3D Models Created",
-        "text": "From prototypes to art, we’ve designed models for various industries."
-      },
-      "stat2": {
-        "title": "Successful Animations",
-        "text": "From prototypes to art, we’ve designed models for various industries."
-      },
-      "stat3": {
-        "title": "UI/UX Designs",
-        "text": "Crafting intuitive, visually stunning designs for websites and apps."
-      },
-      "stat4": {
-        "title": "Video Productions",
-        "text": "Creating high-impact videos that drive results and tell powerful stories."
-      },
-      "stat5": {
-        "title": "Happy Clients",
-        "text": "Artists, creators, and businesses who trust us to bring their ideas to life."
-      }
-    },
-    "whyChooseUs": {
-      "title": "Why Choose Us?",
-      "text": {
-        "0": "Let’s face it, there are plenty of agencies out there. So why choose us? Simple: we bring a unique blend of creativity, precision, and a little bit of fun. We don’t just follow trends — we set them. We’re obsessed with the details, but we also know when to step back and let the big picture take the stage.",
-        "1": "We take pride in our work, and we’re excited to work with clients who share our passion for creativity and innovation. Whether you’re an artist, creator, or brand ready to stand out, we’re the team to bring your vision to life."
-      },
-      "tag": "We’re More Than Just “Another Agency”"
-    },
-    "whatMakesUsDifferent": {
-      "title": "What Makes Us Different",
-      "text": "We think differently. We push limits. We’re not afraid to get weird with it (in the best way possible). Our quirky approach to design and animation is what sets us apart from the sea of generic agencies. We see potential in every project and find fun in every challenge.",
-      "tag": "We’re a Little Unconventional, and That’s Our Superpower"
-    },
-    "aboutDreamart": {
-      "tag": "aka the Digital Avengers",
-      "title": "About Dreamart",
-      "text": "We’re a quirky team of 3D artists, animators, designers, and tech enthusiasts who believe that creativity has no limits. We’re not just experts at what we do — we love doing it. Whether it’s bringing a concept to life with a 3D-printed model, designing an intuitive app, or animating characters that make people smile, we’re always pushing boundaries.",
-      "button": "Want to Join the Fun?",
-      "card1": {
-        "title": "The 3D Magician",
-        "text": "The one who can turn any sketch into a 3D model that’s print-ready."
-      },
-      "card2": {
-        "title": "The Animator Ninja",
-        "text": "Fast, precise, and always ready to bring life to your ideas, frame by frame."
-      },
-      "card3": {
-        "title": "The Design Genius",
-        "text": "They’ve got an eye for aesthetics and an obsession with functionality — perfect for UI/UX that’s both beautiful and intuitive."
-      },
-      "card4": {
-        "title": "The Storyteller",
-        "text": "The mastermind behind those unforgettable videos that capture hearts and minds."
-      }
-    }
-  },
-  "termsOfUse": {
-    "contactTitle": "Contact Information",
-    "contactDescription": "For any questions, contact us at:"
-  },
-  "contactInfoPolicy": {
+  "requestForm": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
     "email": "Email",
-    "phone": "Phone",
-    "website": "Website"
+    "message": "Message",
+    "agree": "I agree to the Terms of Use and Privacy Policy.",
+    "loading": "Loading...",
+    "submit": "Grab the Offer Before It Vanishes",
+    "agreement": "We respect your privacy. <br/>Your information will never be shared.",
+    "success": "Request sent successfully"
   },
-  "privacyPolicy": {
-    "contactTitle": "13. Contact Information",
-    "contactDescription": "If you have any questions about this Privacy Policy, please contact us at:"
+  "packageRequestForm": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "estimatedBudget": "Estimated Budget",
+    "message": "Project Details",
+    "loading": "Loading...",
+    "submit": "Claim Your Creative Power!",
+    "success": "Request sent successfully"
   },
-  "cookiePolicy": {
-    "contactTitle": "Contact Us",
-    "contactDescription": "If you have questions regarding this Cookie Policy, you can contact us at:"
+  "thanksPopup": {
+    "title": "Your Creative <br/>Journey Begins Here!",
+    "description": "Thank you for reaching out to Dreamart 3D. We’re thrilled to bring your vision to life and collaborate on something extraordinary. Our team will be in touch soon to start crafting the perfect solution for your project. Let",
+    "close": "Continue"
   },
-  "refundPolicy": {
-    "contactTitle": "Contact Information"
+  "trends": {
+    "readMore": "Read more"
+  },
+  "footer": {
+    "cultureTitle": "Culture",
+    "culture1": "Work",
+    "culture2": "Impact",
+    "culture3": "Careers",
+    "offersTitle": "Offers",
+    "offers1": "Services",
+    "offers2": "Prices",
+    "offers3": "Deals",
+    "connectTitle": "Connect",
+    "connect1": "Trends",
+    "connect2": "Contacts",
+    "regulationsTitle": "Regulations",
+    "regulations1": "Terms of Use",
+    "regulations2": "Privacy Policy",
+    "regulations3": "Cookie Policy",
+    "regulations4": "Refund Policy",
+    "infoTitle": "Info",
+    "infoOfficeTitle": "Office address:",
+    "infoOfficeAddress": "address",
+    "infoRegisteredTitle": "Registered address:",
+    "infoRegisteredAddress": "address",
+    "copyright": "© {year} [COMPANY] All Legal Rights Reserved."
+  },
+  "header": {
+    "home": "Home",
+    "shop": "Shop",
+    "work": "Work",
+    "services": "Services",
+    "impact": "Impact",
+    "prices": "Prices",
+    "deals": "Deals",
+    "trends": "Trends",
+    "careers": "Careers",
+    "contacts": "Contacts",
+    "login": "Login",
+    "signup": "Sign Up"
   }
 }

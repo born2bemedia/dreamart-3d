@@ -8,7 +8,7 @@ import { fadeInUp } from '@/shared/lib/helpers/animations';
 import styles from './HomeHero.module.scss';
 
 export const Hero = () => {
-  const t = useTranslations('trends.hero');
+  const t = useTranslations('trendsHero');
 
   return (
     <section className={styles.hero}>
@@ -29,7 +29,7 @@ export const Hero = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            {t('hero.title', { fallback: 'The Future of 3D Creativity' })}
+            {t('title', { fallback: 'The Future of 3D Creativity' })}
           </motion.h1>
           <motion.p
             variants={fadeInUp}
@@ -37,7 +37,7 @@ export const Hero = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            {t('hero.description', {
+            {t('description', {
               fallback:
                 'At Dreamart 3D, we’re all about staying ahead of the curve. This is where we talk trends, share insights, and keep you updated on everything exciting in the world of 3D modelling, animation, UI/UX design, and video production. Explore the latest innovations and see how they’re shaping the future of digital creativity.',
             })}

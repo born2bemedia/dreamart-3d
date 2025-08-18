@@ -59,6 +59,19 @@
     "title2": "Ready to Make Some Magic Happen?",
     "description2": "Got a project waiting to be brought to life? Or maybe you’re just craving to start something new and exciting? We’ve got you covered! Let’s team up and turn your ideas into digital masterpieces that’ll leave a lasting impression."
   },
+  "priceList": {
+    "title": "Get the Full Picture",
+    "label": "Download Our Complete Price List",
+    "description": "We know you want all the details, and we’re happy to provide! Download our full price list to see all our packages, services, and prices in one easy-to-read PDF. Whether you’re just browsing or ready to get started, it’s the perfect way to find the package that works best for you."
+  },
+  "pricesHero": {
+    "title1": "Our Pricing: Choose Your <br/>Perfect Package",
+    "description": "At Dreamart 3D, we offer flexible packages designed to fit your <br/>needs and budget. Whether you’re looking for animation, UI/UX <br/>design, or video production, we’ve got something for you. Here’s <br/>everything you get with each package!"
+  },
+  "prices": {
+    "includes": "Includes",
+    "price": "From"
+  },
   "requestForm": {
     "firstName": "First Name",
     "lastName": "Last Name",

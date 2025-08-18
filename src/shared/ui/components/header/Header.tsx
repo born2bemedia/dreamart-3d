@@ -68,10 +68,10 @@ export const Header = () => {
                 <Link href="#">{t('shop', { fallback: 'Shop' })}</Link>
                 <Link href="#">{t('work', { fallback: 'Work' })}</Link>
                 <Link href="#">{t('services', { fallback: 'Services' })}</Link>
-                <Link href="#">{t('impact', { fallback: 'Impact' })}</Link>
-                <Link href="#">{t('prices', { fallback: 'Prices' })}</Link>
+                <Link href="/impact">{t('impact', { fallback: 'Impact' })}</Link>
+                <Link href="/prices">{t('prices', { fallback: 'Prices' })}</Link>
                 <Link href="#">{t('deals', { fallback: 'Deals' })}</Link>
-                <Link href="#">{t('trends', { fallback: 'Trends' })}</Link>
+                <Link href="/trends">{t('trends', { fallback: 'Trends' })}</Link>
                 <Link href="#">{t('careers', { fallback: 'Careers' })}</Link>
                 <Link href="/contacts">{t('contacts', { fallback: 'Contacts' })}</Link>
               </nav>

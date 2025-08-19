@@ -6,3 +6,4 @@ export type CartItem = {
   quantity: number;
   subtotal: number;
 };
+

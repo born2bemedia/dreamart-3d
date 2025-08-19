@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 
 import { Plus } from '@/shared/ui/icons/plus';
@@ -8,21 +10,19 @@ import styles from './ProductCard.module.scss';
 
 import { useCartStore } from '@/featured/cart/model/store';
 
-export const ProductCard = ({ title, image, excerpt, price }: Product) => {
+export const ProductCard = ({ id, title, image, excerpt, price }: Product) => {
   const { addToCart, setTotal, total } = useCartStore();
 
   const handleAddToCart = () => {
     addToCart({
-      id: title,
+      id: id,
       name: title,
       price,
       image: image.url,
       quantity: 1,
       subtotal: price,
-      
     });
     setTotal(total + price);
-
   };
 
   return (

@@ -182,6 +182,11 @@
     "contactTitle": "Contact Information",
     "contactDescription": "For any questions, contact us at:"
   },
+  "thankyouPage": {
+    "title": "Woohoo! Your Order is In!",
+    "description": "Thank you for choosing Dreamart 3D — your creative journey starts now! Our team will be in touch soon to confirm the details and get things rolling. We can’t wait to bring your vision to life!",
+    "button": "Home"
+  },
   "trendsHero": {
     "title": "The Future of 3D Creativity",
     "description": "At Dreamart 3D, we’re all about staying ahead of the curve. This is where we talk trends, share insights, and keep you updated on everything exciting in the world of 3D modelling, animation, UI/UX design, and video production. Explore the latest innovations and see how they’re shaping the future of digital creativity."
@@ -192,6 +197,33 @@
     "orderSummary": "Your Order Summary",
     "total": "Total",
     "checkout": "Checkout",
+    "emptyCart": "Oops! Your Cart is a Little Empty...",
+    "emptyCartDescription": "Don’t worry, we’ve got plenty of awesome 3D models waiting for you! Explore our collection and fill your cart with the coolest designs to bring your ideas to life!",
+    "exploreCollection": "Start Exploring"
+  },
+  "checkout": {
+    "billingDetails": "Billing Details",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "address1": "Address line 1",
+    "address2": "Address line 2",
+    "city": "City",
+    "country": "Country",
+    "zip": "Postal code",
+    "email": "Email",
+    "paymentMethod": "Payment method",
+    "bankTransfer": "Bank Transfer",
+    "paymentNote": "*After placing an order, you’ll receive an email with payment instructions, including our bank details and a summary of your purchase.",
+    "letUsKnow": "Got a Special Request? Let Us Know!",
+    "orderNotes": "Is there something extra magical you’d like us to add? Drop your notes here, and we’ll make it happen — no request is too wild!",
+    "orderSummary": "Your Order Summary",
+    "total": "Total",
+    "loading": "Loading...",
+    "checkout": "Submit",
+    "termsAndConditions": "I have read and agree to the website’s Terms and Conditions.",
+    "refundPolicy": "I have read and agree to the Refund Policy.",
+    "safeAndSound": "Your Info, Safe & Sound!",
+    "safeAndSoundDescription": "We use your details to get your order to you, make your browsing experience smoother, and for other cool stuff outlined in our Privacy Policy. No worries, we’ve got it all covered!",
     "emptyCart": "Oops! Your Cart is a Little Empty...",
     "emptyCartDescription": "Don’t worry, we’ve got plenty of awesome 3D models waiting for you! Explore our collection and fill your cart with the coolest designs to bring your ideas to life!",
     "exploreCollection": "Start Exploring"

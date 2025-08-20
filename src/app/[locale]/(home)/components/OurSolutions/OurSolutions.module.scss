@@ -5,6 +5,11 @@
   @include tablet {
     padding: 32px 0;
   }
+  &__button {
+    margin-top: 52px;
+    display: flex;
+    justify-content: center;
+  }
   &__content {
     display: flex;
     flex-direction: column;

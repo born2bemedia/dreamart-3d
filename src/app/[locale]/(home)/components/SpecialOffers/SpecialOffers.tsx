@@ -52,7 +52,7 @@ export const SpecialOffers = () => {
                 fallback: 'Grab the Offer Before It Vanishes',
               })}
               type="link"
-              href="#"
+              href="/deals"
             />
           </motion.div>
         </div>

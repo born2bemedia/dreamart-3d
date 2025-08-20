@@ -137,7 +137,7 @@ export const WhyChoose = () => {
                       activeTab === index ? styles.active : ''
                     }`}
                     style={{
-                      height: activeTab === index ? (heights[index] || 0) : 0,
+                      height: activeTab === index ? heights[index] || 0 : 0,
                     }}
                     ref={(el) => {
                       tabRefs.current[index] = el;
@@ -155,7 +155,7 @@ export const WhyChoose = () => {
                 fallback: 'See How We Inspire',
               })}
               type="link"
-              href="#"
+              href="/impact"
             />
           </motion.div>
           <motion.div

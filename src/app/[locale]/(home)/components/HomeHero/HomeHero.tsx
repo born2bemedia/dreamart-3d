@@ -57,7 +57,8 @@ export const HomeHero = () => {
               text={t('button', {
                 fallback: 'Unleash the Magic',
               })}
-              type="button"
+              type="link"
+              href="/quote-request-form"
             />
           </motion.div>
         </div>

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 
 import { fadeInUp } from '@/shared/lib/helpers/animations';
-import { Label, Text, Title } from '@/shared/ui/kit';
+import { Button, Label, Text, Title } from '@/shared/ui/kit';
 
 import styles from './OurSolutions.module.scss';
 
@@ -151,6 +151,21 @@ export const OurSolutions = () => {
             </Link>
           </motion.div>
         </div>
+        <motion.div
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className={styles.ourSolutions__button}
+        >
+          <Button
+            text={t('button', {
+              fallback: 'Get Started with Us',
+            })}
+            type="link"
+            href="/services"
+          />
+        </motion.div>
       </div>
     </section>
   );

@@ -29,7 +29,7 @@ export const Footer = () => {
                 })}
               </h3>
               <nav>
-                <Link href="#">
+                <Link href="/work">
                   {t('culture1', {
                     fallback: 'Work',
                   })}

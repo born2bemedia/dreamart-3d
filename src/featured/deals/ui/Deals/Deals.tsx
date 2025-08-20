@@ -3,9 +3,10 @@ import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 
 import { BlueCheckIcon } from '@/shared/ui/icons';
-import { Button, Text, Title } from '@/shared/ui/kit';
+import { Text, Title } from '@/shared/ui/kit';
 
-import { getDeals } from '../api/get-deals';
+import { getDeals } from '../../api/get-deals';
+import { AddToCart } from '../AddToCart/AddToCart';
 import styles from './Deals.module.scss';
 
 export const Deals = async () => {
@@ -53,7 +54,13 @@ export const Deals = async () => {
                 <div className={styles.bottom}>
                   <h5>€{deal.deal_old_price}</h5>
                   <h4>€{deal.price}</h4>
-                  <Button text={deal.button_text} type="button" />
+                  <AddToCart
+                    id={deal.id}
+                    title={deal.title}
+                    price={deal.price}
+                    image={deal.image.url}
+                    button_text={deal.button_text}
+                  />
                 </div>
               </div>
             </div>

@@ -42,7 +42,7 @@ export const PricingPackage = () => {
                 fallback: 'See Our Prices',
               })}
               type="link"
-              href="#"
+              href="/prices"
             />
           </motion.div>
           <motion.div

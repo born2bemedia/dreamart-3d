@@ -153,7 +153,8 @@
   "priceList": {
     "title": "Get the Full Picture",
     "label": "Download Our Complete Price List",
-    "description": "We know you want all the details, and we’re happy to provide! Download our full price list to see all our packages, services, and prices in one easy-to-read PDF. Whether you’re just browsing or ready to get started, it’s the perfect way to find the package that works best for you."
+    "description": "We know you want all the details, and we’re happy to provide! Download our full price list to see all our packages, services, and prices in one easy-to-read PDF. Whether you’re just browsing or ready to get started, it’s the perfect way to find the package that works best for you.",
+    "button": "Download Full Price List"
   },
   "pricesHero": {
     "title1": "Our Pricing: Choose Your <br/>Perfect Package",
@@ -190,6 +191,66 @@
   "trendsHero": {
     "title": "The Future of 3D Creativity",
     "description": "At Dreamart 3D, we’re all about staying ahead of the curve. This is where we talk trends, share insights, and keep you updated on everything exciting in the world of 3D modelling, animation, UI/UX design, and video production. Explore the latest innovations and see how they’re shaping the future of digital creativity."
+  },
+  "pricingPackage": {
+    "title": "Pricing & Packages",
+    "description": "We believe in fair, transparent pricing for all our services. From emerging artists to established creators, we offer flexible packages designed to suit your vision and budget. Get the high-quality, personalized service you deserve, without hidden costs. Let’s bring your creative ideas to life at a price that works for you.",
+    "button": "See Our Prices"
+  },
+  "readyToStart": {
+    "title": "Ready to Start?",
+    "description": "At Dreamart 3D, we turn creative concepts into reality with solutions that drive impact. Looking to captivate your audience with stunning visuals or improve user experiences, we’re here to make it happen. Let’s take your project to the next level.",
+    "button": "Let’s Make It Happen"
+  },
+  "workHero": {
+    "title1": "Shaping Ideas into Digital Art",
+    "description": "At Dreamart 3D, we don’t just complete projects — we transform concepts into immersive creations. From 3D models to captivating animations, our work is a blend of creativity, precision, and storytelling. Each project we take on is an opportunity to innovate, challenge norms, and exceed expectations."
+  },
+  "work": {
+    "title1": "3D Modelling for Printing",
+    "label1": "Turn ideas into prints that speak for themselves.",
+    "text1": "Our 3D models aren’t just designs; they are high-quality creations ready for printing. Whether it’s for prototyping, art, or retail, we specialize in making your vision tangible.",
+    "title2": "Animation Creation",
+    "label2": "Bring your story to life, frame by frame.",
+    "text2": "We craft animations that grab attention and tell compelling stories. From promotional content to full cinematic experiences, our animations engage and captivate audiences.",
+    "title3": "UI/UX Design",
+    "label3": "Designs that flow, users that stay.",
+    "text3": "We create seamless digital experiences that users love. Our UI/UX designs focus on both aesthetics and functionality to ensure a smooth, intuitive journey.",
+    "title4": "Video Production",
+    "label4": "Capture your vision, leave a lasting impression.",
+    "text4": "We produce videos that make a memorable impact. Whether it’s an explainer, a commercial, or a cinematic project, our videos tell your story in a way that sticks."
+  },
+  "loginForm": {
+    "error": "Something went wrong. Please try again later.",
+    "title": "Welcome Back, Creator!",
+    "description": "Ready to jump back into the world of 3D magic? Just pop in your username, email, and password to get started! Forgot your password? No worries, just hit “Forgot Password?” and we’ll help you out!",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "loggingIn": "Logging in...",
+    "login": "Login",
+    "dontHaveAccount": "Don’t have an account?",
+    "create": "Create"
+  },
+  "registrationForm": {
+    "success": "You have successfully registered. Please login to continue.",
+    "error": "Something went wrong. Please try again later.",
+    "title": "Join the Dreamart 3D Family!",
+    "description": "Ready to unlock the full potential of your creativity? Sign up today and get exclusive updates, fresh new features, and sweet deals that’ll take your design projects to the next level. Let’s make some 3D magic happen!",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "isAgree": {
+      "0": "By signing up, you confirm that you are over 18 years old and agree to our",
+      "1": "Terms and Conditions",
+      "2": "and",
+      "3": "Privacy Policy"
+    },
+    "creating": "Creating...",
+    "createAccount": "Create Account"
   },
   "cart": {
     "price": "Price",
@@ -358,37 +419,5 @@
     "contacts": "Contacts",
     "login": "Login",
     "signup": "Sign Up"
-  },
-  "registrationForm": {
-    "success": "You have successfully registered. Please login to continue.",
-    "error": "Something went wrong. Please try again later.",
-    "title": "Join the Dreamart 3D Family!",
-    "description": "Ready to unlock the full potential of your creativity? Sign up today and get exclusive updates, fresh new features, and sweet deals that’ll take your design projects to the next level. Let’s make some 3D magic happen!",
-    "firstName": "First Name",
-    "lastName": "Last Name",
-    "email": "Email",
-    "phone": "Phone",
-    "password": "Password",
-    "confirmPassword": "Confirm Password",
-    "creating": "Creating...",
-    "isAgree": {
-      "0": "By signing up, you confirm that you are over 18 years old and agree to our",
-      "1": "Terms and Conditions",
-      "2": "and",
-      "3": "Privacy Policy"
-    },
-    "createAccount": "Create Account"
-  },
-  "loginForm": {
-    "error": "Something went wrong. Please try again later.",
-    "title": "Welcome Back, Creator!",
-    "description": "Ready to jump back into the world of 3D magic? Just pop in your username, email, and password to get started! Forgot your password? No worries, just hit “Forgot Password?” and we’ll help you out!",
-    "email": "Email",
-    "password": "Password",
-    "forgotPassword": "Forgot Password?",
-    "dontHaveAccount": "Don’t have an account?",
-    "create": "Create",
-    "loggingIn": "Logging in...",
-    "login": "Login"
   }
 }

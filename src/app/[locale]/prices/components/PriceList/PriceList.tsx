@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 
 import { fadeInUp } from '@/shared/lib/helpers/animations';
-import { Label, Text, Title } from '@/shared/ui/kit';
+import { Button, Label, Text, Title } from '@/shared/ui/kit';
 
 import styles from './PriceList.module.scss';
 
@@ -45,6 +45,13 @@ export const PriceList = () => {
               fallback:
                 'We know you want all the details, and we’re happy to provide! Download our full price list to see all our packages, services, and prices in one easy-to-read PDF. Whether you’re just browsing or ready to get started, it’s the perfect way to find the package that works best for you.',
             })}
+          />
+          <Button
+            text={t('button', {
+              fallback: 'Download Full Price List',
+            })}
+            type="link"
+            href="#"
           />
         </motion.div>
       </div>

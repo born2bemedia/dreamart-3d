@@ -1,0 +1,43 @@
+.wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+}
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.thead {
+  text-align: left;
+}
+
+.th {
+  padding: 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  background: #1b1c1e;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.tbody {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.td {
+  padding: 16px;
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+
+  &:first-child {
+    border-left: none;
+  }
+}
+
+.rowDivider {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}

@@ -420,5 +420,43 @@
     "contacts": "Contacts",
     "login": "Login",
     "signup": "Sign Up"
+  },
+  "accountContainer": {
+    "title": "Account Settings"
+  },
+  "sidebar": {
+    "history": "History",
+    "settings": "Settings",
+    "wishlist": "Wishlist",
+    "logout": "Logout"
+  },
+  "editUserForm": {
+    "title": "Account Settings",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "country": "Country",
+    "personalInformation": "Personal Information",
+    "save": "Save",
+    "address1": "Street Address",
+    "address2": "Apartment/Suite",
+    "city": "City",
+    "zip": "Zip Code",
+    "saving": "Saving...",
+    "savingSuccess": "User updated successfully",
+    "savingError": "Something went wrong — please refresh and try again, or email us directly at info@trendelladigital.com.",
+    "edit": "Edit"
+  },
+  "changePasswordForm": {
+    "title": "Account Access",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "repeatPassword": "Repeat Password",
+    "save": "Save",
+    "saving": "Saving...",
+    "savingSuccess": "Password updated successfully",
+    "savingError": "Something went wrong — please refresh and try again, or email us directly at info@trendelladigital.com.",
+    "edit": "Edit"
   }
 }

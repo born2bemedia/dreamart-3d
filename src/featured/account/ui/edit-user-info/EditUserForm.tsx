@@ -3,6 +3,7 @@
 import { useState } from 'react';
 
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useTranslations } from 'next-intl';
 import { Controller, useForm } from 'react-hook-form';
 
 import { notifySuccess, notifyWarning } from '@/shared/lib/utils/notify';
@@ -23,7 +24,7 @@ export const EditUserForm = () => {
 
   const { user, setUser } = useUserStore();
 
-  console.log('user', user?.country);
+  const t = useTranslations('editUserForm');
 
   const {
     handleSubmit,
@@ -65,7 +66,7 @@ export const EditUserForm = () => {
   return (
     <form className={st.layout} onSubmit={onSubmit}>
       <header className={st.header}>
-        <h3>Personal Information</h3>
+        <h3>{t('personalInformation', { fallback: 'Personal Information' })}</h3>
         {!isEditing ? (
           <Btn
             variant="secondary"
@@ -77,29 +78,31 @@ export const EditUserForm = () => {
             }}
           >
             <EditIcon />
-            Edit
+            {t('edit', { fallback: 'Edit' })}
           </Btn>
         ) : (
           <Btn variant="primary" type="submit" size="sm" disabled={isSubmitting}>
-            {isSubmitting ? 'Saving...' : 'Save'}
+            {isSubmitting
+              ? t('saving', { fallback: 'Saving...' })
+              : t('save', { fallback: 'Save' })}
           </Btn>
         )}
       </header>
       <section className={st.fields}>
         <TextField
-          label="First Name"
+          label={t('firstName', { fallback: 'First Name' })}
           hint={errors.firstName?.message}
           disabled={!isEditing}
           {...register('firstName')}
         />
         <TextField
-          label="Last Name"
+          label={t('lastName', { fallback: 'Last Name' })}
           hint={errors.lastName?.message}
           disabled={!isEditing}
           {...register('lastName')}
         />
         <TextField
-          label="Email"
+          label={t('email', { fallback: 'Email' })}
           hint={errors.email?.message}
           disabled={!isEditing}
           {...register('email')}
@@ -109,7 +112,7 @@ export const EditUserForm = () => {
           name="phone"
           render={({ field }) => (
             <PhoneField
-              label="Phone Number"
+              label={t('phone', { fallback: 'Phone Number' })}
               hint={errors.phone?.message}
               disabled={!isEditing}
               {...field}
@@ -117,19 +120,19 @@ export const EditUserForm = () => {
           )}
         />
         <TextField
-          label="Street Address"
+          label={t('address1', { fallback: 'Street Address' })}
           hint={errors.address1?.message}
           disabled={!isEditing}
           {...register('address1')}
         />
         <TextField
-          label="Apartment/Suite"
+          label={t('address2', { fallback: 'Apartment/Suite' })}
           hint={errors.address2?.message}
           disabled={!isEditing}
           {...register('address2')}
         />
         <TextField
-          label="City"
+          label={t('city', { fallback: 'City' })}
           hint={errors.city?.message}
           disabled={!isEditing}
           {...register('city')}
@@ -140,7 +143,7 @@ export const EditUserForm = () => {
           render={({ field }) => (
             <CountryAutocomplete
               {...field}
-              label="Country"
+              label={t('country', { fallback: 'Country' })}
               hint={errors.country?.message}
               initialValue={user?.country}
               disabled={!isEditing}
@@ -148,7 +151,7 @@ export const EditUserForm = () => {
           )}
         />
         <TextField
-          label="Zip Code"
+          label={t('zip', { fallback: 'Zip Code' })}
           hint={errors.zip?.message}
           type="number"
           disabled={!isEditing}

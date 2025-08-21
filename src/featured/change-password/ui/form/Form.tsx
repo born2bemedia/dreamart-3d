@@ -3,6 +3,7 @@
 import { useState } from 'react';
 
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useTranslations } from 'next-intl';
 import { useForm } from 'react-hook-form';
 
 import { notifySuccess, notifyWarning } from '@/shared/lib/utils/notify';
@@ -20,6 +21,8 @@ export const ChangePasswordForm = () => {
   const [isEditing, setIsEditing] = useState(false);
 
   const { user } = useUserStore();
+
+  const t = useTranslations('changePasswordForm');
 
   const {
     handleSubmit,
@@ -54,7 +57,7 @@ export const ChangePasswordForm = () => {
   return (
     <form onSubmit={onSubmit} className={st.layout}>
       <header className={st.header}>
-        <h3>Account Access</h3>
+        <h3>{t('title', { fallback: 'Account Access' })}</h3>
         {!isEditing ? (
           <Btn
             variant="secondary"
@@ -66,29 +69,31 @@ export const ChangePasswordForm = () => {
             }}
           >
             <EditIcon />
-            Edit
+            {t('edit', { fallback: 'Edit' })}
           </Btn>
         ) : (
           <Btn variant="primary" type="submit" size="sm" disabled={isSubmitting}>
-            {isSubmitting ? 'Saving...' : 'Save'}
+            {isSubmitting
+              ? t('saving', { fallback: 'Saving...' })
+              : t('save', { fallback: 'Save' })}
           </Btn>
         )}
       </header>
       <section className={st.fields}>
         <TextField
-          label="Password"
+          label={t('currentPassword', { fallback: 'Current Password' })}
           hint={errors.currentPassword?.message}
           disabled={!isEditing}
           {...register('currentPassword')}
         />
         <TextField
-          label="Repeat password"
+          label={t('repeatPassword', { fallback: 'Repeat Password' })}
           hint={errors.retypeCurrentPassword?.message}
           disabled={!isEditing}
           {...register('retypeCurrentPassword')}
         />
         <TextField
-          label="New password"
+          label={t('newPassword', { fallback: 'New Password' })}
           hint={errors.newPassword?.message}
           disabled={!isEditing}
           {...register('newPassword')}

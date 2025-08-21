@@ -151,3 +151,7 @@ h3 {
     animation-range: entry 0% cover 20%;
   }
 }
+
+.phone-input-dropdown:focus-within {
+  overflow: hidden;
+}

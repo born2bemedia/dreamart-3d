@@ -16,11 +16,16 @@ import { TextArea } from '@/shared/ui/kit/text-area';
 import { TextField } from '@/shared/ui/kit/text-field';
 import { Url } from '@/shared/ui/kit/url';
 
+import { sendQuoteForm } from '../../api/send-quote-form';
 import { quoteRequestFormSchema } from '../../model/schema';
 import st from './Form.module.scss';
 
+import { useThanksPopupStore } from '@/featured/thanks-popup/store/store';
+
 export const Form = () => {
   const t = useTranslations('quoteRequestForm');
+
+  const { setIsOpen } = useThanksPopupStore();
 
   const {
     register,
@@ -28,6 +33,7 @@ export const Form = () => {
     control,
     watch,
     formState: { errors },
+    reset,
   } = useForm({
     defaultValues: {
       firstName: '',
@@ -52,8 +58,15 @@ export const Form = () => {
 
   const serviceValue = watch('service');
 
-  const onSubmit = handleSubmit((data) => {
-    console.log(data);
+  const onSubmit = handleSubmit(async (data) => {
+    const { success } = await sendQuoteForm(data);
+
+    console.log('data', data);
+
+    if (success) {
+      setIsOpen(true);
+      reset();
+    }
   });
 
   return (
@@ -270,7 +283,7 @@ export const Form = () => {
         </h3>
         <Controller
           control={control}
-          name="urgencyLevel"
+          name="fileFormat"
           render={({ field }) => (
             <CheckboxGroup
               options={[

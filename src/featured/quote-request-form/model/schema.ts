@@ -21,3 +21,5 @@ export const quoteRequestFormSchema = z.object({
     message: 'You must agree to the terms and conditions.',
   }),
 });
+
+export type QuoteRequestFormSchema = z.infer<typeof quoteRequestFormSchema>;

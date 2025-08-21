@@ -1,7 +1,15 @@
-import { SERVER_URL } from '@/shared/config/env';
+'use server';
+
+import sgMail from '@sendgrid/mail';
+
+import { FROM_EMAIL, SENDGRID_API_KEY, SERVER_URL } from '@/shared/config/env';
 
 import type { CheckoutFormSchema } from '../model/schema';
 import type { CartItem } from '../model/types';
+
+import { orderConfirmBody } from '@/featured/email-letters/order-confirm-body';
+
+sgMail.setApiKey(SENDGRID_API_KEY);
 
 export const postOrder = async (data: CheckoutFormSchema, total: number, cart: CartItem[]) => {
   let userId = null;
@@ -44,8 +52,10 @@ export const postOrder = async (data: CheckoutFormSchema, total: number, cart: C
     })
   );
 
+  const orderNumber = `ORD_${Math.floor(Math.random() * 900000) + 100000}`;
+
   const orderData = {
-    orderNumber: `ORD_${Math.floor(Math.random() * 900000) + 100000}`,
+    orderNumber,
     user: userId,
     items: items.map((item) => ({
       product: item.product,
@@ -67,7 +77,6 @@ export const postOrder = async (data: CheckoutFormSchema, total: number, cart: C
     orderNotes: data.orderNotes || '',
   };
 
-  // Validate order data before sending
   if (!userId) {
     throw new Error('User ID is required to create an order');
   }
@@ -85,6 +94,25 @@ export const postOrder = async (data: CheckoutFormSchema, total: number, cart: C
     },
     body: JSON.stringify(orderData),
   });
+
+  const userMsg = {
+    to: data.email,
+    from: FROM_EMAIL,
+    subject: `Your Order is On! Let’s Get This Party Started – ${orderNumber}`,
+    html: orderConfirmBody({
+      username: data.firstName,
+      orderNumber,
+      description: cart.map((item) => item.name).join(', '),
+      total: String(total),
+      orderDate: new Date().toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      }),
+    }),
+  };
+
+  await sgMail.send(userMsg);
 
   if (!response.ok) {
     console.error(`Order creation failed with status: ${response.status}`);

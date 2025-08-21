@@ -13,11 +13,6 @@ sgMail.setApiKey(SENDGRID_API_KEY);
 export const sendContactForm = async (data: RequestFormSchema) => {
   const { email, firstName, lastName, phone, message } = data;
 
-  // const response = await fetch(`/api/contact`, {
-  //   method: 'POST',
-  //   body: JSON.stringify(data),
-  // });
-
   const msg = {
     to: ADMIN_EMAIL,
     from: FROM_EMAIL,

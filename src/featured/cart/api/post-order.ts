@@ -12,6 +12,12 @@ import { orderConfirmBody } from '@/featured/email-letters/order-confirm-body';
 sgMail.setApiKey(SENDGRID_API_KEY);
 
 export const postOrder = async (data: CheckoutFormSchema, total: number, cart: CartItem[]) => {
+  console.log('Cart items received:', cart);
+  console.log(
+    'Cart item IDs:',
+    cart.map((item) => ({ id: item.id, name: item.name }))
+  );
+
   let userId = null;
   const existingUser = await fetchUserByEmail(data.email);
 
@@ -27,12 +33,21 @@ export const postOrder = async (data: CheckoutFormSchema, total: number, cart: C
     userId = newUser.doc.id;
   }
 
+  // Validate and process cart items
   const items = await Promise.all(
     cart.map(async (item) => {
       try {
+        // First, validate that the product exists and get its details
+        const productDetails = await validateAndGetProductDetails(item.id);
+
+        if (!productDetails) {
+          throw new Error(`Product with ID ${item.id} not found`);
+        }
+
         const { fileurl, filename } = await getFileUrlForProduct(item.id);
+
         return {
-          product: item.id,
+          product: productDetails.id, // Use the validated product ID
           quantity: item.quantity,
           price: item.price,
           file_url: fileurl,
@@ -40,14 +55,8 @@ export const postOrder = async (data: CheckoutFormSchema, total: number, cart: C
         };
       } catch (error) {
         console.error(`Error processing item ${item.id}:`, error);
-        // Return the item without file details if the product can't be found
-        return {
-          product: item.id,
-          quantity: item.quantity,
-          price: item.price,
-          file_url: null,
-          file_name: null,
-        };
+        const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+        throw new Error(`Invalid product: ${item.id} - ${errorMessage}`);
       }
     })
   );
@@ -165,9 +174,72 @@ export const createUser = async (data: CheckoutFormSchema, password: string) => 
   return response.json();
 };
 
+const validateAndGetProductDetails = async (productId: string) => {
+  try {
+    console.log(`Validating product ID: "${productId}" (type: ${typeof productId})`);
+
+    // Sanitize the product ID - remove any extra spaces or invalid characters
+    const sanitizedProductId = productId.trim();
+    console.log(`Sanitized product ID: "${sanitizedProductId}"`);
+
+    // Encode the product ID to handle special characters
+    const encodedProductId = encodeURIComponent(sanitizedProductId);
+    const url = `${SERVER_URL}/api/products/${encodedProductId}`;
+
+    console.log('Validating product details from:', url);
+
+    const res = await fetch(url);
+
+    if (!res.ok) {
+      console.error(`HTTP error! status: ${res.status} for product id: ${productId}`);
+
+      // If the direct ID lookup fails, try to search by title
+      console.log('Trying to search by title as fallback...');
+      const searchUrl = `${SERVER_URL}/api/products?where[title][equals]=${encodeURIComponent(sanitizedProductId)}`;
+      console.log('Searching by title:', searchUrl);
+
+      const searchRes = await fetch(searchUrl);
+
+      if (!searchRes.ok) {
+        return null;
+      }
+
+      const searchData = await searchRes.json();
+
+      if (!searchData.docs || searchData.docs.length === 0) {
+        return null;
+      }
+
+      const productData = searchData.docs[0];
+      console.log('Found product by title search:', productData);
+
+      return {
+        id: productData.id,
+        title: productData.title,
+        price: productData.price,
+      };
+    }
+
+    const productData = await res.json();
+    console.log('Found product by ID:', productData);
+
+    return {
+      id: productData.id,
+      title: productData.title,
+      price: productData.price,
+    };
+  } catch (error) {
+    console.error(`Error validating product ${productId}:`, error);
+    return null;
+  }
+};
+
 const getFileUrlForProduct = async (productId: string) => {
+  // Sanitize the product ID - remove any extra spaces or invalid characters
+  const sanitizedProductId = productId.trim();
+
   // Encode the product ID to handle special characters
-  const encodedProductId = encodeURIComponent(productId);
+  const encodedProductId = encodeURIComponent(sanitizedProductId);
   const url = `${SERVER_URL}/api/products/${encodedProductId}`;
 
   console.log('Fetching product details from:', url);
@@ -175,23 +247,23 @@ const getFileUrlForProduct = async (productId: string) => {
   const res = await fetch(url);
 
   if (!res.ok) {
-    console.error(`HTTP error! status: ${res.status} for product id: ${productId}`);
+    console.error(`HTTP error! status: ${res.status} for product id: ${sanitizedProductId}`);
 
     // If the direct ID lookup fails, try to search by title
     console.log('Trying to search by title as fallback...');
-    const searchUrl = `${SERVER_URL}/api/products?where[title][equals]=${encodeURIComponent(productId)}`;
+    const searchUrl = `${SERVER_URL}/api/products?where[title][equals]=${encodeURIComponent(sanitizedProductId)}`;
     console.log('Searching by title:', searchUrl);
 
     const searchRes = await fetch(searchUrl);
 
     if (!searchRes.ok) {
-      throw new Error(`Failed to fetch product details for product id: ${productId}`);
+      throw new Error(`Failed to fetch product details for product id: ${sanitizedProductId}`);
     }
 
     const searchData = await searchRes.json();
 
     if (!searchData.docs || searchData.docs.length === 0) {
-      throw new Error(`Product not found: ${productId}`);
+      throw new Error(`Product not found: ${sanitizedProductId}`);
     }
 
     const productData = searchData.docs[0];

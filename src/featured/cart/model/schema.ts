@@ -6,7 +6,12 @@ export const checkoutFormSchema = z.object({
   address1: z.string().min(1, { message: 'This field must be filled.' }),
   address2: z.string().optional(),
   city: z.string().min(1, { message: 'This field must be filled.' }),
-  country: z.string().min(1, { message: 'This field must be filled.' }),
+  country: z
+    .string()
+    .min(1, { message: 'This field must be filled.' })
+    .refine((val) => val !== 'Select Country', {
+      message: 'This field must be filled.',
+    }),
   zip: z.string().min(1, { message: 'This field must be filled.' }),
   phone: z.string().min(1, { message: 'This field must be filled.' }),
   email: z.string().email({ message: 'Invalid email address.' }),

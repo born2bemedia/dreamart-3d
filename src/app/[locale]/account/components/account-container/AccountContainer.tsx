@@ -2,18 +2,25 @@
 
 import { useTranslations } from 'next-intl';
 
+import { Table } from '@/shared/ui/components/table';
+
 import st from './AccountContainer.module.scss';
 
 import { useTabsStore } from '@/featured/account/model/tabs.store';
 import { EditUserForm } from '@/featured/account/ui/edit-user-info';
 import { ChangePasswordForm } from '@/featured/change-password/ui/form';
+import { getOrdersColumns } from '@/featured/products/model/get-orders-columns';
+import type { Order } from '@/featured/products/model/types';
+import { OrderCard } from '@/featured/products/ui/OrderCard/OrderCard';
 import { useWishlistStore } from '@/featured/wishlist/model/wishlist.store';
 import { WishlistCard } from '@/featured/wishlist/ui/WishlistCard';
 
-export const AccountContainer = () => {
+export const AccountContainer = ({ orders }: { orders: Order[] }) => {
   const { activeTab } = useTabsStore();
 
   const { wishlist } = useWishlistStore();
+
+  const columns = getOrdersColumns();
 
   const t = useTranslations('accountContainer');
   const tw = useTranslations('wishlist');
@@ -47,6 +54,19 @@ export const AccountContainer = () => {
             ))}
           </section>
         </div>
+      )}
+      {activeTab === 'history' && (
+        <section className={st.orderHistoryLayout}>
+          <h2>Order History</h2>
+          <div className={st.table}>
+            <Table columns={columns} data={orders} />
+          </div>
+          <div className={st.cards}>
+            {orders.map((order) => (
+              <OrderCard key={order.orderId} {...order} />
+            ))}
+          </div>
+        </section>
       )}
     </section>
   );

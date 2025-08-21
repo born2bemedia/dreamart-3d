@@ -18,3 +18,12 @@ export type Product = {
   image: { url: string };
   price: number;
 };
+
+export type Order = {
+  orderId: string;
+  items: string[];
+  price: string;
+  orderDate: string;
+  orderStatus: string;
+  invoiceUrl: string;
+};

@@ -85,3 +85,39 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.orderHistoryLayout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 64px;
+
+  h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  @include tablet {
+    padding: 32px 16px;
+  }
+}
+
+.table {
+  @include tablet {
+    display: none;
+  }
+}
+
+.cards {
+  display: none;
+  width: 100%;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}

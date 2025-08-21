@@ -4,12 +4,10 @@ export const requestFormBody = ({ username }: { username: string }) => {
   return htmlTemplate({
     body: `
       <div style="width: 595px; margin: 0 auto;">
-        <header class="header">
-          <img src="https://dreamart3d.com/images/email/header.png" alt="full-logo" width="595" height="110" />
-        </header>
+        <img style="display:block; border:0; outline:none; text-decoration:none; font-size:0; line-height:0;" src="https://dreamart3d.com/images/email/header.png" alt="full-logo" width="595" height="100" />
         <div class="wrapper">
           <div class="main">
-            <p style="font-size: 24px; color: #717173; margin-bottom: 24px;">We Got Your Request! Time to Make Some Magic – Dreamart 3D</p>
+            <p style="font-size: 24px; color: #fff; margin-bottom: 24px; font-weight: 600;">We Got Your Request! Time to Make Some Magic – Dreamart 3D</p>
             <p class="text" style="color: #717173; margin-bottom: 16px;">Dear ${username},</p>
             <p class="text" style="color: #717173; margin-bottom: 24px;">Thanks for choosing Dreamart 3D for your project! We’ve got your service request, and we’re already excited to dive into it. Our team is reviewing the details, and we’ll be reaching out soon to chat more about your vision.</p>
             <p style="color: #fff; font-size: 16px; font-weight: 600; margin-bottom: 16px;">What’s Next?</p>
@@ -20,7 +18,7 @@ export const requestFormBody = ({ username }: { username: string }) => {
           </div>
         </div>
         <div>
-          <img src="https://dreamart3d.com/images/email/footer.png" alt="full-logo" width="595" height="130" />
+          <img src="https://dreamart3d.com/images/email/footer.png" alt="full-logo" width="595" height="100" />
         </div>
       </div>
     `,

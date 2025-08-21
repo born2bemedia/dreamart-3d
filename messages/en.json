@@ -465,5 +465,20 @@
     "removedFromWishlist": "Product removed from wishlist",
     "welcome": "Welcome to Your Dreamart 3D Wishlist!",
     "description": "This is your creative playground — a place to save, organize, and revisit your favorite 3D models and animations anytime you want. It’s like your personal design museum, but cooler."
+  },
+  "orderHistory": {
+    "title": "Order History",
+    "orderId": "Order ID",
+    "itemPurchased": "Item Purchased",
+    "purchaseDate": "Purchase Date",
+    "total": "Total",
+    "paymentMethod": "Payment Method",
+    "orderStatus": "Order Status",
+    "invoice": "Invoice",
+    "notAvailable": "Not Available",
+    "download": "Download",
+    "completed": "Completed",
+    "failed": "Failed",
+    "pending": "Pending"
   }
 }

@@ -20,10 +20,11 @@ export const AccountContainer = ({ orders }: { orders: Order[] }) => {
 
   const { wishlist } = useWishlistStore();
 
-  const columns = getOrdersColumns();
-
   const t = useTranslations('accountContainer');
   const tw = useTranslations('wishlist');
+  const tt = useTranslations('orderHistory');
+
+  const columns = getOrdersColumns(tt);
 
   return (
     <section className={st.layout}>
@@ -57,7 +58,7 @@ export const AccountContainer = ({ orders }: { orders: Order[] }) => {
       )}
       {activeTab === 'history' && (
         <section className={st.orderHistoryLayout}>
-          <h2>Order History</h2>
+          <h2>{tt('title', { fallback: 'Order History' })}</h2>
           <div className={st.table}>
             <Table columns={columns} data={orders} />
           </div>

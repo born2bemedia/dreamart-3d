@@ -9,6 +9,7 @@ import { Controller, useForm } from 'react-hook-form';
 
 import { useCountryCode } from '@/shared/lib/hooks/use-country';
 import { Button } from '@/shared/ui/kit/button/Button';
+import CountrySelect from '@/shared/ui/kit/country-select/CountrySelect';
 import { PhoneField } from '@/shared/ui/kit/phone-field';
 import { Text } from '@/shared/ui/kit/text/Text';
 import { Title } from '@/shared/ui/kit/title/Title';
@@ -17,6 +18,11 @@ import { postOrder } from '../../api/post-order';
 import { type CheckoutFormSchema, checkoutFormSchema } from '../../model/schema';
 import { useCartStore } from '../../model/store';
 import styles from './Checkout.module.scss';
+
+/*const getCountryOptionByCode = (code: string) => {
+  const countries = countryList().getData();
+  return countries.find((country) => country.value === code);
+};*/
 
 export const Checkout = () => {
   const { cart, clearCart, total } = useCartStore();
@@ -123,11 +129,10 @@ export const Checkout = () => {
                   className={`${styles.inputWrapper} ${styles.third} ${errors.country ? styles.error : ''}`}
                 >
                   {errors.country && <p className={styles.error}>{errors.country.message}</p>}
-                  <input
-                    {...register('country')}
-                    placeholder={t('country', {
-                      fallback: 'Country',
-                    })}
+                  <Controller
+                    name="country"
+                    control={control}
+                    render={({ field }) => <CountrySelect field={field} />}
                   />
                 </div>
 

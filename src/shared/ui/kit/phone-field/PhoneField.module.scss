@@ -57,6 +57,15 @@
   width: 222px !important;
   background: #1b1c1e !important;
   color: #fff !important;
+  li {
+    &:hover {
+      background: #2583ff !important;
+      color: #fff !important;
+      span {
+        color: #fff !important;
+      }
+    }
+  }
 }
 
 .arrow {

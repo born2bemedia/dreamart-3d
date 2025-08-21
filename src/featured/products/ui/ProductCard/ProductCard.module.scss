@@ -1,6 +1,13 @@
 @use '@/shared/lib/styles/mixin.scss' as *;
 
+.favorite {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
 .productCard {
+  position: relative;
   display: flex;
   padding: 24px;
   flex-direction: column;

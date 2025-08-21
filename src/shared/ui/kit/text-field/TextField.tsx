@@ -1,6 +1,6 @@
 'use client';
 
-import type { HTMLAttributes } from 'react';
+import type { InputHTMLAttributes } from 'react';
 
 import { cn } from '@/shared/lib/utils/cn';
 
@@ -9,17 +9,15 @@ import st from './TextField.module.scss';
 export const TextField = ({
   hint,
   className,
-  placeholder,
-  type,
+  label,
   ...props
-}: HTMLAttributes<HTMLInputElement> & { hint?: string; placeholder?: string; type?: string }) => (
+}: {
+  hint?: string;
+  label?: string;
+} & InputHTMLAttributes<HTMLInputElement>) => (
   <div className={st.layout}>
-    {hint && <p className={st.hint}>{hint}</p>}
-    <input
-      className={cn(hint ? st.dangerIntent : st.defaultIntent, className)}
-      placeholder={placeholder}
-      type={type}
-      {...props}
-    />
+    {hint && !label ? <p className={cn(st.hint, st.absoluteHint)}>{hint}</p> : null}
+    {label ? hint ? <p className={st.hint}>{hint}</p> : <p className={st.label}>{label}</p> : null}
+    <input className={cn(hint ? st.dangerIntent : st.defaultIntent, className)} {...props} />
   </div>
 );

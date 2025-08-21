@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 
+import { useTranslations } from 'next-intl';
+
 import { notifySuccess } from '@/shared/lib/utils/notify';
 import { ActiveFavoriteIcon, FavoriteIcon } from '@/shared/ui/icons/favorite';
 import { Plus } from '@/shared/ui/icons/plus';
@@ -19,6 +21,8 @@ export const ProductCard = ({ id, title, image, excerpt, price, category, slug }
   const { addToCart, setTotal, total } = useCartStore();
 
   const { wishlist, setWishlist } = useWishlistStore();
+
+  const t = useTranslations('wishlist');
 
   const isInWishlist = wishlist.some((item) => item.id === id);
 
@@ -39,18 +43,16 @@ export const ProductCard = ({ id, title, image, excerpt, price, category, slug }
 
     if (success) {
       setWishlist(newWishlist);
-      notifySuccess('Product added to wishlist');
+      notifySuccess(t('addedToWishlist', { fallback: 'Product added to wishlist' }));
     }
   };
 
   const removeFromWishlistHandle = (id: string) => {
-    console.log('remove click');
-
     const { success, newWishlist } = removeFromWishlist(id);
 
     if (success) {
       setWishlist(newWishlist);
-      notifySuccess('Product removed from wishlist');
+      notifySuccess(t('removedFromWishlist', { fallback: 'Product removed from wishlist' }));
     }
   };
 

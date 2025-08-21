@@ -458,5 +458,12 @@
     "savingSuccess": "Password updated successfully",
     "savingError": "Something went wrong — please refresh and try again, or email us directly at info@trendelladigital.com.",
     "edit": "Edit"
+  },
+  "wishlist": {
+    "productId": "Product ID",
+    "addedToWishlist": "Product added to wishlist",
+    "removedFromWishlist": "Product removed from wishlist",
+    "welcome": "Welcome to Your Dreamart 3D Wishlist!",
+    "description": "This is your creative playground — a place to save, organize, and revisit your favorite 3D models and animations anytime you want. It’s like your personal design museum, but cooler."
   }
 }

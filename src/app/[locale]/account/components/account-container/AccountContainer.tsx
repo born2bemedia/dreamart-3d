@@ -16,6 +16,7 @@ export const AccountContainer = () => {
   const { wishlist } = useWishlistStore();
 
   const t = useTranslations('accountContainer');
+  const tw = useTranslations('wishlist');
 
   return (
     <section className={st.layout}>
@@ -32,11 +33,12 @@ export const AccountContainer = () => {
       {activeTab === 'wishlist' && (
         <div className={st.wishlistLayout}>
           <section className={st.wishlistTitle}>
-            <h2>Welcome to Your Dreamart 3D Wishlist!</h2>
+            <h2>{tw('welcome', { fallback: 'Welcome to Your Dreamart 3D Wishlist!' })}</h2>
             <p>
-              This is your creative playground — a place to save, organize, and revisit your
-              favorite 3D models and animations anytime you want. It’s like your personal design
-              museum, but cooler.
+              {tw('description', {
+                fallback:
+                  'This is your creative playground — a place to save, organize, and revisit your favorite 3D models and animations anytime you want. It’s like your personal design museum, but cooler.',
+              })}
             </p>
           </section>
           <section className={st.wishlist}>

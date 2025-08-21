@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 
+import { useTranslations } from 'next-intl';
+
 import { DeleteIcon } from '@/shared/ui/icons/delete';
 import { Title } from '@/shared/ui/kit';
 
@@ -13,6 +15,8 @@ import { useWishlistStore } from '@/featured/wishlist/model/wishlist.store';
 
 export const WishlistCard = ({ id, title, image }: Product) => {
   const { wishlist, setWishlist } = useWishlistStore();
+
+  const t = useTranslations('wishlist');
 
   const deleteHandle = () => {
     removeFromWishlist(id);
@@ -28,7 +32,9 @@ export const WishlistCard = ({ id, title, image }: Product) => {
         <Image src={image.url} alt={title} width={230} height={230} quality={100} />
         <div>
           <Title title={title} tag="h3" />
-          <p className={styles.price}>Product ID #{id}</p>
+          <p className={styles.price}>
+            {t('productId', { fallback: 'Product ID' })} #{id}
+          </p>
         </div>
       </div>
     </div>

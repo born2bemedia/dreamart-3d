@@ -8,12 +8,19 @@ import { usePathname } from 'next/navigation';
 import { useLenis } from 'lenis/react';
 import { useTranslations } from 'next-intl';
 
+import { cookies } from '@/shared/lib/utils/cookie';
 import { BurgerMenu, Cart, Facebook, Instagram, X } from '@/shared/ui/icons';
 
 import styles from './Header.module.scss';
 
+import { useUserStore } from '@/core/user/model/user.store';
+import { UserBadge } from '@/core/user/ui/user-badge';
+
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const { user, setUser } = useUserStore();
+
   const pathname = usePathname();
   const lenis = useLenis();
 
@@ -22,6 +29,12 @@ export const Header = () => {
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [pathname]);
+
+  useEffect(() => {
+    const storedUser = cookies.get('user');
+    const parsedUser = storedUser ? JSON.parse(storedUser) : null;
+    setUser(parsedUser);
+  }, [setUser]);
 
   useEffect(() => {
     if (isMobileMenuOpen) {
@@ -79,12 +92,20 @@ export const Header = () => {
                 <Link href="/cart" className={styles.cart}>
                   <Cart />
                 </Link>
-                <Link href="#" className={styles.login}>
-                  {t('login', { fallback: 'Login' })}
-                </Link>
-                <Link href="#" className={styles.signup}>
-                  {t('signup', { fallback: 'Sign Up' })}
-                </Link>
+                {user ? (
+                  <span className={styles.badgeWrapper}>
+                    <UserBadge firstName={user.firstName} />
+                  </span>
+                ) : (
+                  <>
+                    <Link href="#" className={styles.login}>
+                      {t('login', { fallback: 'Login' })}
+                    </Link>
+                    <Link href="#" className={styles.signup}>
+                      {t('signup', { fallback: 'Sign Up' })}
+                    </Link>
+                  </>
+                )}
                 <span
                   className={styles.burger}
                   onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -109,14 +130,18 @@ export const Header = () => {
           <Link href="#">{t('careers', { fallback: 'Careers' })}</Link>
           <Link href="/contacts">{t('contacts', { fallback: 'Contacts' })}</Link>
         </nav>
-        <div className={styles.actions}>
-          <Link href="#" className={styles.loginMobile}>
-            {t('login', { fallback: 'Login' })}
-          </Link>
-          <Link href="#" className={styles.signupMobile}>
-            {t('signup', { fallback: 'Sign Up' })}
-          </Link>
-        </div>
+        {user?.firstName ? (
+          <UserBadge firstName={user.firstName} />
+        ) : (
+          <div className={styles.actions}>
+            <Link href="#" className={styles.loginMobile}>
+              {t('login', { fallback: 'Login' })}
+            </Link>
+            <Link href="#" className={styles.signupMobile}>
+              {t('signup', { fallback: 'Sign Up' })}
+            </Link>
+          </div>
+        )}
         <div className={styles.bottom}>
           <div className={styles.socials}>
             <Link href="#">

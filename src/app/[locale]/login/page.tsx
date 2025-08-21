@@ -1,6 +1,6 @@
 import st from './page.module.scss';
 
-import { LoginForm } from '@/core/ui/login-form';
+import { LoginForm } from '@/core/user/ui/login-form';
 
 export default function LoginPage() {
   return (

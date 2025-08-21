@@ -1,0 +1,53 @@
+.layout {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #1a1b1e;
+  width: 275px;
+  height: 82vh;
+  position: sticky;
+  top: 0;
+}
+
+.mainTabs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.defaultTab {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 24px;
+  padding: 16px 32px;
+
+  p {
+    color: #717173;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.activeTab {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 24px;
+  padding: 16px 32px;
+  background: #191a1e;
+
+  p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  svg > path,
+  svg > path > stroke {
+    fill: #fff;
+  }
+}

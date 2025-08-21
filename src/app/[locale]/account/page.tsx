@@ -1,5 +1,5 @@
 import { AccountContainer } from './components/account-container';
-import st from './page.module.css';
+import st from './page.module.scss';
 
 import { Sidebar } from '@/featured/account/ui/sidebar';
 

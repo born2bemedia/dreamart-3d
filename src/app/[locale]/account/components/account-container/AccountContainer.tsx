@@ -4,6 +4,7 @@ import st from './AccountContainer.module.scss';
 
 import { useTabsStore } from '@/featured/account/model/tabs.store';
 import { EditUserForm } from '@/featured/account/ui/edit-user-info';
+import { ChangePasswordForm } from '@/featured/change-password/ui/form';
 
 export const AccountContainer = () => {
   const { activeTab } = useTabsStore();
@@ -14,7 +15,10 @@ export const AccountContainer = () => {
         <section className={st.settings}>
           <h2 className={st.heading}>Account Settings</h2>
           <div className={st.divider} />
-          <EditUserForm />
+          <div className={st.forms}>
+            <EditUserForm />
+            <ChangePasswordForm />
+          </div>
         </section>
       )}
     </section>

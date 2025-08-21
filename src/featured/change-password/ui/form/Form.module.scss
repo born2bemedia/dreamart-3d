@@ -9,6 +9,7 @@
   flex-direction: column;
   gap: 16px;
   width: 50%;
+  height: max-content;
 
   @include tablet {
     width: 100%;

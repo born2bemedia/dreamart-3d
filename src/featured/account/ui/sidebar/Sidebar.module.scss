@@ -1,3 +1,5 @@
+@use '@/shared/lib/styles/mixin.scss' as *;
+
 .layout {
   padding: 32px;
   display: flex;
@@ -8,12 +10,29 @@
   height: 82vh;
   position: sticky;
   top: 0;
+
+  @include tablet {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-right: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 16px 0;
+    background: #17171a;
+  }
 }
 
 .mainTabs {
   display: flex;
   flex-direction: column;
   gap: 8px;
+
+  @include tablet {
+    align-items: center;
+    flex-direction: row;
+  }
 }
 
 .defaultTab {

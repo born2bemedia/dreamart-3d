@@ -13,14 +13,17 @@ export const PhoneField = ({
   country,
   hint,
   size = 'sm',
+  label,
   ...args
 }: PhoneInputProps & {
   country?: string;
   hint?: string;
   size?: 'sm' | 'md';
+  label?: string;
 }) => {
   return (
     <label className={st.layout}>
+      {label && !hint ? <p className={st.label}>{label}</p> : ''}
       {hint && <p className={st.hint}>{hint}</p>}
       <PhoneInput
         defaultCountry={

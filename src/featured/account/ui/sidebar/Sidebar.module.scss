@@ -1,0 +1,72 @@
+@use '@/shared/lib/styles/mixin.scss' as *;
+
+.layout {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #1a1b1e;
+  width: 275px;
+  height: 82vh;
+  position: sticky;
+  top: 0;
+
+  @include tablet {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-right: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 16px 0;
+    background: #17171a;
+  }
+}
+
+.mainTabs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include tablet {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.defaultTab {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 24px;
+  padding: 16px 32px;
+
+  p {
+    color: #717173;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.activeTab {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 24px;
+  padding: 16px 32px;
+  background: #191a1e;
+
+  p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  svg > path,
+  svg > path > stroke {
+    fill: #fff;
+  }
+}

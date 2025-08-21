@@ -1,0 +1,10 @@
+@use '@/shared/lib/styles/mixin.scss' as *;
+
+.layout {
+  border-top: 1px solid #1a1b1e;
+  display: flex;
+
+  @include tablet {
+    flex-direction: column;
+  }
+}

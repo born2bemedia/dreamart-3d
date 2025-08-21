@@ -14,8 +14,8 @@ import { Url } from '@/shared/ui/kit/url';
 
 import st from './LoginForm.module.scss';
 
-import { login } from '@/core/api/login';
-import { loginSchema } from '@/core/model/login.schema';
+import { login } from '@/core/user/api/login';
+import { loginSchema } from '@/core/user/model/login.schema';
 
 export const LoginForm = () => {
   const router = useRouter();

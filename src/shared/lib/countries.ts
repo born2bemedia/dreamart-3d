@@ -1,3 +1,5 @@
+import { countries } from 'countries-list';
+
 export const excludedCountries = [
   'af',
   'al',
@@ -72,3 +74,7 @@ export const excludedCountries = [
   'soo',
   'pse',
 ];
+
+export const allowedCountries = Object.fromEntries(
+  Object.entries(countries).filter(([code]) => !excludedCountries.includes(code.toLowerCase()))
+);

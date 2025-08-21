@@ -120,6 +120,12 @@
   }
 }
 
+.badgeWrapper {
+  @include tablet {
+    display: none;
+  }
+}
+
 .mobileMenu {
   top: -200vh;
   position: fixed;

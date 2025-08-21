@@ -16,7 +16,7 @@ import { Url } from '@/shared/ui/kit/url';
 import { registrationSchema } from '../../model/registration.schema';
 import st from './RegistrationForm.module.scss';
 
-import { registerUser } from '@/core/api/register-user';
+import { registerUser } from '@/core/user/api/register-user';
 
 export const RegistrationForm = () => {
   const router = useRouter();

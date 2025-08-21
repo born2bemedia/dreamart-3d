@@ -11,6 +11,7 @@ import '@/shared/lib/styles/null.scss';
 import '@/shared/lib/styles/base.scss';
 
 import { ThanksPopup } from '@/featured/thanks-popup/ui/ThanksPopup';
+import { WishlistProvider } from '@/featured/wishlist/ui/wishlist-provider';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -43,13 +44,15 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={inter.variable}>
         <NextIntlClientProvider>
-          <LenisScrollProvider>
-            <Header />
-            {children}
-            <Footer />
-          </LenisScrollProvider>
-          <ThanksPopup />
-          <Toaster />
+          <WishlistProvider>
+            <LenisScrollProvider>
+              <Header />
+              {children}
+              <Footer />
+            </LenisScrollProvider>
+            <ThanksPopup />
+            <Toaster />
+          </WishlistProvider>
         </NextIntlClientProvider>
       </body>
     </html>

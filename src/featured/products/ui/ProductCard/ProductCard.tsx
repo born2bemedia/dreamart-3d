@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 
+import { notifySuccess } from '@/shared/lib/utils/notify';
+import { ActiveFavoriteIcon, FavoriteIcon } from '@/shared/ui/icons/favorite';
 import { Plus } from '@/shared/ui/icons/plus';
 import { Text, Title } from '@/shared/ui/kit';
 
@@ -9,9 +11,16 @@ import type { Product } from '../../model/types';
 import styles from './ProductCard.module.scss';
 
 import { useCartStore } from '@/featured/cart/model/store';
+import { addToWishlist } from '@/featured/wishlist/api/add-to-wishlist';
+import { removeFromWishlist } from '@/featured/wishlist/api/remove-from-wishlist';
+import { useWishlistStore } from '@/featured/wishlist/model/wishlist.store';
 
-export const ProductCard = ({ id, title, image, excerpt, price }: Product) => {
+export const ProductCard = ({ id, title, image, excerpt, price, category, slug }: Product) => {
   const { addToCart, setTotal, total } = useCartStore();
+
+  const { wishlist, setWishlist } = useWishlistStore();
+
+  const isInWishlist = wishlist.some((item) => item.id === id);
 
   const handleAddToCart = () => {
     addToCart({
@@ -25,8 +34,38 @@ export const ProductCard = ({ id, title, image, excerpt, price }: Product) => {
     setTotal(total + price);
   };
 
+  const addToWishlistHandle = (item: Product) => {
+    const { success, newWishlist } = addToWishlist(item);
+
+    if (success) {
+      setWishlist(newWishlist);
+      notifySuccess('Product added to wishlist');
+    }
+  };
+
+  const removeFromWishlistHandle = (id: string) => {
+    console.log('remove click');
+
+    const { success, newWishlist } = removeFromWishlist(id);
+
+    if (success) {
+      setWishlist(newWishlist);
+      notifySuccess('Product removed from wishlist');
+    }
+  };
+
   return (
     <div className={styles.productCard}>
+      <button
+        className={styles.favorite}
+        onClick={() =>
+          isInWishlist
+            ? removeFromWishlistHandle(id)
+            : addToWishlistHandle({ id, slug, category, title, image, excerpt, price })
+        }
+      >
+        {isInWishlist ? <ActiveFavoriteIcon /> : <FavoriteIcon />}
+      </button>
       <div className={styles.top}>
         <Image src={image.url} alt={title} width={230} height={230} quality={100} />
         <div>

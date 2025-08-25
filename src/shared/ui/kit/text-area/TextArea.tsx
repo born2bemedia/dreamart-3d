@@ -10,10 +10,26 @@ export const TextArea = ({
   hint,
   className,
   placeholder,
+  label,
+  labelColor = 'grey',
   ...props
-}: TextareaHTMLAttributes<HTMLTextAreaElement> & { hint?: string; placeholder?: string }) => (
+}: TextareaHTMLAttributes<HTMLTextAreaElement> & {
+  hint?: string;
+  placeholder?: string;
+  label?: string;
+  labelColor?: 'white' | 'grey';
+}) => (
   <div className={st.layout}>
-    {hint && <p className={st.hint}>{hint}</p>}
+    {hint && !label ? <p className={cn(st.hint, st.absoluteHint)}>{hint}</p> : null}
+    {label ? (
+      hint ? (
+        <p className={st.hint}>{hint}</p>
+      ) : (
+        <p className={cn(st.label, labelColor === 'white' ? st.whiteLabel : st.greyLabel)}>
+          {label}
+        </p>
+      )
+    ) : null}
     <textarea
       className={cn(hint ? st.dangerIntent : st.defaultIntent, className)}
       placeholder={placeholder}

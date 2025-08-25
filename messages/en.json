@@ -480,5 +480,190 @@
     "completed": "Completed",
     "failed": "Failed",
     "pending": "Pending"
+  },
+  "servicesHero": {
+    "title": "Turning ‘What Ifs’ Into ‘Wow’",
+    "description": {
+      "0": "We don’t just offer services — we create experiences. From 3D models that bring your designs to life to animations that steal the show, we’re all about turning your creative dreams into reality.",
+      "1": "Need a stunning website, a jaw-dropping animation, or a game-changing 3D model? We’ve got the skills, creativity, and tech to make it happen. Let’s dive into the world of limitless possibilities together — your imagination is the only limit!"
+    }
+  },
+  "services": {
+    "navigation": {
+      "3DModelling": "3D Modelling",
+      "animationCreation": "Animation Creation",
+      "uiuxDesign": "UI/UX Design",
+      "videoProduction": "Video Production"
+    },
+    "3DModelling": {
+      "title": "3D Modelling",
+      "tag": "Your Ideas, Now in 3D",
+      "description": "Our 3D models aren’t just cool — they’re print-ready, detailed, and ready to be awesome. From prototypes to figurines, we bring your wildest ideas to life with precision and style. Whether you need a super sleek vase or a custom action figure, we’ve got the modelling skills to make it happen.",
+      "servicesWeOffer": "Services We Offer",
+      "exploreTitle": "Explore Our 3D Models",
+      "exploreTag": "Ready to Print, Ready to Wow!",
+      "exploreDescription": "Dive into our collection of 3D models, where creativity meets precision. Whether you’re looking for stunning decor, custom figurines, or prototype designs, our models are perfect for your next project. Browse through a variety of categories and find the perfect design, ready to print and make your vision come to life.",
+      "exploreButton": "Shop Our 3D Models",
+      "hotDealsTitle": "Hot Deals on Unique Creations",
+      "hotDealsTag": "Hurry Before They Vanish!",
+      "hotDealsDescription": "Time’s ticking! Grab our limited-time deals on 3D models before they’re gone. From quirky figurines to sleek prototypes, these models are ready to bring your ideas to life — and they’re at prices you won’t believe. Don’t wait — make them yours while you still can!",
+      "hotDealsButton": "Claim Your Deal Now!",
+      "readyToTitle": "Got a wild 3D idea?",
+      "readyToText": "Let’s create a custom masterpiece just for you!",
+      "readyToButton": "Get a Quote",
+      "services": {
+        "0": "Product Prototypes",
+        "1": "3D Printing Models",
+        "2": "Conceptual Designs",
+        "3": "Custom Figurines",
+        "4": "Miniatures for Collectibles",
+        "5": "Jewelry Designs",
+        "6": "Architectural Models",
+        "7": "Game Assets & Characters",
+        "8": "3D Icons & Logos",
+        "9": "Home Decor Models",
+        "10": "Product Mockups",
+        "11": "Low Poly & High Poly Models",
+        "12": "Custom 3D Sculptures",
+        "13": "3D Furniture Models",
+        "14": "Concept Art Models",
+        "15": "Architectural Renderings",
+        "16": "3D Illustrations",
+        "17": "Custom Collectibles",
+        "18": "3D Textures and Mapping",
+        "19": "Interactive 3D Models"
+      }
+    },
+    "animationCreation": {
+      "services": {
+        "0": "2D Animation",
+        "1": "3D Animation",
+        "2": "Explainer Videos",
+        "3": "Commercial Animations",
+        "4": "Product Demo Animations",
+        "5": "Motion Graphics",
+        "6": "Character Animations",
+        "7": "Animated Logos",
+        "8": "Cinematic Animations",
+        "9": "Social Media Videos",
+        "10": "Infographic Animations",
+        "11": "Music Videos",
+        "12": "Animated Titles",
+        "13": "Augmented Reality Animations",
+        "14": "Virtual Reality Animations",
+        "15": "Gif Animations",
+        "16": "Stop Motion Animations",
+        "17": "Storyboarding",
+        "18": "Video Game Animations",
+        "19": "Interactive Animations"
+      },
+      "title": "Animation Creation",
+      "tag": "Let’s Make Your Ideas Spark",
+      "description": "Animation isn’t just about moving pictures — it’s about making magic happen on screen. From explainer videos that make complex ideas simple to epic animated commercials that will make your audience go, “Wow!”, we’ve got the skills to make your story come to life. Grab some popcorn, because your ideas are about to hit the big screen!",
+      "servicesWeOffer": "Services We Offer"
+    },
+    "design": {
+      "services": {
+        "0": "Landing Page Design",
+        "1": "Responsive Web Design",
+        "2": "E-commerce UI Design",
+        "3": "Custom Icon Design",
+        "4": "App Interface Design",
+        "5": "Dashboard Design",
+        "6": "Brand Guidelines",
+        "7": "User Journey Mapping",
+        "8": "Interactive UI Elements",
+        "9": "Motion Design for UI",
+        "10": "User Interface Development",
+        "11": "User Engagement Strategy",
+        "12": "Information Architecture",
+        "13": "Multilingual Interface Design"
+      },
+      "title": "UI/UX Design",
+      "tag": "Designs So Smooth, Users Will Want to Hang Around",
+      "description": "We don’t just design websites and apps — we set up experiences that keep users coming back. We create sleek, intuitive, and fun designs that make navigation feel like a breeze. We blend beauty and functionality so your users have a seamless adventure.",
+      "servicesWeOffer": "Services We Offer",
+      "readyToTitle": {
+        "0": "Have a totally",
+        "1": "one-of-a-kind vision?"
+      },
+      "readyToText": "Let’s design it for you!",
+      "readyToButton": "Request Your Quote",
+      "flow": {
+        "cards": {
+          "0": {
+            "title": "Discovery & Research",
+            "tag": {
+              "0": "Understanding Your Needs",
+              "1": "And Your Users’ Needs Too"
+            },
+            "desc": "We start by diving deep into your brand and understanding your audience. It’s not just about designing for today — it’s about predicting what users need and how they think. We get to know your goals, your users, and the big picture before we even start sketching."
+          },
+          "1": {
+            "title": "Wireframing & Prototyping",
+            "tag": "Where the Fun Begins",
+            "desc": "Time to make the first move! We map out wireframes and create interactive prototypes to show you the layout and flow. Think of it as the skeleton of your future digital masterpiece — no clothes yet, but it’s already looking pretty good!"
+          },
+          "2": {
+            "title": "Visual Design",
+            "tag": "Making It Shine",
+            "desc": "Now, we add the fun stuff — colors, typography, icons, and all the visual elements that make your design pop! This is where we take the wireframe and turn it into something beautiful. It’s all about balance — functionality meets aesthetics to create a design that’s as smooth as it is stylish."
+          },
+          "3": {
+            "title": "User Testing",
+            "tag": "Feedback = Improvement",
+            "desc": "Time to put our design to the test! We engage real users with the prototype, gather their feedback, and identify any friction points. The goal? To perfect the user journey and ensure a seamless experience for all users."
+          },
+          "4": {
+            "title": "Development Handoff",
+            "tag": "The Final Push",
+            "desc": "Once everything’s polished, we pass it on to the dev team, ensuring every pixel is in place and the design flows seamlessly into development. Our collaboration ensures that the final product not only looks great but also works flawlessly."
+          },
+          "5": {
+            "title": "Launch & Iteration",
+            "tag": "We Don’t Stop After Launch",
+            "desc": "We believe that a design is never truly finished. After launch, we continue to monitor, gather user feedback, and iterate to improve. The digital world is ever-changing, and we stay ahead by constantly fine-tuning and enhancing our services."
+          }
+        },
+        "title": "Our UI/UX Design Flow",
+        "tag": "Creating Flawless Journeys from Start to Finish",
+        "desc": "At Dreamart 3D, our UI/UX design flow is all about making your users’ journey smooth, intuitive, and downright delightful. From brainstorming to final clicks, we ensure every step is a piece of the puzzle, creating a cohesive and unforgettable experience. Here’s how we do it:",
+        "btn": "See Our Packages & Prices"
+      }
+    },
+    "videoProduction": {
+      "services": {
+        "0": "Corporate Videos",
+        "1": "Product Promo Videos",
+        "2": "Brand Storytelling Videos",
+        "3": "Commercials",
+        "4": "Explainer Videos",
+        "5": "Event Coverage Videos",
+        "6": "YouTube Content Creation",
+        "7": "Training & Tutorial Videos",
+        "8": "Social Media Videos",
+        "9": "Testimonial Videos",
+        "10": "Animated Video Ads",
+        "11": "Behind-the-Scenes Videos",
+        "12": "TV Spots",
+        "13": "3D Product Videos",
+        "14": "Educational Videos",
+        "15": "Drone Footage Videos",
+        "16": "360° Videos",
+        "17": "Music Videos",
+        "18": "Interactive Videos",
+        "19": "Video Editing Services"
+      },
+      "title": "Video Production",
+      "tag": "Where Your Story Gets the Star Treatment",
+      "description": "Let’s make your journey unforgettable. Whether it’s a commercial, a social media ad, or a heartfelt brand story, we create videos that get people talking. From script to screen, we bring creativity, fun, and flair into every frame. Ready for your close-up?",
+      "servicesWeOffer": "Services We Offer",
+      "readyToTitle": {
+        "0": "Got a video idea",
+        "1": "that’s a little wild?"
+      },
+      "readyToText": "Let’s make it happen!",
+      "readyToButton": "Get Pricing Now"
+    }
   }
 }

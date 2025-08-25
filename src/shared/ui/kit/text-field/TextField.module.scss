@@ -18,10 +18,17 @@
 }
 
 .label {
-  color: #717173;
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
+}
+
+.whiteLabel {
+  color: #fff;
+}
+
+.greyLabel {
+  color: #717173;
 }
 
 .hint {

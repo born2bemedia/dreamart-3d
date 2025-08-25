@@ -665,5 +665,139 @@
       "readyToText": "Let’s make it happen!",
       "readyToButton": "Get Pricing Now"
     }
+  },
+  "careers": {
+    "hero": {
+      "title": {
+        "0": "Join Our Dream Team:",
+        "1": "Where Creativity Meets Fun"
+      },
+      "description": "Welcome to Dreamart 3D — the place where ideas turn into tangible reality, imagination is our superpower, and creativity is our secret weapon. We don’t just create 3D models, animations, and designs — we craft experiences that make your brand unforgettable."
+    },
+    "perks": {
+      "title": {
+        "0": "Perks of Being on the",
+        "1": "Dreamart 3D Team"
+      },
+      "perk": {
+        "0": {
+          "title": "Creative freedom",
+          "text": "We believe in letting your creativity flow without limits."
+        },
+        "1": {
+          "title": "Collaborative environment",
+          "text": "Work with a team that supports and challenges you."
+        },
+        "2": {
+          "title": "Growth opportunities",
+          "text": "The more you learn, the more you grow — both personally and professionally."
+        },
+        "3": {
+          "title": "Great Vibes",
+          "text": "We work hard, but we also know how to keep it light — no matter where you are! Virtual game nights, online challenges, and plenty of laughs."
+        }
+      }
+    },
+    "openJobs": {
+      "title": "Current Openings",
+      "responsibilities": "Responsibilities:",
+      "requirements": "Requirements:",
+      "jobs": {
+        "0": {
+          "title": "3D Modelling Wizard",
+          "buttonText": "No Wait – Apply",
+          "responsibilities": {
+            "0": "Transform ideas into tangible 3D creations (from product prototypes to custom miniatures).",
+            "1": "Work with the team to create print-ready designs for a variety of industries (no pressure, just cool stuff).",
+            "2": "Push the boundaries of creativity while making sure each model is precision-perfect.",
+            "3": "Play around with cutting-edge 3D software and stay on top of the latest trends in the industry."
+          },
+          "requirements": {
+            "0": "Solid experience with 3D modelling software (Blender, Autodesk, etc.).",
+            "1": "A passion for details — because precision is your middle name.",
+            "2": "Ability to take a concept and turn it into a tangible masterpiece.",
+            "3": "Good vibes only — bring your creativity and your fun side!"
+          }
+        },
+        "1": {
+          "title": "Animation Ninja",
+          "buttonText": "Get in the Game!",
+          "responsibilities": {
+            "0": "Create eye-popping animations that make people say “Wow!”",
+            "1": "Work closely with the design team to bring characters, stories, and products to life through animation.",
+            "2": "Develop motion graphics and cinematic animations for various projects (no boring stuff allowed!).",
+            "3": "Make sure the animation is not just moving, but moving with purpose."
+          },
+          "requirements": {
+            "0": "A strong background in 2D/3D animation and motion graphics.",
+            "1": "Experience with animation software (Maya, After Effects, etc.).",
+            "2": "A passionate storyteller who can turn an idea into an engaging experience.",
+            "3": "Detail-oriented with a pinch of creativity and a dash of humor!"
+          }
+        },
+        "2": {
+          "title": "UI/UX Design Guru",
+          "buttonText": "Don’t Wait – Join Us!",
+          "responsibilities": {
+            "0": "Design smooth, seamless user interfaces that users can’t stop clicking (literally).",
+            "1": "Collaborate with developers to ensure designs are beautiful AND functional.",
+            "2": "Use your design superpowers to craft user-centric designs that improve every digital experience.",
+            "3": "Keep up with the latest design trends and innovative techniques to stay ahead of the game."
+          },
+          "requirements": {
+            "0": "A portfolio that showcases your user-centered designs.",
+            "1": "Proficiency in UI/UX tools (Sketch, Figma, Adobe XD, etc.).",
+            "2": "An eye for clean, sleek, and modern designs.",
+            "3": "A problem-solver who thrives on creating seamless user experiences."
+          }
+        },
+        "3": {
+          "title": "Video Production Hero",
+          "buttonText": "Get Onboard Today!",
+          "responsibilities": {
+            "0": "Direct, shoot, and edit high-impact videos that will blow your audience away.",
+            "1": "Collaborate with the team to create everything from product demos to cinematic brand stories.",
+            "2": "Ensure each video is emotionally captivating, not just “nice to watch.”",
+            "3": "Work your magic with special effects, animations, and some jaw-dropping edits."
+          },
+          "requirements": {
+            "0": "Proven experience with video production (camera work, editing, lighting, sound, etc.).",
+            "1": "Experience in motion graphics and video editing software (Premiere Pro, After Effects, Final Cut Pro).",
+            "2": "A storyteller who loves making videos that stick in people’s minds.",
+            "3": "Must love collaborating and having fun along the way!"
+          }
+        }
+      }
+    },
+    "applyForm": {
+      "title": "Ready to Join the Fun?",
+      "description": "If you’re ready to bring your creativity, skills, and good vibes to Dreamart 3D, we want to hear from you! Fill out the form below and show us what makes you extraordinary. Let’s create, collaborate, and have some fun along the way. The adventure starts now!"
+    }
+  },
+  "careerForm": {
+    "failed": "Failed to send email. Please refresh and try again.",
+    "fullName": "Full Name*",
+    "fullNamePlaceholder": "Enter your first and last name",
+    "email": "Email Address*",
+    "emailPlaceholder": "Your primary contact email",
+    "phone": "Phone Number*",
+    "phonePlaceholder": "Your primary contact phone number",
+    "position": "Position*",
+    "positionPlaceholder": "Enter your position",
+    "resume": "Resume*",
+    "resumePlaceholder": "Upload your up-to-date resume",
+    "coverLetter": "Cover Letter*",
+    "coverLetterPlaceholder": "Upload your cover letter",
+    "message": "Message*",
+    "messagePlaceholder": "Enter your message",
+    "submit": "Submit",
+    "submitting": "Submitting...",
+    "positionApplyingFor": "Position Applying For",
+    "positions": {
+      "0": "3D Modelling Wizard",
+      "1": "Animation Ninja",
+      "2": "UI/UX Design Guru",
+      "3": "Video Production Hero"
+    }
   }
 }

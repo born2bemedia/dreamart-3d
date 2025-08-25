@@ -376,7 +376,10 @@
     "success": "Request sent successfully"
   },
   "thanksPopup": {
-    "title": "Your Creative <br/>Journey Begins Here!",
+    "title": {
+      "0": "Your Creative",
+      "1": "Journey Begins Here!"
+    },
     "description": "Thank you for reaching out to Dreamart 3D. We’re thrilled to bring your vision to life and collaborate on something extraordinary. Our team will be in touch soon to start crafting the perfect solution for your project. Let",
     "close": "Continue"
   },

@@ -11,6 +11,7 @@ import { useTranslations } from 'next-intl';
 import { cookies } from '@/shared/lib/utils/cookie';
 import { BurgerMenu, Cart, Facebook, Instagram, X } from '@/shared/ui/icons';
 
+import { LangSwitcher } from '../lang-switcher/LangSwitcher';
 import styles from './Header.module.scss';
 
 import { useUserStore } from '@/core/user/model/user.store';
@@ -49,23 +50,26 @@ export const Header = () => {
   return (
     <>
       <header className={styles.header}>
-        <div className={styles.header__top}>
-          <div className={'_container'}>
-            <div className={styles.header__top_row}>
-              <div className={styles.socials}>
-                <Link href="#">
-                  <X />
-                </Link>
-                <Link href="#">
-                  <Facebook />
-                </Link>
-                <Link href="#">
-                  <Instagram />
-                </Link>
-              </div>
-              <div className={styles.contacts}>
-                <Link href="mailto:example@gmail.com">example@gmail.com</Link>
-                <Link href="tel:+1 000 000 000">+1 000 000 000</Link>
+        <div className={styles.bg}>
+          <div className="_container">
+            <div className={styles.header__top}>
+              <div className={styles.header__top_row}>
+                <div className={styles.socials}>
+                  <Link href="#">
+                    <X />
+                  </Link>
+                  <Link href="#">
+                    <Facebook />
+                  </Link>
+                  <Link href="#">
+                    <Instagram />
+                  </Link>
+                </div>
+                <div className={styles.contacts}>
+                  <Link href="mailto:example@gmail.com">example@gmail.com</Link>
+                  <Link href="tel:+1 000 000 000">+1 000 000 000</Link>
+                  <LangSwitcher />
+                </div>
               </div>
             </div>
           </div>
@@ -131,7 +135,9 @@ export const Header = () => {
           <Link href="/contacts">{t('contacts', { fallback: 'Contacts' })}</Link>
         </nav>
         {user?.firstName ? (
-          <UserBadge firstName={user.firstName} />
+          <div className={styles.userWrapperMob}>
+            <UserBadge firstName={user.firstName} />
+          </div>
         ) : (
           <div className={styles.actions}>
             <Link href="/login" className={styles.loginMobile}>
@@ -158,6 +164,7 @@ export const Header = () => {
             <Link href="mailto:example@gmail.com">example@gmail.com</Link>
             <Link href="tel:+1 000 000 000">+1 000 000 000</Link>
           </div>
+          <LangSwitcher />
         </div>
       </div>
     </>

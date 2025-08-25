@@ -1,9 +1,7 @@
 .tag {
   border-radius: 24px;
-  background: rgba(37, 131, 255, 0.15);
   padding: 12px 16px;
   width: max-content;
-  color: #2583ff;
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
@@ -15,4 +13,14 @@
     word-break: break-word;
     white-space: normal;
   }
+}
+
+.default {
+  background: rgba(37, 131, 255, 0.15);
+  color: #2583ff;
+}
+
+.solid {
+  background: #14263d;
+  color: #2583ff;
 }

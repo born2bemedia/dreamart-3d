@@ -33,7 +33,13 @@ export const ThanksPopup = () => {
         <Image src="/images/thanks.svg" alt="thanks-popup" width={64} height={64} />
         <Title
           tag="h3"
-          title={t('title', { fallback: 'Your Creative <br/>Journey Begins Here!' })}
+          title={
+            <>
+              {t('title.0', { fallback: 'Your Creative' })}
+              <br />
+              {t('title.1', { fallback: 'Journey Begins Here!' })}
+            </>
+          }
         />
         <Text
           text={t('description', {

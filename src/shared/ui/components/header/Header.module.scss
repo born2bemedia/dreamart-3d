@@ -1,5 +1,9 @@
 @use '@/shared/lib/styles/mixin.scss' as *;
 
+.bg {
+  background: #1a1b1e;
+}
+
 .header {
   position: relative;
   z-index: 100;
@@ -13,7 +17,6 @@
       justify-content: space-between;
       align-items: center;
       align-self: stretch;
-      background: #1a1b1e;
       .socials {
         display: flex;
         gap: 12px;
@@ -124,6 +127,11 @@
   @include tablet {
     display: none;
   }
+}
+
+.userWrapperMob {
+  padding: 0 24px;
+  margin: 12px 0;
 }
 
 .mobileMenu {

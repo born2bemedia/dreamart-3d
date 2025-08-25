@@ -161,9 +161,9 @@ export const Footer = () => {
         </div>
         <div className={styles.footer__bottom}>
           <p>
+            © {year} [COMPANY]{' '}
             {t('copyright', {
-              year: year,
-              fallback: '© {year} [COMPANY] All Legal Rights Reserved.',
+              fallback: 'All Legal Rights Reserved.',
             })}
           </p>
           <div className={styles.socials}>

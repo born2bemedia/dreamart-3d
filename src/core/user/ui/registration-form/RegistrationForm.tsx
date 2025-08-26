@@ -32,6 +32,7 @@ export const RegistrationForm = () => {
     defaultValues: {
       firstName: '',
       lastName: '',
+      username: '',
       email: '',
       phone: '',
       password: '',
@@ -74,6 +75,11 @@ export const RegistrationForm = () => {
           placeholder={t('lastName', { fallback: 'Last Name' })}
           hint={errors.lastName?.message}
           {...register('lastName')}
+        />
+        <TextField
+          placeholder={t('username', { fallback: 'Username' })}
+          hint={errors.username?.message}
+          {...register('username')}
         />
         <TextField
           placeholder={t('email', { fallback: 'Email' })}

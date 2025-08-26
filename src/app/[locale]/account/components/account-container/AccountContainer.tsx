@@ -1,11 +1,15 @@
 'use client';
 
+import { useEffect } from 'react';
+
 import { useTranslations } from 'next-intl';
 
+import { cookies } from '@/shared/lib/utils/cookie';
 import { Table } from '@/shared/ui/components/table';
 
 import st from './AccountContainer.module.scss';
 
+import { useUserStore } from '@/core/user/model/user.store';
 import { useTabsStore } from '@/featured/account/model/tabs.store';
 import { EditUserForm } from '@/featured/account/ui/edit-user-info';
 import { ChangePasswordForm } from '@/featured/change-password/ui/form';
@@ -25,6 +29,14 @@ export const AccountContainer = ({ orders }: { orders: Order[] }) => {
   const tt = useTranslations('orderHistory');
 
   const columns = getOrdersColumns(tt);
+
+  const { setUser } = useUserStore();
+
+  useEffect(() => {
+    const storedUser = cookies.get('user');
+    const parsedUser = storedUser ? JSON.parse(storedUser) : null;
+    setUser(parsedUser);
+  }, [setUser]);
 
   return (
     <section className={st.layout}>

@@ -35,6 +35,7 @@ export const EditUserForm = () => {
     defaultValues: {
       firstName: user?.firstName ?? '',
       lastName: user?.lastName ?? '',
+      username: user?.username ?? '',
       email: user?.email ?? '',
       phone: user?.phone ?? '',
       address1: user?.address1 ?? '',
@@ -100,6 +101,12 @@ export const EditUserForm = () => {
           hint={errors.lastName?.message}
           disabled={!isEditing}
           {...register('lastName')}
+        />
+        <TextField
+          label={t('username', { fallback: 'Username' })}
+          hint={errors.username?.message}
+          disabled={!isEditing}
+          {...register('username')}
         />
         <TextField
           label={t('email', { fallback: 'Email' })}

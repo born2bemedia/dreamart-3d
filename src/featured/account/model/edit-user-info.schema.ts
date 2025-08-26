@@ -3,6 +3,7 @@ import { z } from 'zod';
 export const editUserInfoSchema = z.object({
   firstName: z.string().min(1, { message: 'First Name is required' }),
   lastName: z.string().min(1, { message: 'Last Name is required' }),
+  username: z.string().optional(),
   email: z.string().email({ message: 'Invalid email address' }),
   phone: z.string().min(1, { message: 'Phone number is required' }),
   address1: z.string().min(1, { message: 'Street Address is required' }),

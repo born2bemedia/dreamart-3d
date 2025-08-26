@@ -101,9 +101,17 @@ export const WhyChoose = () => {
           >
             <div className={styles.top}>
               <Title
-                title={t('title', {
-                  fallback: 'Why Choose <br/>Dreamart 3D?',
-                })}
+                title={
+                  <>
+                    {t('title.0', {
+                      fallback: 'Why Choose',
+                    })}
+                    <br />
+                    {t('title.1', {
+                      fallback: 'Dreamart 3D?',
+                    })}
+                  </>
+                }
                 className={'alignLeft'}
               />
               <Label

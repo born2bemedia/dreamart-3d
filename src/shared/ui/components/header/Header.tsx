@@ -84,12 +84,12 @@ export const Header = () => {
                 <Link href="/">{t('home', { fallback: 'Home' })}</Link>
                 <Link href="/shop">{t('shop', { fallback: 'Shop' })}</Link>
                 <Link href="/work">{t('work', { fallback: 'Work' })}</Link>
-                <Link href="#">{t('services', { fallback: 'Services' })}</Link>
+                <Link href="/services">{t('services', { fallback: 'Services' })}</Link>
                 <Link href="/impact">{t('impact', { fallback: 'Impact' })}</Link>
                 <Link href="/prices">{t('prices', { fallback: 'Prices' })}</Link>
                 <Link href="/deals">{t('deals', { fallback: 'Deals' })}</Link>
                 <Link href="/trends">{t('trends', { fallback: 'Trends' })}</Link>
-                <Link href="#">{t('careers', { fallback: 'Careers' })}</Link>
+                <Link href="/careers">{t('careers', { fallback: 'Careers' })}</Link>
                 <Link href="/contacts">{t('contacts', { fallback: 'Contacts' })}</Link>
               </nav>
               <div className={styles.actions}>
@@ -126,12 +126,12 @@ export const Header = () => {
           <Link href="/">{t('home', { fallback: 'Home' })}</Link>
           <Link href="/shop">{t('shop', { fallback: 'Shop' })}</Link>
           <Link href="/work">{t('work', { fallback: 'Work' })}</Link>
-          <Link href="#">{t('services', { fallback: 'Services' })}</Link>
+          <Link href="/services">{t('services', { fallback: 'Services' })}</Link>
           <Link href="/impact">{t('impact', { fallback: 'Impact' })}</Link>
           <Link href="/prices">{t('prices', { fallback: 'Prices' })}</Link>
           <Link href="/deals">{t('deals', { fallback: 'Deals' })}</Link>
           <Link href="/trends">{t('trends', { fallback: 'Trends' })}</Link>
-          <Link href="#">{t('careers', { fallback: 'Careers' })}</Link>
+          <Link href="/careers">{t('careers', { fallback: 'Careers' })}</Link>
           <Link href="/contacts">{t('contacts', { fallback: 'Contacts' })}</Link>
         </nav>
         {user?.firstName ? (

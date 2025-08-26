@@ -12,9 +12,15 @@ export default async function ShopPage() {
   return (
     <>
       <ShopHero
-        title={t('title', {
-          fallback: '3D Models That Make Your Ideas <br/>Walk, Talk, and Print',
-        })}
+        title={
+          <>
+            {t('title.0', {
+              fallback: '3D Models That Make Your Ideas',
+            })}
+            <br />
+            {t('title.1', { fallback: 'Walk, Talk, and Print' })}
+          </>
+        }
         description={t('description', {
           fallback:
             'Welcome to Dreamart 3D’s playground, where your wildest ideas go from “just a thought” to “look at that!” in a few clicks. From quirky home decor to iconic movie characters, our 3D models are designed to bring your creative visions to life without the complexity. Browse through our collection, pick your favorite, and let’s turn those brilliant ideas into tangible prints.',

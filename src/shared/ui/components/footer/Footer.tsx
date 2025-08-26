@@ -4,7 +4,6 @@ import Link from 'next/link';
 
 import { useTranslations } from 'next-intl';
 
-import { Facebook, Instagram, X } from '../../icons';
 import styles from './Footer.module.scss';
 
 //import { RequestForm } from '@/featured/contact-popup/ui/RequestForm/RequestForm';
@@ -39,7 +38,7 @@ export const Footer = () => {
                     fallback: 'Impact',
                   })}
                 </Link>
-                <Link href="#">
+                <Link href="/careers">
                   {t('culture3', {
                     fallback: 'Careers',
                   })}
@@ -53,7 +52,7 @@ export const Footer = () => {
                 })}
               </h3>
               <nav>
-                <Link href="#">
+                <Link href="/services">
                   {t('offers1', {
                     fallback: 'Services',
                   })}
@@ -77,7 +76,7 @@ export const Footer = () => {
                 })}
               </h3>
               <nav>
-                <Link href="#">
+                <Link href="/trends">
                   {t('connect1', {
                     fallback: 'Trends',
                   })}
@@ -96,22 +95,22 @@ export const Footer = () => {
                 })}
               </h3>
               <nav>
-                <Link href="#">
+                <Link href="/terms-of-use">
                   {t('regulations1', {
                     fallback: 'Terms of Use',
                   })}
                 </Link>
-                <Link href="#">
+                <Link href="/privacy-policy">
                   {t('regulations2', {
                     fallback: 'Privacy Policy',
                   })}
                 </Link>
-                <Link href="#">
+                <Link href="/cookie-policy">
                   {t('regulations3', {
                     fallback: 'Cookie Policy',
                   })}
                 </Link>
-                <Link href="#">
+                <Link href="/refund-policy">
                   {t('regulations4', {
                     fallback: 'Refund Policy',
                   })}
@@ -166,7 +165,7 @@ export const Footer = () => {
               fallback: 'All Legal Rights Reserved.',
             })}
           </p>
-          <div className={styles.socials}>
+          {/* <div className={styles.socials}>
             <Link href="#">
               <X />
             </Link>
@@ -176,7 +175,7 @@ export const Footer = () => {
             <Link href="#">
               <Instagram />
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

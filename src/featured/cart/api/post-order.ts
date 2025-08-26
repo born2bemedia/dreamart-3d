@@ -174,12 +174,12 @@ export const createUser = async (data: CheckoutFormSchema, password: string) => 
   return response.json();
 };
 
-const validateAndGetProductDetails = async (productId: string) => {
+const validateAndGetProductDetails = async (productId: string | number) => {
   try {
     console.log(`Validating product ID: "${productId}" (type: ${typeof productId})`);
 
-    // Sanitize the product ID - remove any extra spaces or invalid characters
-    const sanitizedProductId = productId.trim();
+    // Convert to string and sanitize the product ID - remove any extra spaces or invalid characters
+    const sanitizedProductId = String(productId).trim();
     console.log(`Sanitized product ID: "${sanitizedProductId}"`);
 
     // Encode the product ID to handle special characters
@@ -234,9 +234,9 @@ const validateAndGetProductDetails = async (productId: string) => {
   }
 };
 
-const getFileUrlForProduct = async (productId: string) => {
-  // Sanitize the product ID - remove any extra spaces or invalid characters
-  const sanitizedProductId = productId.trim();
+const getFileUrlForProduct = async (productId: string | number) => {
+  // Convert to string and sanitize the product ID - remove any extra spaces or invalid characters
+  const sanitizedProductId = String(productId).trim();
 
   // Encode the product ID to handle special characters
   const encodedProductId = encodeURIComponent(sanitizedProductId);

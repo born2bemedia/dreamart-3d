@@ -1,9 +1,22 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { ShopHero } from './components';
 
 import { getProductCategories } from '@/featured/products/api/products';
 import { FeaturedCategories } from '@/featured/products/ui/FeaturedCategory/FeaturedCategory';
+
+export const metadata: Metadata = {
+  title: 'Dreamart 3D Shop | Unique 3D Models for Printing, Animation, and More',
+  description:
+    'Browse our collection of high-quality 3D models for printing, animation, and digital design. Shop now for exclusive creations to bring your ideas to life.',
+  openGraph: {
+    title: 'Dreamart 3D Shop | Unique 3D Models for Printing, Animation, and More',
+    description:
+      'Browse our collection of high-quality 3D models for printing, animation, and digital design. Shop now for exclusive creations to bring your ideas to life.',
+    images: 'https://dreamart3d.com/images/meta.png',
+  },
+};
 
 export default async function ShopPage() {
   const t = await getTranslations('shop');

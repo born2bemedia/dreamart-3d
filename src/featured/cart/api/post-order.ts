@@ -33,11 +33,9 @@ export const postOrder = async (data: CheckoutFormSchema, total: number, cart: C
     userId = newUser.doc.id;
   }
 
-  // Validate and process cart items
   const items = await Promise.all(
     cart.map(async (item) => {
       try {
-        // First, validate that the product exists and get its details
         const productDetails = await validateAndGetProductDetails(item.id);
 
         if (!productDetails) {
@@ -47,7 +45,7 @@ export const postOrder = async (data: CheckoutFormSchema, total: number, cart: C
         const { fileurl, filename } = await getFileUrlForProduct(item.id);
 
         return {
-          product: productDetails.id, // Use the validated product ID
+          product: productDetails.id,
           quantity: item.quantity,
           price: item.price,
           file_url: fileurl,
@@ -104,6 +102,22 @@ export const postOrder = async (data: CheckoutFormSchema, total: number, cart: C
     body: JSON.stringify(orderData),
   });
 
+  const adminMsg = {
+    to: FROM_EMAIL,
+    from: FROM_EMAIL,
+    subject: `New Order Received - ${orderNumber}`,
+    html: `
+    <p>New Order Received - ${orderNumber}</p>
+    <p>User: ${data.firstName} ${data.lastName}</p>
+    <p>Email: ${data.email}</p>
+    <p>Phone: ${data.phone}</p>
+    <p>Address: ${data.address1}, ${data.address2}, ${data.city}, ${data.zip}, ${data.country}</p>
+    <p>Order Notes: ${data.orderNotes}</p>
+    <p>Total: ${total}</p>
+    <p>Items: ${cart.map((item) => item.name).join(', ')}</p>
+    `,
+  };
+
   const userMsg = {
     to: data.email,
     from: FROM_EMAIL,
@@ -122,6 +136,7 @@ export const postOrder = async (data: CheckoutFormSchema, total: number, cart: C
   };
 
   await sgMail.send(userMsg);
+  await sgMail.send(adminMsg);
 
   if (!response.ok) {
     console.error(`Order creation failed with status: ${response.status}`);

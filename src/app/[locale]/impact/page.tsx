@@ -1,6 +1,19 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { AboutDreamart, ByTheNumbers, Hero, SectionInfo } from './components';
+
+export const metadata: Metadata = {
+  title: 'Dreamart 3D Impact | Creative Solutions That Leave a Lasting Mark',
+  description:
+    'Learn how Dreamart 3D is transforming the world of 3D modeling, animation, and design. Check out the impact of our creative projects.',
+  openGraph: {
+    title: 'Dreamart 3D Impact | Creative Solutions That Leave a Lasting Mark',
+    description:
+      'Learn how Dreamart 3D is transforming the world of 3D modeling, animation, and design. Check out the impact of our creative projects.',
+    images: 'https://dreamart3d.com/images/meta.png',
+  },
+};
 
 export default async function ImpactPage() {
   const t = await getTranslations('impact');

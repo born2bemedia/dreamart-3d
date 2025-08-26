@@ -1,8 +1,22 @@
+import type { Metadata } from 'next';
+
 import { PriceList, PricesHero, PricingCategory } from './components';
 
 import { getPricingCategories } from '@/featured/prices/api/get-prices';
 import { RequestPackagePopup } from '@/featured/request-package-popup/ui/RequestPackagePopup';
 import { ThanksPopup } from '@/featured/thanks-popup/ui/ThanksPopup';
+
+export const metadata: Metadata = {
+  title: 'Dreamart 3D Pricing | Affordable Packages for 3D Models, Animations, and More',
+  description:
+    'Discover our competitive pricing for 3D modeling, animation creation, UI/UX design, and video production. We offer flexible packages to suit your project needs.',
+  openGraph: {
+    title: 'Dreamart 3D Pricing | Affordable Packages for 3D Models, Animations, and More',
+    description:
+      'Discover our competitive pricing for 3D modeling, animation creation, UI/UX design, and video production. We offer flexible packages to suit your project needs.',
+    images: 'https://dreamart3d.com/images/meta.png',
+  },
+};
 
 export default async function PricesPage() {
   const categories = await getPricingCategories();

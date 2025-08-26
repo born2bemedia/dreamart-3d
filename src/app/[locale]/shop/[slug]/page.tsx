@@ -1,17 +1,57 @@
+import type { Metadata } from 'next';
+
 import { SERVER_URL } from '@/shared/config/env';
 
 import { ProductsList, ShopHero } from '../components';
 
 import { getCategoryBySlug, getProducts } from '@/featured/products/api/products';
 
-export default async function ShopPage({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{
+    slug: string;
+    locale: string;
+  }>;
+}): Promise<Metadata> {
+  const { slug, locale } = await params;
+  const data = await getCategoryBySlug(slug, locale);
+
+  return {
+    title:
+      data?.seo_title ?? 'Dreamart 3D Shop | Unique 3D Models for Printing, Animation, and More',
+    description:
+      data?.seo_description ??
+      'Welcome to Dreamart 3D, where we turn your creative ideas into reality! Explore our 3D models, animations, and UI/UX design solutions designed to make your projects stand out.',
+    openGraph: {
+      title:
+        data?.seo_title ?? 'Dreamart 3D Shop | Unique 3D Models for Printing, Animation, and More',
+      description:
+        data?.seo_description ??
+        'Welcome to Dreamart 3D, where we turn your creative ideas into reality! Explore our 3D models, animations, and UI/UX design solutions designed to make your projects stand out.',
+      images: 'https://dreamart3d.com/images/meta.png',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title:
+        data?.seo_title ?? 'Dreamart 3D Shop | Unique 3D Models for Printing, Animation, and More',
+      description:
+        data?.seo_description ??
+        'Welcome to Dreamart 3D, where we turn your creative ideas into reality! Explore our 3D models, animations, and UI/UX design solutions designed to make your projects stand out.',
+      images: 'https://dreamart3d.com/images/meta.png',
+    },
+  };
+}
+
+export default async function ShopPage({
+  params,
+}: {
+  params: Promise<{ slug: string; locale: string }>;
+}) {
   const awaitedParams = await params;
-  const { slug } = awaitedParams;
-  console.log('slug', slug);
-  const category = await getCategoryBySlug(slug);
-  console.log('category', category);
+  const { slug, locale } = awaitedParams;
+  const category = await getCategoryBySlug(slug, locale);
   const products = await getProducts(category?.id || '');
-  console.log('products', products);
 
   return (
     <>

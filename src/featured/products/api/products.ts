@@ -4,8 +4,11 @@ import type { Product, ProductCategory } from '../model/types';
 
 console.log('SERVER_URL', SERVER_URL);
 
-export const getCategoryBySlug = async (slug: string): Promise<ProductCategory | null> => {
-  const url = `${SERVER_URL}/api/categories?where[slug][in]=${slug}`;
+export const getCategoryBySlug = async (
+  slug: string,
+  locale: string
+): Promise<ProductCategory | null> => {
+  const url = `${SERVER_URL}/api/categories?where[slug][in]=${slug}&locale=${locale}`;
   const res = await fetch(url);
   const data = await res.json();
   return data.docs[0] || null;

@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google';
 
+import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { Toaster } from 'sonner';
@@ -42,6 +43,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
+      <GoogleAnalytics gaId="G-YSJ62HG0CB" />
       <body className={inter.variable}>
         <NextIntlClientProvider>
           <WishlistProvider>

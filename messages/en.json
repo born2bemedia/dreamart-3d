@@ -816,5 +816,20 @@
       "2": "UI/UX Design Guru",
       "3": "Video Production Hero"
     }
+  },
+  "forgotPassword": {
+    "title": "Oops, Forgot Your Password?",
+    "description": "No problem! Just enter your username or email below, and we’ll send you a link to reset it faster than a 3D model loads!",
+    "email": "Email",
+    "sending": "Sending...",
+    "resetPassword": "Reset Your Password",
+    "success": "Password reset link sent to your email"
+  },
+  "changePassword": {
+    "title": "Change Your Password",
+    "description": "Enter your new password below to change your password.",
+    "newPassword": "New Password",
+    "changePassword": "Change Password",
+    "success": "Password changed successfully"
   }
 }

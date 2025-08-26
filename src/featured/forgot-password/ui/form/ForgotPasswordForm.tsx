@@ -1,6 +1,7 @@
 'use client';
 
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useTranslations } from 'next-intl';
 import { useForm } from 'react-hook-form';
 
 import { notifySuccess, notifyWarning } from '@/shared/lib/utils/notify';
@@ -12,6 +13,8 @@ import { forgotPasswordSchema } from '../../model/forgot-pass.schema';
 import st from './ForgotPasswordForm.module.scss';
 
 export const ForgotPasswordForm = () => {
+  const t = useTranslations('forgotPassword');
+
   const {
     reset,
     register,
@@ -28,7 +31,7 @@ export const ForgotPasswordForm = () => {
     const res = await sendForgotRequest(data.email);
 
     if (res.message === 'Success') {
-      notifySuccess('Password reset link sent');
+      notifySuccess(t('success', { fallback: 'Password reset link sent' }));
       reset();
     } else {
       notifyWarning(`${res.errors.map((e: { message: string }) => e.message).join(' ')}`);
@@ -38,15 +41,23 @@ export const ForgotPasswordForm = () => {
   return (
     <form onSubmit={onSubmit} className={st.layout}>
       <section className={st.content}>
-        <h1>Oops, Forgot Your Password?</h1>
+        <h1>{t('title', { fallback: 'Oops, Forgot Your Password?' })}</h1>
         <p>
-          No problem! Just enter your username or email below, and we’ll send you a link to reset it
-          faster than a 3D model loads!
+          {t('description', {
+            fallback:
+              'No problem! Just enter your username or email below, and we’ll send you a link to reset it faster than a 3D model loads!',
+          })}
         </p>
       </section>
-      <TextField placeholder="Email" hint={errors.email?.message} {...register('email')} />
+      <TextField
+        placeholder={t('email', { fallback: 'Email' })}
+        hint={errors.email?.message}
+        {...register('email')}
+      />
       <Btn type="submit" fullWidth disabled={isSubmitting}>
-        {isSubmitting ? 'Sending...' : 'Reset Your Password'}
+        {isSubmitting
+          ? t('sending', { fallback: 'Sending...' })
+          : t('resetPassword', { fallback: 'Reset Your Password' })}
       </Btn>
     </form>
   );

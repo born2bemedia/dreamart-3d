@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl';
 
 import { fadeInUp } from '@/shared/lib/helpers/animations';
 import { ChevronRight } from '@/shared/ui/icons/chevron-right/chevron-right';
-import { Button, Label, Text, Title } from '@/shared/ui/kit';
+import { Button, Label, Text } from '@/shared/ui/kit';
 
 import styles from './WhyChoose.module.scss';
 
@@ -100,20 +100,15 @@ export const WhyChoose = () => {
             className={styles.left}
           >
             <div className={styles.top}>
-              <Title
-                title={
-                  <>
-                    {t('title.0', {
-                      fallback: 'Why Choose',
-                    })}
-                    <br />
-                    {t('title.1', {
-                      fallback: 'Dreamart 3D?',
-                    })}
-                  </>
-                }
-                className={'alignLeft'}
-              />
+              <h2 className={styles.title}>
+                {t('title.0', {
+                  fallback: 'Why Choose',
+                })}
+                <br />
+                {t('title.1', {
+                  fallback: 'Dreamart 3D?',
+                })}
+              </h2>
               <Label
                 text={t('label', {
                   fallback: 'We’re Not Just a 3D Studio — We’re Your Creative Powerhouse',

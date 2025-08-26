@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl';
 
 import { fadeInUp } from '@/shared/lib/helpers/animations';
 import { BackIcon } from '@/shared/ui/icons/back';
-import { Label, Text, Title } from '@/shared/ui/kit';
+import { Label, Text } from '@/shared/ui/kit';
 
 import styles from './ShopHero.module.scss';
 
@@ -44,7 +44,7 @@ export const ShopHero = ({
             </Link>
           )}
           <Label text={label} />
-          <Title title={title} tag="h1" className={'alignLeft'} />
+          <h1 className={styles.title}>{title}</h1>
           <Text text={description} className={'alignLeft'} />
         </motion.div>
       </div>

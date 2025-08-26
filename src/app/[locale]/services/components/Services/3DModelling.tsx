@@ -40,7 +40,7 @@ export const ThreeDModelling = () => {
         <div className={st.serviceHero__header}>
           <h2 className={st.serviceHero__title}>{t('title', { fallback: '3D Modelling' })}</h2>
           <Tag className={st.serviceHero__tag} variant="solid">
-            {t('tag', { fallback: 'Your Ideas, Now in 3D' })}
+            {t('tag', { fallback: 'Your Blueprint, Now in 3D' })}
           </Tag>
         </div>
         <p className={st.serviceHero__desc}>

@@ -1,5 +1,20 @@
 @use '@/shared/lib/styles/mixin.scss' as *;
 
+.title {
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  @include tablet {
+    font-size: 42px;
+    br {
+      display: none;
+    }
+  }
+}
+
 .thanksPopupWrapper {
   position: fixed;
   top: 0;
@@ -54,7 +69,8 @@
         }
       }
     }
-    a, button {
+    a,
+    button {
       box-sizing: border-box;
       width: 100%;
     }

@@ -60,7 +60,7 @@ export const FeaturedCategories = ({ category }: { category: ProductCategory }) 
 
         <div className={styles.featuredCategory__bottom}>
           <Button
-            text={t('viewAll', { fallback: 'See All Our 3D Wonders' })}
+            text={t('viewAll', { fallback: 'Explore' })}
             type="link"
             href={`/shop/${category.slug}`}
           />

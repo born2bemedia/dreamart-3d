@@ -6,7 +6,8 @@
   },
   "letsCreate": {
     "title": "Let’s Create Something Epic Together",
-    "description": "Starting a new project or looking to elevate an existing one, we’re here to help. Let’s turn your vision into a masterpiece."
+    "description": "Starting a new project or looking to elevate an existing one, we’re here to help. Let’s turn your vision into a masterpiece.",
+    "submit": "Start the Project Today"
   },
   "ourSolutions": {
     "title": "Our Solutions",
@@ -61,7 +62,8 @@
     "socialsTitle": "Stay Social",
     "socialsDescription": "We’re always creating, and we want you to be part of it! Follow us on social media for the latest on our projects, industry trends, and some serious creative inspo. Get involved, stay updated, and let’s start something amazing!",
     "title2": "Ready to Make Some Magic Happen?",
-    "description2": "Got a project waiting to be brought to life? Or maybe you’re just craving to start something new and exciting? We’ve got you covered! Let’s team up and turn your ideas into digital masterpieces that’ll leave a lasting impression."
+    "description2": "Got a project waiting to be brought to life? Or maybe you’re just craving to start something new and exciting? We’ve got you covered! Let’s team up and turn your ideas into digital masterpieces that’ll leave a lasting impression.",
+    "submit": "Start the Project Today"
   },
   "cookiePolicy": {
     "contactTitle": "Contact Information",
@@ -151,7 +153,7 @@
     "whatMakesUsDifferent": {
       "title": "What Makes Us Different",
       "text": "We think differently. We push limits. We’re not afraid to get weird with it (in the best way possible). Our quirky approach to design and animation is what sets us apart from the sea of generic agencies. We see potential in every project and find fun in every challenge.",
-      "tag": "We’re a Little Unconventional, and That’s Our Superpower”"
+      "tag": "We’re a Little Unconventional, and That’s Our Superpower"
     }
   },
   "priceList": {
@@ -307,7 +309,7 @@
     "website": "Website"
   },
   "featuredCategory": {
-    "viewAll": "See All Our 3D Wonders"
+    "viewAll": "Explore"
   },
   "quoteRequestForm": {
     "yourInfo": "Your Info",
@@ -394,6 +396,7 @@
     "readMore": "Read more"
   },
   "footer": {
+    "shop": "Shop",
     "cultureTitle": "Culture",
     "culture1": "Work",
     "culture2": "Impact",
@@ -508,7 +511,7 @@
     },
     "3DModelling": {
       "title": "3D Modelling",
-      "tag": "Your Ideas, Now in 3D",
+      "tag": "Your Blueprint, Now in 3D",
       "description": "Our 3D models aren’t just cool — they’re print-ready, detailed, and ready to be awesome. From prototypes to figurines, we bring your wildest ideas to life with precision and style. Whether you need a super sleek vase or a custom action figure, we’ve got the modelling skills to make it happen.",
       "servicesWeOffer": "Services We Offer",
       "exploreTitle": "Explore Our 3D Models",
@@ -689,7 +692,7 @@
         "0": "Join Our Dream Team:",
         "1": "Where Creativity Meets Fun"
       },
-      "description": "Welcome to Dreamart 3D — the place where ideas turn into tangible reality, imagination is our superpower, and creativity is our secret weapon. We don’t just create 3D models, animations, and designs — we craft experiences that make your brand unforgettable."
+      "description": "We’re not your typical agency — we’re a creative powerhouse that thrives on innovation, collaboration, and a little bit of chaos (in the best way possible). If you love pushing the boundaries of what’s possible in the world of 3D modelling, animation, UI/UX design, and video production, then we want YOU on our team!"
     },
     "perks": {
       "title": {
@@ -840,5 +843,23 @@
     },
     "decline": "Decline",
     "accept": "Accept"
+  },
+  "trendsCta": {
+    "theRiseOf3dPrintingWhatsNext": {
+      "title": "Ready to bring your 3D projects to life?",
+      "btn": "Explore Our 3D Models in the Shop"
+    },
+    "uiuxDesignTrendsMakingDigitalSpacesMoreHuman": {
+      "title": "Are you ready to create a design experience that's as unique as your users?",
+      "btn": "Explore Our UI/UX Design Solutions"
+    },
+    "animationsIn2025WhatsHotAndWhatsNot": {
+      "title": "Ready to bring your animation ideas to life?",
+      "btn": "Ready to bring your animation ideas to life?"
+    },
+    "videoContentIn2025InteractiveImmersiveAndEverywhere": {
+      "title": "Ready to create video content that stands out in 2025?",
+      "btn": "Explore Our Video Production Packages"
+    }
   }
 }

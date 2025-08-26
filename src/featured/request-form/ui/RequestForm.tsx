@@ -15,7 +15,7 @@ import styles from './RequestForm.module.scss';
 
 import { useThanksPopupStore } from '@/featured/thanks-popup/store/store';
 
-export const RequestForm = () => {
+export const RequestForm = ({ submitLabel }: { submitLabel?: string }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const t = useTranslations('requestForm');
@@ -117,9 +117,10 @@ export const RequestForm = () => {
           ? t('loading', {
               fallback: 'Loading...',
             })
-          : t('submit', {
+          : (submitLabel ??
+            t('submit', {
               fallback: 'Grab the Offer Before It Vanishes',
-            })}
+            }))}
       </button>
 
       <div className={styles.respect}>

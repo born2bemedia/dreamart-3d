@@ -40,7 +40,7 @@ export const Hero = () => {
           >
             {t('description', {
               fallback:
-                'Welcome to Dreamart 3D — the place where ideas turn into tangible reality, imagination is our superpower, and creativity is our secret weapon. We don’t just create 3D models, animations, and designs — we craft experiences that make your brand unforgettable.',
+                'We’re not your typical agency — we’re a creative powerhouse that thrives on innovation, collaboration, and a little bit of chaos (in the best way possible). If you love pushing the boundaries of what’s possible in the world of 3D modelling, animation, UI/UX design, and video production, then we want YOU on our team!',
             })}
           </motion.p>
         </div>

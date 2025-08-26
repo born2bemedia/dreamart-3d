@@ -17,8 +17,7 @@ const getCard = (t: ReturnType<typeof useTranslations>) => [
     tag: (
       <>
         {t('cards.0.tag.0', { fallback: 'Understanding Your Needs' })}
-        <br />
-        {t('cards.0.tag.1', { fallback: 'And Your Users’ Needs Too' })}
+        <br />({t('cards.0.tag.1', { fallback: 'And Your Users’ Needs Too' })})
       </>
     ),
     desc: t('cards.0.desc', {

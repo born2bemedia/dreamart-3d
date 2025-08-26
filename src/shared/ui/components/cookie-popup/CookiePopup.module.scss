@@ -1,0 +1,108 @@
+.cookiePopup {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  width: 350px;
+  padding: 32px;
+  z-index: 1000;
+  border-radius: 24px;
+  border: 1px solid #24252a;
+  background: #1a1b1e;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.05);
+  display: none;
+  max-width: 100%;
+
+  @media (max-width: 992px) {
+    padding: 40px 20px;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+  }
+
+  &.visible {
+    display: block;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 12px;
+  }
+
+  p {
+    color: #717173;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    a {
+      color: #717173;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-skip-ink: auto;
+      text-decoration-thickness: auto;
+      text-underline-offset: auto;
+      text-underline-position: from-font;
+    }
+  }
+
+  .buttons {
+    margin-top: 16px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    @media (max-width: 992px) {
+      gap: 16px;
+    }
+
+    button {
+      width: calc(50% - 12px);
+      cursor: pointer;
+      font-size: 14px;
+      padding: 12px 12px;
+      @media (max-width: 992px) {
+        width: calc(50% - 8px);
+      }
+      &.decline {
+        border-radius: 24px;
+        background: #292a2d;
+        padding: 16px 24px;
+        color: #717173;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: #292a2d;
+        }
+      }
+
+      &.accept {
+        border-radius: 24px;
+        background: #2583ff;
+        padding: 16px 24px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: #1e74e0;
+        }
+      }
+    }
+  }
+}

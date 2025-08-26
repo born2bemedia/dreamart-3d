@@ -831,5 +831,14 @@
     "newPassword": "New Password",
     "changePassword": "Change Password",
     "success": "Password changed successfully"
+  },
+  "cookiePopup": {
+    "title": "Cookie settings",
+    "text": {
+      "0": "Cookies help us improve our website. By clicking 'Accept' you agree to our use of cookies for functionality, analytics, and personalized content. Learn more in our",
+      "1": "Cookie Policy"
+    },
+    "decline": "Decline",
+    "accept": "Accept"
   }
 }

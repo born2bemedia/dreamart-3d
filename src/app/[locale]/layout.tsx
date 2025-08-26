@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { Toaster } from 'sonner';
 
 import { Footer, Header, Preloader } from '@/shared/ui/components';
+import { CookiePopup } from '@/shared/ui/components/cookie-popup';
 import { LenisScrollProvider } from '@/shared/ui/kit';
 
 import '@/shared/lib/styles/null.scss';
@@ -55,6 +56,7 @@ export default async function RootLayout({
             <ThanksPopup />
             <Toaster />
             <Preloader />
+            <CookiePopup />
           </WishlistProvider>
         </NextIntlClientProvider>
       </body>

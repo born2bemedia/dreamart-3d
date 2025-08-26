@@ -45,7 +45,11 @@ export const LetsCreate = () => {
             viewport={{ once: true }}
             className={styles.right}
           >
-            <RequestForm />
+            <RequestForm
+              submitLabel={t('submit', {
+                fallback: 'Start the Project Today',
+              })}
+            />
           </motion.div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { useLenis } from 'lenis/react';
 import { useTranslations } from 'next-intl';
 
-import { Button, Text, Title } from '@/shared/ui/kit';
+import { Button, Text } from '@/shared/ui/kit';
 
 import { useThanksPopupStore } from '../store/store';
 import styles from './ThanksPopup.module.scss';
@@ -31,16 +31,11 @@ export const ThanksPopup = () => {
       <div className={styles.overlay} onClick={() => setIsOpen(false)} />
       <div className={styles.thanksPopup}>
         <Image src="/images/thanks.svg" alt="thanks-popup" width={64} height={64} />
-        <Title
-          tag="h3"
-          title={
-            <>
-              {t('title.0', { fallback: 'Your Creative' })}
-              <br />
-              {t('title.1', { fallback: 'Journey Begins Here!' })}
-            </>
-          }
-        />
+        <h3 className={styles.title}>
+          {t('title.0', { fallback: 'Your Creative' })}
+          <br />
+          {t('title.1', { fallback: 'Journey Begins Here!' })}
+        </h3>
         <Text
           text={t('description', {
             fallback:

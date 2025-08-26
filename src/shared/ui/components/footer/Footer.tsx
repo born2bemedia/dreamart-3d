@@ -52,6 +52,11 @@ export const Footer = () => {
                 })}
               </h3>
               <nav>
+                <Link href="/shop" className={styles.link}>
+                  {t('shop', {
+                    fallback: 'Shop',
+                  })}
+                </Link>
                 <Link href="/services" className={styles.link}>
                   {t('offers1', {
                     fallback: 'Services',

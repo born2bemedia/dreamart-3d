@@ -1,47 +1,54 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
-export const Preloader: React.FC = () => {
+import { cn } from '@/shared/lib/utils/cn';
+
+import st from './Preloader.module.scss';
+
+export const Preloader = () => {
   const pathname = usePathname();
-  const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [isVisible, setIsVisible] = useState<boolean>(true);
+
+  const [isLoading, setIsLoading] = useState(true);
+  const [isVisible, setIsVisible] = useState(true);
+  const [isHidden, setIsHidden] = useState(false);
 
   useEffect(() => {
     setIsLoading(true);
     setIsVisible(true);
+    setIsHidden(false);
 
     const timer = setTimeout(() => {
       setIsLoading(false);
-      setTimeout(() => setIsVisible(false), 200);
-    }, 1000);
+      setTimeout(() => {
+        setIsVisible(false);
+        setTimeout(() => setIsHidden(true), 500);
+      }, 1500);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, [pathname]);
 
-  if (!isVisible) return null;
+  if (isHidden) return null;
 
   return (
     <div
-      style={{
-        position: 'fixed',
-        color: '#ffffff',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        backgroundColor: '#0c0c0c',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        zIndex: 99999,
-        opacity: isLoading ? 1 : 0,
-        transition: 'opacity 0.5s ease',
-        visibility: isVisible ? 'visible' : 'hidden',
-      }}
+      className={cn(st.preloader, isLoading ? st.loading : st.notLoading, !isVisible && st.hidden)}
     >
-      <Image src="/images/preloader.gif" alt="preloader" width={150} height={150} quality={100} />
+      <Image
+        src="/preloader.gif"
+        alt="preloader"
+        width={200}
+        height={200}
+        className={cn(
+          st.image,
+          isLoading ? st.imageLoading : st.imageNotLoading,
+          !isVisible && st.imageHidden
+        )}
+        unoptimized
+      />
     </div>
   );
 };

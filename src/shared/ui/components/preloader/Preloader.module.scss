@@ -1,0 +1,45 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #121316;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.loading {
+  visibility: visible;
+  opacity: 1;
+}
+
+.notLoading {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.hidden {
+  transform: translateY(100%);
+}
+
+.image {
+  transition: all 0.5s ease-in-out;
+}
+
+.imageLoading {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.imageNotLoading {
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+.imageHidden {
+  transform: translateY(-100%);
+}

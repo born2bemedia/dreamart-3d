@@ -1,5 +1,12 @@
 @use '@/shared/lib/styles/mixin.scss' as *;
 
+.link {
+  transition: all 0.3s ease;
+  &:hover {
+    color: #fff;
+  }
+}
+
 .footer {
   border-top: 1px solid #1a1b1e;
   background: #121316;

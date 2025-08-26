@@ -18,7 +18,7 @@ import { removeFromWishlist } from '@/featured/wishlist/api/remove-from-wishlist
 import { useWishlistStore } from '@/featured/wishlist/model/wishlist.store';
 
 export const ProductCard = ({ id, title, image, excerpt, price, category, slug }: Product) => {
-  const { addToCart, setTotal, total } = useCartStore();
+  const { addToCart, setTotal, total, setIsCartFilled } = useCartStore();
 
   const { wishlist, setWishlist } = useWishlistStore();
 
@@ -36,6 +36,7 @@ export const ProductCard = ({ id, title, image, excerpt, price, category, slug }
       subtotal: price,
     });
     setTotal(total + price);
+    setIsCartFilled(true);
   };
 
   const addToWishlistHandle = (item: Product) => {

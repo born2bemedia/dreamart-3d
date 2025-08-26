@@ -15,12 +15,18 @@ type CartStore = {
   setTotal: (total: number) => void;
   decrementQuantity: (id: string) => void;
   incrementQuantity: (id: string) => void;
+  isCartFilled: boolean;
+  setIsCartFilled: (isCartFilled: boolean) => void;
 };
 
 export const useCartStore = create<CartStore>((set, get) => {
   return {
     cart: typeof window !== 'undefined' ? JSON.parse(localStorage.getItem('cart') || '[]') : [],
     total: typeof window !== 'undefined' ? JSON.parse(localStorage.getItem('total') || '0') : 0,
+    isCartFilled: false,
+    setIsCartFilled: (isCartFilled: boolean) => {
+      set({ isCartFilled });
+    },
     addToCart: (item: CartItem) => {
       const cart = get().cart;
       const existingItem = cart.find((cartItem) => cartItem.id === item.id);

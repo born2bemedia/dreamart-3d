@@ -17,7 +17,7 @@ export const AddToCart = ({
   image: string;
   button_text: string;
 }) => {
-  const { addToCart, setTotal, total } = useCartStore();
+  const { addToCart, setTotal, total, setIsCartFilled } = useCartStore();
 
   const handleAddToCart = () => {
     addToCart({
@@ -29,6 +29,7 @@ export const AddToCart = ({
       subtotal: price,
     });
     setTotal(total + price);
+    setIsCartFilled(true);
   };
 
   return <Button text={button_text} type="button" onClick={handleAddToCart} />;

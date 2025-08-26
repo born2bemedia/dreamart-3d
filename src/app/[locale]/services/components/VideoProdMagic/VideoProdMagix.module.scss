@@ -31,6 +31,7 @@
   flex-direction: column;
   gap: 16px;
   padding: 24px;
+  width: 50%;
 
   h3 {
     color: #fff;
@@ -46,6 +47,10 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+  }
+
+  @include tablet {
+    width: 100%;
   }
 }
 

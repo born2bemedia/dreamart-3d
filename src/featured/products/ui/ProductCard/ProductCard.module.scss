@@ -15,7 +15,10 @@
   align-items: center;
   gap: 24px;
   border-right: 1px solid #1a1b1e;
-  background: #141518;
+  transition: all 0.3s ease;
+  &:hover {
+    background: #141518;
+  }
   @include tablet {
     padding: 16px;
   }
@@ -62,6 +65,11 @@
       gap: 10px;
       border-radius: 24px;
       background: #2583ff;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: #1965c8;
+      }
     }
   }
 }

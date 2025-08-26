@@ -92,6 +92,7 @@ export const ThreeDModelling = () => {
           label: t('hotDealsButton', { fallback: 'Claim Your Deal Now!' }),
           href: '/deals',
         }}
+        reverse
       />
       <ReadyTo
         title={t('readyToTitle', { fallback: 'Got a wild 3D idea?' })}

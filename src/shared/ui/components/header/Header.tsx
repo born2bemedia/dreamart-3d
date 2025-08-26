@@ -9,13 +9,14 @@ import { useLenis } from 'lenis/react';
 import { useTranslations } from 'next-intl';
 
 import { cookies } from '@/shared/lib/utils/cookie';
-import { BurgerMenu, Cart, Facebook, Instagram, X } from '@/shared/ui/icons';
+import { BurgerMenu, Cart, Facebook, FilledCartIcon, Instagram, X } from '@/shared/ui/icons';
 
 import { LangSwitcher } from '../lang-switcher/LangSwitcher';
 import styles from './Header.module.scss';
 
 import { useUserStore } from '@/core/user/model/user.store';
 import { UserBadge } from '@/core/user/ui/user-badge';
+import { useCartStore } from '@/featured/cart/model/store';
 
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -47,6 +48,8 @@ export const Header = () => {
     }
   }, [isMobileMenuOpen, lenis]);
 
+  const { isCartFilled } = useCartStore();
+
   return (
     <>
       <header className={styles.header}>
@@ -66,8 +69,12 @@ export const Header = () => {
                   </Link>
                 </div>
                 <div className={styles.contacts}>
-                  <Link href="mailto:example@gmail.com">example@gmail.com</Link>
-                  <Link href="tel:+1 000 000 000">+1 000 000 000</Link>
+                  <Link href="mailto:example@gmail.com" className={styles.link}>
+                    example@gmail.com
+                  </Link>
+                  <Link href="tel:+1 000 000 000" className={styles.link}>
+                    +1 000 000 000
+                  </Link>
                   <LangSwitcher />
                 </div>
               </div>
@@ -81,20 +88,40 @@ export const Header = () => {
                 <Image src="/images/logo.svg" alt="DreamArt 3D" width={125} height={24} />
               </Link>
               <nav className={styles.nav}>
-                <Link href="/">{t('home', { fallback: 'Home' })}</Link>
-                <Link href="/shop">{t('shop', { fallback: 'Shop' })}</Link>
-                <Link href="/work">{t('work', { fallback: 'Work' })}</Link>
-                <Link href="/services">{t('services', { fallback: 'Services' })}</Link>
-                <Link href="/impact">{t('impact', { fallback: 'Impact' })}</Link>
-                <Link href="/prices">{t('prices', { fallback: 'Prices' })}</Link>
-                <Link href="/deals">{t('deals', { fallback: 'Deals' })}</Link>
-                <Link href="/trends">{t('trends', { fallback: 'Trends' })}</Link>
-                <Link href="/careers">{t('careers', { fallback: 'Careers' })}</Link>
-                <Link href="/contacts">{t('contacts', { fallback: 'Contacts' })}</Link>
+                <Link href="/" className={styles.link}>
+                  {t('home', { fallback: 'Home' })}
+                </Link>
+                <Link href="/shop" className={styles.link}>
+                  {t('shop', { fallback: 'Shop' })}
+                </Link>
+                <Link href="/work" className={styles.link}>
+                  {t('work', { fallback: 'Work' })}
+                </Link>
+                <Link href="/services" className={styles.link}>
+                  {t('services', { fallback: 'Services' })}
+                </Link>
+                <Link href="/impact" className={styles.link}>
+                  {t('impact', { fallback: 'Impact' })}
+                </Link>
+                <Link href="/prices" className={styles.link}>
+                  {t('prices', { fallback: 'Prices' })}
+                </Link>
+                <Link href="/deals" className={styles.link}>
+                  {t('deals', { fallback: 'Deals' })}
+                </Link>
+                <Link href="/trends" className={styles.link}>
+                  {t('trends', { fallback: 'Trends' })}
+                </Link>
+                <Link href="/careers" className={styles.link}>
+                  {t('careers', { fallback: 'Careers' })}
+                </Link>
+                <Link href="/contacts" className={styles.link}>
+                  {t('contacts', { fallback: 'Contacts' })}
+                </Link>
               </nav>
               <div className={styles.actions}>
                 <Link href="/cart" className={styles.cart}>
-                  <Cart />
+                  {isCartFilled ? <FilledCartIcon /> : <Cart />}
                 </Link>
                 {user ? (
                   <span className={styles.badgeWrapper}>

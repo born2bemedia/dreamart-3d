@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import type { ReactNode } from 'react';
 
 import { fadeInUp } from '@/shared/lib/helpers/animations';
-import { Button, Text, Title } from '@/shared/ui/kit';
+import { Button, Text } from '@/shared/ui/kit';
 
 import styles from './ReadyTo.module.scss';
 
@@ -35,7 +35,7 @@ export const ReadyTo = ({
           className={styles.readyToStart__video}
         />
         <div className={styles.readyToStart__overlay} />
-        <Title title={title} />
+        <h2 className={styles.title}>{title}</h2>
         <Text text={text} />
         <Button text={metaButton.label} type="link" href={metaButton.href} />
       </motion.div>

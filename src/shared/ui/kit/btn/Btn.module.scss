@@ -9,14 +9,23 @@
   line-height: normal;
   width: max-content;
   gap: 8px;
+  transition: all 0.3s ease;
 }
 
 .primary {
   background: #2583ff;
+
+  &:hover {
+    background: #1965c8;
+  }
 }
 
 .secondary {
   background: #292a2d;
+
+  &:hover {
+    background: #323336;
+  }
 }
 
 .mdSize {

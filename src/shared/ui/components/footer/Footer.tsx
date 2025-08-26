@@ -28,17 +28,17 @@ export const Footer = () => {
                 })}
               </h3>
               <nav>
-                <Link href="/work">
+                <Link href="/work" className={styles.link}>
                   {t('culture1', {
                     fallback: 'Work',
                   })}
                 </Link>
-                <Link href="/impact">
+                <Link href="/impact" className={styles.link}>
                   {t('culture2', {
                     fallback: 'Impact',
                   })}
                 </Link>
-                <Link href="/careers">
+                <Link href="/careers" className={styles.link}>
                   {t('culture3', {
                     fallback: 'Careers',
                   })}
@@ -52,17 +52,17 @@ export const Footer = () => {
                 })}
               </h3>
               <nav>
-                <Link href="/services">
+                <Link href="/services" className={styles.link}>
                   {t('offers1', {
                     fallback: 'Services',
                   })}
                 </Link>
-                <Link href="/prices">
+                <Link href="/prices" className={styles.link}>
                   {t('offers2', {
                     fallback: 'Prices',
                   })}
                 </Link>
-                <Link href="/deals">
+                <Link href="/deals" className={styles.link}>
                   {t('offers3', {
                     fallback: 'Deals',
                   })}
@@ -76,12 +76,12 @@ export const Footer = () => {
                 })}
               </h3>
               <nav>
-                <Link href="/trends">
+                <Link href="/trends" className={styles.link}>
                   {t('connect1', {
                     fallback: 'Trends',
                   })}
                 </Link>
-                <Link href="/contacts">
+                <Link href="/contacts" className={styles.link}>
                   {t('connect2', {
                     fallback: 'Contacts',
                   })}
@@ -95,29 +95,29 @@ export const Footer = () => {
                 })}
               </h3>
               <nav>
-                <Link href="/terms-of-use">
+                <Link href="/terms-of-use" className={styles.link}>
                   {t('regulations1', {
                     fallback: 'Terms of Use',
                   })}
                 </Link>
-                <Link href="/privacy-policy">
+                <Link href="/privacy-policy" className={styles.link}>
                   {t('regulations2', {
                     fallback: 'Privacy Policy',
                   })}
                 </Link>
-                <Link href="/cookie-policy">
+                <Link href="/cookie-policy" className={styles.link}>
                   {t('regulations3', {
                     fallback: 'Cookie Policy',
                   })}
                 </Link>
-                <Link href="/refund-policy">
+                <Link href="/refund-policy" className={styles.link}>
                   {t('regulations4', {
                     fallback: 'Refund Policy',
                   })}
                 </Link>
               </nav>
             </div>
-            <div>
+            {/* <div>
               <h3>
                 {t('infoTitle', {
                   fallback: 'Info',
@@ -149,13 +149,17 @@ export const Footer = () => {
                   </p>
                 </div>
                 <div>
-                  <Link href="mailto:example@gmail.com">example@gmail.com</Link>
+                  <Link href="mailto:example@gmail.com" className={styles.link}>
+                    example@gmail.com
+                  </Link>
                 </div>
                 <div>
-                  <Link href="tel:+1 000 000 000">+1 000 000 000</Link>
+                  <Link href="tel:+1 000 000 000" className={styles.link}>
+                    +1 000 000 000
+                  </Link>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={styles.footer__bottom}>

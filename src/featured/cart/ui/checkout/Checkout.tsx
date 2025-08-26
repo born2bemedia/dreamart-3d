@@ -53,7 +53,9 @@ export const Checkout = () => {
         reset();
         setIsLoading(false);
         router.push('/thankyou');
-        clearCart();
+        setTimeout(() => {
+          clearCart();
+        }, 3000);
       }, 1000);
     } catch (error) {
       console.error(error);

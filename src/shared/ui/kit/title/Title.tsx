@@ -12,5 +12,10 @@ export const Title = ({
   tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 }) => {
   const Tag = tag;
-  return <Tag className={`${styles.title} ${styles[className as string]}`}>{title}</Tag>;
+  return (
+    <Tag
+      className={`${styles.title} ${styles[className as string]}`}
+      dangerouslySetInnerHTML={{ __html: title as string }}
+    />
+  );
 };

@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { Toaster } from 'sonner';
 
-import { Footer, Header } from '@/shared/ui/components';
+import { Footer, Header, Preloader } from '@/shared/ui/components';
 import { LenisScrollProvider } from '@/shared/ui/kit';
 
 import '@/shared/lib/styles/null.scss';
@@ -52,6 +52,7 @@ export default async function RootLayout({
             </LenisScrollProvider>
             <ThanksPopup />
             <Toaster />
+            <Preloader />
           </WishlistProvider>
         </NextIntlClientProvider>
       </body>

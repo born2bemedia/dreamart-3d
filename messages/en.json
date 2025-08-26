@@ -43,10 +43,13 @@
     "title2": "Customization",
     "description2": "Your vision, our designs. Everything we do is tailored to your needs.",
     "title3": "Quality",
-    "description3": "Your vision, our designs. Everything we do is tailored to your needs.",
+    "description3": "Only the best. If it’s not perfect, we don’t stop until it is.",
     "title4": "Creativity",
-    "description4": "Your vision, our designs. Everything we do is tailored to your needs.",
-    "title": "Why Choose <br/>Dreamart 3D?",
+    "description4": "Our work isn’t just functional — it’s an experience that wows.",
+    "title": {
+      "0": "Why Choose",
+      "1": "Dreamart 3D?"
+    },
     "label": "We’re Not Just a 3D Studio — We’re Your Creative Powerhouse",
     "description": "Our crew combines creativity, technology, and a touch of brilliance. We’re the team you call when you need more than just a 3D model or a pretty animation. You need a partner who can deliver stunning, high-quality content with a sprinkle of fun and creativity.",
     "button": "See How We Inspire"
@@ -87,8 +90,8 @@
         "text": "The mastermind behind those unforgettable videos that capture hearts and minds."
       },
       "tag": "aka the Digital Avengers",
-      "title": "About Dreamart",
-      "text": "We’re a quirky team of 3D artists, animators, designers, and tech enthusiasts who believe that creativity has no limits.",
+      "title": "The Dreamart 3D Team",
+      "text": "We’re a bunch of creative minds that love to collaborate and push boundaries. Meet the team that makes all this magic happen:",
       "button": "Want to Join the Fun?"
     },
     "byTheNumbers": {
@@ -158,7 +161,7 @@
     "button": "Download Full Price List"
   },
   "pricesHero": {
-    "title1": "Our Pricing: Choose Your <br/>Perfect Package",
+    "title1": "Choose Your <br/>Perfect Package",
     "description": "At Dreamart 3D, we offer flexible packages designed to fit your <br/>needs and budget. Whether you’re looking for animation, UI/UX <br/>design, or video production, we’ve got something for you. Here’s <br/>everything you get with each package!"
   },
   "prices": {
@@ -176,7 +179,10 @@
     "back": "Back"
   },
   "shop": {
-    "title": "3D Models That Make Your Ideas <br/>Walk, Talk, and Print",
+    "title": {
+      "0": "3D Models That Make Your Ideas",
+      "1": "Walk, Talk, and Print"
+    },
     "description": "Welcome to Dreamart 3D’s playground, where your wildest ideas go from “just a thought” to “look at that!” in a few clicks. From quirky home decor to iconic movie characters, our 3D models are designed to bring your creative visions to life without the complexity. Browse through our collection, pick your favorite, and let’s turn those brilliant ideas into tangible prints.",
     "label": "Who knew 3D printing could be this fun?"
   },
@@ -567,20 +573,26 @@
     },
     "design": {
       "services": {
-        "0": "Landing Page Design",
-        "1": "Responsive Web Design",
-        "2": "E-commerce UI Design",
-        "3": "Custom Icon Design",
-        "4": "App Interface Design",
-        "5": "Dashboard Design",
-        "6": "Brand Guidelines",
-        "7": "User Journey Mapping",
-        "8": "Interactive UI Elements",
-        "9": "Motion Design for UI",
-        "10": "User Interface Development",
-        "11": "User Engagement Strategy",
-        "12": "Information Architecture",
-        "13": "Multilingual Interface Design"
+        "0": "Website Design",
+        "1": "Mobile App Design",
+        "2": "User Flow & Wireframing",
+        "3": "Interactive Prototypes",
+        "4": "Usability Testing",
+        "5": "UI Kit Design",
+        "6": "Landing Page Design",
+        "7": "Responsive Web Design",
+        "8": "E-commerce UI Design",
+        "9": "Custom Icon Design",
+        "10": "App Interface Design",
+        "11": "Dashboard Design",
+        "12": "Brand Guidelines",
+        "13": "User Journey Mapping",
+        "14": "Interactive UI Elements",
+        "15": "Motion Design for UI",
+        "16": "User Interface Development",
+        "17": "User Engagement Strategy",
+        "18": "Information Architecture",
+        "19": "Multilingual Interface Design"
       },
       "title": "UI/UX Design",
       "tag": "Designs So Smooth, Users Will Want to Hang Around",

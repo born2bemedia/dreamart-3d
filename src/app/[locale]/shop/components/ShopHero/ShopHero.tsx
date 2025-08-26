@@ -18,7 +18,7 @@ export const ShopHero = ({
   label,
   back = false,
 }: {
-  title: string;
+  title: React.ReactNode;
   description: string;
   backgroundImage: string;
   label: string;

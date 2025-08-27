@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useTranslations } from 'next-intl';
+import ReCaptcha from 'react-google-recaptcha';
 import { Controller, useForm } from 'react-hook-form';
 
 import { useCountryCode } from '@/shared/lib/hooks/use-country';
@@ -16,8 +17,9 @@ import styles from './RequestForm.module.scss';
 import { useThanksPopupStore } from '@/featured/thanks-popup/store/store';
 
 export const RequestForm = ({ submitLabel }: { submitLabel?: string }) => {
-  const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [isReCaptchaVerified, setIsReCaptchaVerified] = useState(false);
+
   const t = useTranslations('requestForm');
   const { setIsOpen } = useThanksPopupStore();
 
@@ -28,24 +30,25 @@ export const RequestForm = ({ submitLabel }: { submitLabel?: string }) => {
     handleSubmit,
     reset,
     control,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm<RequestFormSchema>({
     resolver: zodResolver(requestFormSchema),
   });
 
   const onSubmit = async (data: RequestFormSchema) => {
     try {
-      setIsLoading(true);
       await sendContactForm(data);
-      console.log(data);
-      setTimeout(() => {
-        setIsSuccess(true);
-        reset();
-        setIsLoading(false);
-        setIsOpen(true);
-      }, 1000);
+      setIsSuccess(true);
+      setIsOpen(true);
+      reset();
     } catch (error) {
       console.error(error);
+    }
+  };
+
+  const onReCaptchaChange = (token: string | null) => {
+    if (token) {
+      setIsReCaptchaVerified(true);
     }
   };
 
@@ -112,8 +115,12 @@ export const RequestForm = ({ submitLabel }: { submitLabel?: string }) => {
         </label>
       </div>
 
-      <button type="submit" className={styles.submit}>
-        {isLoading
+      <button
+        type="submit"
+        className={styles.submit}
+        disabled={!isReCaptchaVerified || isSubmitting}
+      >
+        {isSubmitting
           ? t('loading', {
               fallback: 'Loading...',
             })
@@ -122,7 +129,10 @@ export const RequestForm = ({ submitLabel }: { submitLabel?: string }) => {
               fallback: 'Grab the Offer Before It Vanishes',
             }))}
       </button>
-
+      <ReCaptcha
+        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? ''}
+        onChange={onReCaptchaChange}
+      />
       <div className={styles.respect}>
         <Image src="/images/shield.svg" alt="respect" width={24} height={24} />
         <span

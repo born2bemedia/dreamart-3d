@@ -1,12 +1,9 @@
 'use client';
-import Image from 'next/image';
-import Link from 'next/link';
 
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 
 import { fadeInUp } from '@/shared/lib/helpers/animations';
-import { Facebook, Instagram, X } from '@/shared/ui/icons';
 import { Text, Title } from '@/shared/ui/kit';
 
 import styles from './GetInTouch.module.scss';
@@ -42,7 +39,8 @@ export const GetInTouch = () => {
                 className={'alignLeft'}
               />
             </div>
-            <div className={styles.details}>
+          </motion.div>
+          {/* <div className={styles.details}>
               <Title
                 title={t('detailsTitle', {
                   fallback: 'How to Reach Us',
@@ -83,8 +81,8 @@ export const GetInTouch = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className={styles.socials}>
+            </div> */}
+          {/* <div className={styles.socials}>
               <Title
                 title={t('socialsTitle', {
                   fallback: 'Stay Social',
@@ -111,7 +109,7 @@ export const GetInTouch = () => {
                 </Link>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
           <motion.div
             variants={fadeInUp}
             initial="hidden"

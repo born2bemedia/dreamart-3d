@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 
 import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { fadeInUp } from '@/shared/lib/helpers/animations';
 import { Button, Label, Text, Title } from '@/shared/ui/kit';
@@ -17,16 +17,16 @@ export const FeaturedCategories = ({ category }: { category: ProductCategory }) 
   const { title, description, subtitle } = category;
   const [products, setProducts] = useState<Product[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const locale = useLocale();
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const items = await getProducts(category.id);
+      const items = await getProducts(category.id, locale);
       setProducts(items);
       setIsLoading(false);
-      console.log('products', items);
     };
     fetchProducts();
-  }, [category.id]);
+  }, [category.id, locale]);
 
   return (
     <section className={styles.featuredCategory}>

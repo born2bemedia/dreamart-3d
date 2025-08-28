@@ -18,9 +18,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function ShopPage() {
+export default async function ShopPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = await getTranslations('shop');
-  const categories = await getProductCategories();
+  const categories = await getProductCategories(locale);
 
   return (
     <>

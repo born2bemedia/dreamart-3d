@@ -51,7 +51,7 @@ export default async function ShopPage({
   const awaitedParams = await params;
   const { slug, locale } = awaitedParams;
   const category = await getCategoryBySlug(slug, locale);
-  const products = await getProducts(category?.id || '');
+  const products = await getProducts(category?.id || '', locale);
 
   return (
     <>

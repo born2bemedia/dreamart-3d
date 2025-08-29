@@ -16,11 +16,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function DealsPage() {
+export default async function DealsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+
   return (
     <>
       <DealsHero />
-      <Deals />
+      <Deals locale={locale} />
     </>
   );
 }

@@ -4,8 +4,8 @@ import { SERVER_URL } from '@/shared/config/env';
 
 import type { PricingCategory, PricingItem } from '../model/types';
 
-export const getPricingCategories = async (): Promise<PricingCategory[]> => {
-  const res = await fetch(`${SERVER_URL}/api/pricing-categories`);
+export const getPricingCategories = async (locale: string): Promise<PricingCategory[]> => {
+  const res = await fetch(`${SERVER_URL}/api/pricing-categories?locale=${locale}`);
   const data = await res.json();
 
   const categories = data.docs.reverse();

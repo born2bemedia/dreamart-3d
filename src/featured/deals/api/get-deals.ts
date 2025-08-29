@@ -4,8 +4,10 @@ import { SERVER_URL } from '@/shared/config/env';
 
 import type { Deal } from '../model/types';
 
-export const getDeals = async (): Promise<Deal[]> => {
-  const res = await fetch(`${SERVER_URL}/api/products?populate=*&where[category.id][in]=6`);
+export const getDeals = async (locale: string): Promise<Deal[]> => {
+  const res = await fetch(
+    `${SERVER_URL}/api/products?populate=*&where[category.id][in]=6&locale=${locale}`
+  );
   const data = await res.json();
 
   const items = data.docs.reverse();

@@ -9,8 +9,8 @@ import { getDeals } from '../../api/get-deals';
 import { AddToCart } from '../AddToCart/AddToCart';
 import styles from './Deals.module.scss';
 
-export const Deals = async () => {
-  const deals = await getDeals();
+export const Deals = async ({ locale }: { locale: string }) => {
+  const deals = await getDeals(locale);
   const t = await getTranslations('deals');
 
   return (

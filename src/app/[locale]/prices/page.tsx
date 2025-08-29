@@ -18,8 +18,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function PricesPage() {
-  const categories = await getPricingCategories();
+export default async function PricesPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+
+  const categories = await getPricingCategories(locale);
 
   return (
     <>

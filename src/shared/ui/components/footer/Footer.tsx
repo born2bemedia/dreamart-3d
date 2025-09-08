@@ -122,14 +122,14 @@ export const Footer = () => {
                 </Link>
               </nav>
             </div>
-            {/* <div>
+            <div>
               <h3>
                 {t('infoTitle', {
                   fallback: 'Info',
                 })}
               </h3>
               <div className={styles.info}>
-                <div>
+                {/* <div>
                   <span>
                     {t('infoOfficeTitle', {
                       fallback: 'Office address:',
@@ -152,19 +152,19 @@ export const Footer = () => {
                       fallback: 'address',
                     })}
                   </p>
-                </div>
+                </div> */}
                 <div>
-                  <Link href="mailto:example@gmail.com" className={styles.link}>
-                    example@gmail.com
+                  <Link href="mailto:info@dreamart3d.com" className={styles.link}>
+                    info@dreamart3d.com
                   </Link>
                 </div>
-                <div>
+                {/* <div>
                   <Link href="tel:+1 000 000 000" className={styles.link}>
                     +1 000 000 000
                   </Link>
-                </div>
+                </div> */}
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
         <div className={styles.footer__bottom}>

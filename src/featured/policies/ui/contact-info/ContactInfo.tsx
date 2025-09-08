@@ -1,10 +1,11 @@
 'use client';
 
+import Link from 'next/link';
+
 import { useTranslations } from 'next-intl';
 
 import { LinkIcon } from '@/shared/ui/icons/link';
 import { MessageIcon } from '@/shared/ui/icons/message';
-import { PhoneIcon } from '@/shared/ui/icons/phone';
 
 import st from './ContactInfo.module.scss';
 
@@ -15,14 +16,14 @@ export const ContactInfo = ({ description, title }: { title: string; description
     <section className={st.layout}>
       <h3 className={st.title}>{title}</h3>
       {description && <p className={st.description}>{description}</p>}
-      <span className={st.item}>
+      <Link href="mailto:info@dreamart3d.com" className={st.item}>
         <MessageIcon />
-        <p>{t('email', { fallback: 'Email' })}: [Insert Email]</p>
-      </span>
-      <span className={st.item}>
+        <p>{t('email', { fallback: 'Email' })}: info@dreamart3d.com</p>
+      </Link>
+      {/* <span className={st.item}>
         <PhoneIcon />
         <p>{t('phone', { fallback: 'Phone' })}: [Insert Phone]</p>
-      </span>
+      </span> */}
       <span className={st.item}>
         <LinkIcon />
         <p>

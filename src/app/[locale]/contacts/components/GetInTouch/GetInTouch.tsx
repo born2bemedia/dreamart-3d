@@ -1,5 +1,8 @@
 'use client';
 
+import Image from 'next/image';
+import Link from 'next/link';
+
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 
@@ -17,30 +20,31 @@ export const GetInTouch = () => {
     <section className={styles.getInTouch}>
       <div className={'_container'}>
         <div className={styles.getInTouch__content}>
-          <motion.div
-            variants={fadeInUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className={styles.left}
-          >
-            <div className={styles.top}>
-              <Title
-                title={t('title', {
-                  fallback: 'Get in Touch: Let’s Make Something Incredible!',
-                })}
-                className={'alignLeft'}
-              />
-              <Text
-                text={t('description', {
-                  fallback:
-                    'Got a question, a project idea, or need a custom quote? Don’t be shy — we’re all ears! At Dreamart 3D, we believe every great project begins with a conversation. Reach out to us and let’s turn your wildest ideas into digital masterpieces!',
-                })}
-                className={'alignLeft'}
-              />
-            </div>
-          </motion.div>
-          {/* <div className={styles.details}>
+          <div className={styles.wrapper}>
+            <motion.div
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className={styles.left}
+            >
+              <div className={styles.top}>
+                <Title
+                  title={t('title', {
+                    fallback: 'Get in Touch: Let’s Make Something Incredible!',
+                  })}
+                  className={'alignLeft'}
+                />
+                <Text
+                  text={t('description', {
+                    fallback:
+                      'Got a question, a project idea, or need a custom quote? Don’t be shy — we’re all ears! At Dreamart 3D, we believe every great project begins with a conversation. Reach out to us and let’s turn your wildest ideas into digital masterpieces!',
+                  })}
+                  className={'alignLeft'}
+                />
+              </div>
+            </motion.div>
+            <div className={styles.details}>
               <Title
                 title={t('detailsTitle', {
                   fallback: 'How to Reach Us',
@@ -48,41 +52,40 @@ export const GetInTouch = () => {
                 tag={'h3'}
                 className={'alignLeft'}
               />
-
-              <div className={styles.addresses}>
+              <div className={styles.addressWrapper}>
+                {/* <div>
+                <Link href="tel:+1 000 000 000">
+                  <Image src="/images/phone.svg" alt="phone" width={20} height={20} />
+                  <span>[+1 000 000 000]</span>
+                </Link>
+              </div> */}
                 <div>
-                  <Link href="tel:+1 000 000 000">
-                    <Image src="/images/phone.svg" alt="phone" width={20} height={20} />
-                    <span>[+1 000 000 000]</span>
-                  </Link>
-                </div>
-                <div>
-                  <Link href="mailto:example@gmail.com">
+                  <Link href="mailto:info@dreamart3d.com" className={styles.contactWrapper}>
                     <Image src="/images/email.svg" alt="email" width={20} height={20} />
-                    <span>example@gmail.com</span>
+                    <span className={styles.contact}>info@dreamart3d.com</span>
                   </Link>
                 </div>
-                <div>
-                  <p>
-                    <Image src="/images/office.svg" alt="office" width={20} height={20} />
-                    <span>[Office Address]</span>
-                  </p>
-                  <div className={styles.map}>
-                    <Image src="/images/map-tmp.png" alt="map" width={256} height={150} />
-                  </div>
+                {/* <div>
+                <p>
+                  <Image src="/images/office.svg" alt="office" width={20} height={20} />
+                  <span>[Office Address]</span>
+                </p>
+                <div className={styles.map}>
+                  <Image src="/images/map-tmp.png" alt="map" width={256} height={150} />
                 </div>
-                <div>
-                  <p>
-                    <Image src="/images/registered.svg" alt="registered" width={20} height={20} />
-                    <span>[Registered Address]</span>
-                  </p>
-                  <div className={styles.map}>
-                    <Image src="/images/map-tmp.png" alt="map" width={256} height={150} />
-                  </div>
+              </div> */}
+                {/* <div>
+                <p>
+                  <Image src="/images/registered.svg" alt="registered" width={20} height={20} />
+                  <span>[Registered Address]</span>
+                </p>
+                <div className={styles.map}>
+                  <Image src="/images/map-tmp.png" alt="map" width={256} height={150} />
                 </div>
+              </div> */}
               </div>
-            </div> */}
-          {/* <div className={styles.socials}>
+            </div>
+            {/* <div className={styles.socials}>
               <Title
                 title={t('socialsTitle', {
                   fallback: 'Stay Social',
@@ -110,6 +113,7 @@ export const GetInTouch = () => {
               </div>
             </div>
           </motion.div> */}
+          </div>
           <motion.div
             variants={fadeInUp}
             initial="hidden"

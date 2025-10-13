@@ -836,13 +836,9 @@
     "success": "Password changed successfully"
   },
   "cookiePopup": {
-    "title": "Cookie settings",
-    "text": {
-      "0": "Cookies help us improve our website. By clicking 'Accept' you agree to our use of cookies for functionality, analytics, and personalized content. Learn more in our",
-      "1": "Cookie Policy"
-    },
-    "decline": "Decline",
-    "accept": "Accept"
+    "title": "We Like to Keep Things Tasty (and Transparent)!",
+    "text": "We use cookies to enhance your experience on our site, whether it’s for keeping you logged in or providing you with great content. By continuing to browse, you’re agreeing to our use of cookies. If you’re not a fan, you can adjust your cookie settings anytime — but hey, cookies are pretty sweet, aren’t they?",
+    "accept": "Accept Cookies"
   },
   "trendsCta": {
     "theRiseOf3dPrintingWhatsNext": {

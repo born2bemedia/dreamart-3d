@@ -3,7 +3,7 @@
   bottom: 24px;
   right: 24px;
   display: flex;
-  width: 350px;
+  width: 400px;
   padding: 32px;
   z-index: 1000;
   border-radius: 24px;
@@ -98,6 +98,7 @@
         font-weight: 600;
         line-height: normal;
         transition: all 0.3s ease;
+        width: 100%;
 
         &:hover {
           background: #1e74e0;

@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 
 import { useTranslations } from 'next-intl';
 
@@ -27,30 +26,22 @@ export const CookiePopup = () => {
     setIsVisible(false);
   };
 
-  const handleDecline = () => {
-    setIsVisible(false);
-  };
-
   return (
     <div
       className={cn(st.cookiePopup, {
         [st.visible]: isVisible,
       })}
     >
-      <h2>{t('title', { fallback: 'Cookie settings' })}</h2>
+      <h2>{t('title', { fallback: 'We Like to Keep Things Tasty (and Transparent)!' })}</h2>
       <p>
-        {t('text.0', {
+        {t('text', {
           fallback:
-            'Cookies help us improve our website. By clicking &apos;Accept,&apos; you agree to our use of cookies for functionality, analytics, and personalized content. Learn more in our',
-        })}{' '}
-        <Link href="/cookie-policy">{t('text.1', { fallback: 'Cookie Policy' })}</Link>.
+            'We use cookies to enhance your experience on our site, whether it’s for keeping you logged in or providing you with great content. By continuing to browse, you’re agreeing to our use of cookies. If you’re not a fan, you can adjust your cookie settings anytime — but hey, cookies are pretty sweet, aren’t they?',
+        })}
       </p>
       <div className={st.buttons}>
-        <button onClick={handleDecline} className={cn(st.decline)}>
-          {t('decline', { fallback: 'Decline' })}
-        </button>
         <button onClick={handleAccept} className={cn(st.accept)}>
-          {t('accept', { fallback: 'Accept' })}
+          {t('accept', { fallback: 'Accept Cookies' })}
         </button>
       </div>
     </div>

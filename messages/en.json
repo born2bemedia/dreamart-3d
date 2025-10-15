@@ -862,5 +862,10 @@
     "title": "Projects Overview",
     "tag": "What We’ve Been Up To – Prepare to Be Amazed!",
     "description": "Step right up and see what we’ve been creating! In this section, we’re showcasing our latest masterpieces, from mind-blowing 3D prototypes to animations that’ll make you want to hit replay. Spoiler: It’s all awesome."
+  },
+  "ourShowreel": {
+    "title": "Our Showreel",
+    "tag": "Roll the Cameras – Check Out Our Projects Overview!",
+    "description": "Lights, camera, action! Here’s your VIP pass to an exclusive sneak peek of our video production magic. From commercials that make products pop to animated content that tells stories, this showreel serves up the best of what we do. Watch, be amazed, and see how we turn ideas into visual gold."
   }
 }

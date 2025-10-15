@@ -1,0 +1,51 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.titleLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.titleHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+  }
+}
+
+.text {
+  color: #717173;
+  text-align: center;
+  width: 700px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}

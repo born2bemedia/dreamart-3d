@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 
 import { Tag } from '@/shared/ui/kit/tag';
 
+import { OurShowreel } from '../OurShowreel/OurShowreel';
 import { ReadyTo } from '../ReadyTo/ReadyTo';
 import { VideoProdMagic } from '../VideoProdMagic/VideoProdMagic';
 import st from './Services.module.scss';
@@ -63,6 +64,7 @@ export const VideoProduction = () => {
           ))}
         </div>
       </section>
+      <OurShowreel />
       <VideoProdMagic />
       <ReadyTo
         title={

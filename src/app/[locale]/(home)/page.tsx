@@ -2,6 +2,7 @@ import {
   HomeHero,
   LetsCreate,
   OurSolutions,
+  ProjectsOverview,
   SpecialOffers,
   WhatWeDo,
   WhyChoose,
@@ -14,6 +15,7 @@ export default function Home() {
       <WhatWeDo />
       <OurSolutions />
       <WhyChoose />
+      <ProjectsOverview />
       <SpecialOffers />
       <LetsCreate />
     </>

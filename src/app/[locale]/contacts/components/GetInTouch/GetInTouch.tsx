@@ -38,7 +38,7 @@ export const GetInTouch = () => {
                 <Text
                   text={t('description', {
                     fallback:
-                      'Got a question, a project idea, or need a custom quote? Don’t be shy — we’re all ears! At Dreamart 3D, we believe every great project begins with a conversation. Reach out to us and let’s turn your wildest ideas into digital masterpieces!',
+                      'Got a question, a project idea, or need a custom quote? Don’t be shy — we’re all ears! At Moddle 3D, we believe every great project begins with a conversation. Reach out to us and let’s turn your wildest ideas into digital masterpieces!',
                   })}
                   className={'alignLeft'}
                 />
@@ -60,9 +60,9 @@ export const GetInTouch = () => {
                 </Link>
               </div> */}
                 <div>
-                  <Link href="mailto:info@dreamart3d.com" className={styles.contactWrapper}>
+                  <Link href="mailto:info@moddle3d.com" className={styles.contactWrapper}>
                     <Image src="/images/email.svg" alt="email" width={20} height={20} />
-                    <span className={styles.contact}>info@dreamart3d.com</span>
+                    <span className={styles.contact}>info@moddle3d.com</span>
                   </Link>
                 </div>
                 {/* <div>

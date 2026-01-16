@@ -33,7 +33,7 @@ const getCards = () => [
 export const VideoProdMagic = () => {
   return (
     <section className={st.layout}>
-      <h2 className={st.title}>The Dreamart 3D Video Production Magic</h2>
+      <h2 className={st.title}>The Moddle 3D Video Production Magic</h2>
       <section className={st.cards}>
         <div className={st.cards__row}>
           {getCards()

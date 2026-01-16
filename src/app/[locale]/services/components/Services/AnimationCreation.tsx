@@ -68,7 +68,7 @@ export const AnimationCreation = () => {
       <SectionInfo
         imgUrl="/images/services/3d-modelling.png"
         infoMeta={{
-          title: 'Why Choose Dreamart 3D Solutions?',
+          title: 'Why Choose Moddle 3D Solutions?',
           tag: 'Animations That Knock Your Socks Off!',
           text: (
             <>

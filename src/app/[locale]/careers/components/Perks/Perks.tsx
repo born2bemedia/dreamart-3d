@@ -44,7 +44,7 @@ export const Perks = () => {
       <section className={st.layout}>
         <h2>
           {t('title.0', { fallback: 'Perks of Being on the' })} <br />{' '}
-          {t('title.1', { fallback: 'Dreamart 3D Team' })}
+          {t('title.1', { fallback: 'Moddle 3D Team' })}
         </h2>
         <section className={st.content}>
           <section className={st.content__list}>

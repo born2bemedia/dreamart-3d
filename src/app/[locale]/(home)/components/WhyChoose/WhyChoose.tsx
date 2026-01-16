@@ -106,7 +106,7 @@ export const WhyChoose = () => {
                 })}
                 <br />
                 {t('title.1', {
-                  fallback: 'Dreamart 3D?',
+                  fallback: 'Moddle 3D?',
                 })}
               </h2>
               <Label

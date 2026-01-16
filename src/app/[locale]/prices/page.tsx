@@ -7,14 +7,14 @@ import { RequestPackagePopup } from '@/featured/request-package-popup/ui/Request
 import { ThanksPopup } from '@/featured/thanks-popup/ui/ThanksPopup';
 
 export const metadata: Metadata = {
-  title: 'Dreamart 3D Pricing | Affordable Packages for 3D Models, Animations, and More',
+  title: 'Moddle 3D Pricing | Affordable Packages for 3D Models, Animations, and More',
   description:
     'Discover our competitive pricing for 3D modeling, animation creation, UI/UX design, and video production. We offer flexible packages to suit your project needs.',
   openGraph: {
-    title: 'Dreamart 3D Pricing | Affordable Packages for 3D Models, Animations, and More',
+    title: 'Moddle 3D Pricing | Affordable Packages for 3D Models, Animations, and More',
     description:
       'Discover our competitive pricing for 3D modeling, animation creation, UI/UX design, and video production. We offer flexible packages to suit your project needs.',
-    images: 'https://dreamart3d.com/images/meta.png',
+    images: 'https://moddle3d.com/images/meta.png',
   },
 };
 

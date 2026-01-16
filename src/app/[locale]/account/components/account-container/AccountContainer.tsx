@@ -53,7 +53,7 @@ export const AccountContainer = ({ orders }: { orders: Order[] }) => {
       {activeTab === 'wishlist' && (
         <div className={st.wishlistLayout}>
           <section className={st.wishlistTitle}>
-            <h2>{tw('welcome', { fallback: 'Welcome to Your Dreamart 3D Wishlist!' })}</h2>
+            <h2>{tw('welcome', { fallback: 'Welcome to Your Moddle 3D Wishlist!' })}</h2>
             <p>
               {tw('description', {
                 fallback:

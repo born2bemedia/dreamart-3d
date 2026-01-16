@@ -38,7 +38,7 @@ export const ReadyToStart = () => {
           <Text
             text={t('description', {
               fallback:
-                'At Dreamart 3D, we turn creative concepts into reality with solutions that drive impact. Looking to captivate your audience with stunning visuals or improve user experiences, we’re here to make it happen. Let’s take your project to the next level.',
+                'At Moddle 3D, we turn creative concepts into reality with solutions that drive impact. Looking to captivate your audience with stunning visuals or improve user experiences, we’re here to make it happen. Let’s take your project to the next level.',
             })}
           />
           <Button

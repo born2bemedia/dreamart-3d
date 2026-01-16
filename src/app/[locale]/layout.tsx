@@ -22,14 +22,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Dreamart 3D | Unleash Your Creativity with 3D Modeling, Animation & More',
+  title: 'Moddle 3D | Unleash Your Creativity with 3D Modeling, Animation & More',
   description:
-    'Welcome to Dreamart 3D, where we turn your creative ideas into reality! Explore our 3D models, animations, and UI/UX design solutions designed to make your projects stand out.',
+    'Welcome to Moddle 3D, where we turn your creative ideas into reality! Explore our 3D models, animations, and UI/UX design solutions designed to make your projects stand out.',
   openGraph: {
-    title: 'Dreamart 3D | Unleash Your Creativity with 3D Modeling, Animation & More',
+    title: 'Moddle 3D | Unleash Your Creativity with 3D Modeling, Animation & More',
     description:
-      'Welcome to Dreamart 3D, where we turn your creative ideas into reality! Explore our 3D models, animations, and UI/UX design solutions designed to make your projects stand out.',
-    images: 'https://dreamart3d.com/images/meta.png',
+      'Welcome to Moddle 3D, where we turn your creative ideas into reality! Explore our 3D models, animations, and UI/UX design solutions designed to make your projects stand out.',
+    images: 'https://moddle3d.com/images/meta.png',
   },
 };
 

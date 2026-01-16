@@ -69,8 +69,8 @@ export const Header = () => {
                   </Link>
                 </div>
                 <div className={styles.contacts}>
-                  <Link href="mailto:info@dreamart3d.com" className={styles.link}>
-                    info@dreamart3d.com
+                  <Link href="mailto:info@moddle3d.com" className={styles.link}>
+                    info@moddle3d.com
                   </Link>
                   {/* <Link href="tel:+1 000 000 000" className={styles.link}>
                     +1 000 000 000
@@ -188,8 +188,8 @@ export const Header = () => {
             </Link>
           </div>
           <div className={styles.contacts}>
-            <Link href="mailto:example@gmail.com">example@gmail.com</Link>
-            <Link href="tel:+1 000 000 000">+1 000 000 000</Link>
+            <Link href="mailto:info@moddle3d.com">info@moddle3d.com</Link>
+            {/* <Link href="tel:+1 000 000 000">+1 000 000 000</Link> */}
           </div>
           <LangSwitcher />
         </div>

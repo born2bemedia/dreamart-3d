@@ -71,7 +71,7 @@ export const sendQuoteForm = async (data: QuoteRequestFormSchema) => {
   const userMsg = {
     to: email,
     from: FROM_EMAIL,
-    subject: `We Got Your Request! Time to Make Some Magic – Dreamart 3D`,
+    subject: `We Got Your Request! Time to Make Some Magic – Moddle 3D`,
     html: requestFormBody({ username: firstName }),
   };
 

@@ -17,7 +17,7 @@ export const ApplyForm = () => {
           <p>
             {t('description', {
               fallback:
-                'If you’re ready to bring your creativity, skills, and good vibes to Dreamart 3D, we want to hear from you! Fill out the form below and show us what makes you extraordinary. Let’s create, collaborate, and have some fun along the way. The adventure starts now!',
+                'If you’re ready to bring your creativity, skills, and good vibes to Moddle 3D, we want to hear from you! Fill out the form below and show us what makes you extraordinary. Let’s create, collaborate, and have some fun along the way. The adventure starts now!',
             })}
           </p>
         </div>

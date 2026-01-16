@@ -4,14 +4,14 @@ import { getTranslations } from 'next-intl/server';
 import { PricingPackage, ReadyToStart, WorkHero, WorkPreview } from './components';
 
 export const metadata: Metadata = {
-  title: 'Dreamart 3D Work Portfolio | See Our Creative Projects in Action',
+  title: 'Moddle 3D Work Portfolio | See Our Creative Projects in Action',
   description:
     'Browse our portfolio of 3D modeling, animation, UI/UX design, and video production projects. See how we bring creative ideas to life!',
   openGraph: {
-    title: 'Dreamart 3D Work Portfolio | See Our Creative Projects in Action',
+    title: 'Moddle 3D Work Portfolio | See Our Creative Projects in Action',
     description:
       'Browse our portfolio of 3D modeling, animation, UI/UX design, and video production projects. See how we bring creative ideas to life!',
-    images: 'https://dreamart3d.com/images/meta.png',
+    images: 'https://moddle3d.com/images/meta.png',
   },
 };
 

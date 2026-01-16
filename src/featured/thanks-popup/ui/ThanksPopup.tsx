@@ -39,7 +39,7 @@ export const ThanksPopup = () => {
         <Text
           text={t('description', {
             fallback:
-              "Thank you for reaching out to Dreamart 3D. We’re thrilled to bring your vision to life and collaborate on something extraordinary. Our team will be in touch soon to start crafting the perfect solution for your project. Let's create something amazing together!",
+              "Thank you for reaching out to Moddle 3D. We’re thrilled to bring your vision to life and collaborate on something extraordinary. Our team will be in touch soon to start crafting the perfect solution for your project. Let's create something amazing together!",
           })}
         />
         <Button

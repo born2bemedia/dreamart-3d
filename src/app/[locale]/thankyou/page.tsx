@@ -34,7 +34,7 @@ export default function ThankYouPage() {
             dangerouslySetInnerHTML={{
               __html: t('description', {
                 fallback:
-                  'Thank you for choosing Dreamart 3D — your creative journey starts now! Our team will be in touch soon to confirm the details and get things rolling. We can’t wait to bring your vision to life!',
+                  'Thank you for choosing Moddle 3D — your creative journey starts now! Our team will be in touch soon to confirm the details and get things rolling. We can’t wait to bring your vision to life!',
               }),
             }}
           />

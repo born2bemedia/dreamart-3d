@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'dreamart-cms.vercel.app',
+        hostname: 'cms.moddle3d.com',
       },
     ],
   },

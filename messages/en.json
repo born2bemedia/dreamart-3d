@@ -36,7 +36,7 @@
   "whatWeDo": {
     "title": "What We Do",
     "label": "We Turn Your Ideas Into 3D Realities... (No, Seriously)",
-    "description": "At Dreamart 3D, we’re not just designers — we’re magicians. We craft everything from detailed 3D models to animations that make you say “WOW.” Need a digital experience that users won’t forget? We’ve got you covered with stunning UI/UX design. Think of us as the fairy godmothers of digital content, only way cooler."
+    "description": "At Moddle 3D, we’re not just designers — we’re magicians. We craft everything from detailed 3D models to animations that make you say “WOW.” Need a digital experience that users won’t forget? We’ve got you covered with stunning UI/UX design. Think of us as the fairy godmothers of digital content, only way cooler."
   },
   "whyChoose": {
     "title1": "Innovation",
@@ -49,7 +49,7 @@
     "description4": "Our work isn’t just functional — it’s an experience that wows.",
     "title": {
       "0": "Why Choose",
-      "1": "Dreamart 3D?"
+      "1": "Moddle 3D?"
     },
     "label": "We’re Not Just a 3D Studio — We’re Your Creative Powerhouse",
     "description": "Our crew combines creativity, technology, and a touch of brilliance. We’re the team you call when you need more than just a 3D model or a pretty animation. You need a partner who can deliver stunning, high-quality content with a sprinkle of fun and creativity.",
@@ -57,7 +57,7 @@
   },
   "getInTouch": {
     "title": "Get in Touch: Let’s Make Something Incredible!",
-    "description": "Got a question, a project idea, or need a custom quote? Don’t be shy — we’re all ears! At Dreamart 3D, we believe every great project begins with a conversation. Reach out to us and let’s turn your wildest ideas into digital masterpieces!",
+    "description": "Got a question, a project idea, or need a custom quote? Don’t be shy — we’re all ears! At Moddle 3D, we believe every great project begins with a conversation. Reach out to us and let’s turn your wildest ideas into digital masterpieces!",
     "detailsTitle": "How to Reach Us",
     "socialsTitle": "Stay Social",
     "socialsDescription": "We’re always creating, and we want you to be part of it! Follow us on social media for the latest on our projects, industry trends, and some serious creative inspo. Get involved, stay updated, and let’s start something amazing!",
@@ -92,7 +92,7 @@
         "text": "The mastermind behind those unforgettable videos that capture hearts and minds."
       },
       "tag": "aka the Digital Avengers",
-      "title": "The Dreamart 3D Team",
+      "title": "The Moddle 3D Team",
       "text": "We’re a bunch of creative minds that love to collaborate and push boundaries. Meet the team that makes all this magic happen:",
       "button": "Want to Join the Fun?"
     },
@@ -125,7 +125,7 @@
         "0": "Making an Impact,",
         "1": "One Pixel at a Time"
       },
-      "description": "Welcome to Dreamart 3D — the place where ideas turn into tangible reality, imagination is our superpower, and creativity is our secret weapon. We don’t just create 3D models, animations, and designs — we craft experiences that make your brand unforgettable."
+      "description": "Welcome to Moddle 3D — the place where ideas turn into tangible reality, imagination is our superpower, and creativity is our secret weapon. We don’t just create 3D models, animations, and designs — we craft experiences that make your brand unforgettable."
     },
     "whoWeAre": {
       "title": "Who We Are",
@@ -164,7 +164,7 @@
   },
   "pricesHero": {
     "title1": "Choose Your <br/>Perfect Package",
-    "description": "At Dreamart 3D, we offer flexible packages designed to fit your <br/>needs and budget. Whether you’re looking for animation, UI/UX <br/>design, or video production, we’ve got something for you. Here’s <br/>everything you get with each package!"
+    "description": "At Moddle 3D, we offer flexible packages designed to fit your <br/>needs and budget. Whether you’re looking for animation, UI/UX <br/>design, or video production, we’ve got something for you. Here’s <br/>everything you get with each package!"
   },
   "prices": {
     "includes": "Includes",
@@ -185,7 +185,7 @@
       "0": "3D Models That Make Your Ideas",
       "1": "Walk, Talk, and Print"
     },
-    "description": "Welcome to Dreamart 3D’s playground, where your wildest ideas go from “just a thought” to “look at that!” in a few clicks. From quirky home decor to iconic movie characters, our 3D models are designed to bring your creative visions to life without the complexity. Browse through our collection, pick your favorite, and let’s turn those brilliant ideas into tangible prints.",
+    "description": "Welcome to Moddle 3D’s playground, where your wildest ideas go from “just a thought” to “look at that!” in a few clicks. From quirky home decor to iconic movie characters, our 3D models are designed to bring your creative visions to life without the complexity. Browse through our collection, pick your favorite, and let’s turn those brilliant ideas into tangible prints.",
     "label": "Who knew 3D printing could be this fun?"
   },
   "termsOfUse": {
@@ -194,12 +194,12 @@
   },
   "thankyouPage": {
     "title": "Woohoo! Your Order is In!",
-    "description": "Thank you for choosing Dreamart 3D — your creative journey starts now! Our team will be in touch soon to confirm the details and get things rolling. We can’t wait to bring your vision to life!",
+    "description": "Thank you for choosing Moddle 3D — your creative journey starts now! Our team will be in touch soon to confirm the details and get things rolling. We can’t wait to bring your vision to life!",
     "button": "Home"
   },
   "trendsHero": {
     "title": "The Future of 3D Creativity",
-    "description": "At Dreamart 3D, we’re all about staying ahead of the curve. This is where we talk trends, share insights, and keep you updated on everything exciting in the world of 3D modelling, animation, UI/UX design, and video production. Explore the latest innovations and see how they’re shaping the future of digital creativity."
+    "description": "At Moddle 3D, we’re all about staying ahead of the curve. This is where we talk trends, share insights, and keep you updated on everything exciting in the world of 3D modelling, animation, UI/UX design, and video production. Explore the latest innovations and see how they’re shaping the future of digital creativity."
   },
   "pricingPackage": {
     "title": "Pricing & Packages",
@@ -208,12 +208,12 @@
   },
   "readyToStart": {
     "title": "Ready to Start?",
-    "description": "At Dreamart 3D, we turn creative concepts into reality with solutions that drive impact. Looking to captivate your audience with stunning visuals or improve user experiences, we’re here to make it happen. Let’s take your project to the next level.",
+    "description": "At Moddle 3D, we turn creative concepts into reality with solutions that drive impact. Looking to captivate your audience with stunning visuals or improve user experiences, we’re here to make it happen. Let’s take your project to the next level.",
     "button": "Let’s Make It Happen"
   },
   "workHero": {
     "title1": "Shaping Ideas into Digital Art",
-    "description": "At Dreamart 3D, we don’t just complete projects — we transform concepts into immersive creations. From 3D models to captivating animations, our work is a blend of creativity, precision, and storytelling. Each project we take on is an opportunity to innovate, challenge norms, and exceed expectations."
+    "description": "At Moddle 3D, we don’t just complete projects — we transform concepts into immersive creations. From 3D models to captivating animations, our work is a blend of creativity, precision, and storytelling. Each project we take on is an opportunity to innovate, challenge norms, and exceed expectations."
   },
   "work": {
     "title1": "3D Modelling for Printing",
@@ -244,7 +244,7 @@
   "registrationForm": {
     "success": "You have successfully registered. Please login to continue.",
     "error": "Something went wrong. Please try again later.",
-    "title": "Join the Dreamart 3D Family!",
+    "title": "Join the Moddle 3D Family!",
     "description": "Ready to unlock the full potential of your creativity? Sign up today and get exclusive updates, fresh new features, and sweet deals that’ll take your design projects to the next level. Let’s make some 3D magic happen!",
     "firstName": "First Name",
     "lastName": "Last Name",
@@ -389,7 +389,7 @@
       "0": "Your Creative",
       "1": "Journey Begins Here!"
     },
-    "description": "Thank you for reaching out to Dreamart 3D. We’re thrilled to bring your vision to life and collaborate on something extraordinary. Our team will be in touch soon to start crafting the perfect solution for your project. Let",
+    "description": "Thank you for reaching out to Moddle 3D. We’re thrilled to bring your vision to life and collaborate on something extraordinary. Our team will be in touch soon to start crafting the perfect solution for your project. Let",
     "close": "Continue"
   },
   "trends": {
@@ -477,7 +477,7 @@
     "productId": "Product ID",
     "addedToWishlist": "Product added to wishlist",
     "removedFromWishlist": "Product removed from wishlist",
-    "welcome": "Welcome to Your Dreamart 3D Wishlist!",
+    "welcome": "Welcome to Your Moddle 3D Wishlist!",
     "description": "This is your creative playground — a place to save, organize, and revisit your favorite 3D models and animations anytime you want. It’s like your personal design museum, but cooler."
   },
   "orderHistory": {
@@ -647,7 +647,7 @@
         },
         "title": "Our UI/UX Design Flow",
         "tag": "Creating Flawless Journeys from Start to Finish",
-        "desc": "At Dreamart 3D, our UI/UX design flow is all about making your users’ journey smooth, intuitive, and downright delightful. From brainstorming to final clicks, we ensure every step is a piece of the puzzle, creating a cohesive and unforgettable experience. Here’s how we do it:",
+        "desc": "At Moddle 3D, our UI/UX design flow is all about making your users’ journey smooth, intuitive, and downright delightful. From brainstorming to final clicks, we ensure every step is a piece of the puzzle, creating a cohesive and unforgettable experience. Here’s how we do it:",
         "btn": "See Our Packages & Prices"
       }
     },
@@ -697,7 +697,7 @@
     "perks": {
       "title": {
         "0": "Perks of Being on the",
-        "1": "Dreamart 3D Team"
+        "1": "Moddle 3D Team"
       },
       "perk": {
         "0": {
@@ -791,7 +791,7 @@
     },
     "applyForm": {
       "title": "Ready to Join the Fun?",
-      "description": "If you’re ready to bring your creativity, skills, and good vibes to Dreamart 3D, we want to hear from you! Fill out the form below and show us what makes you extraordinary. Let’s create, collaborate, and have some fun along the way. The adventure starts now!"
+      "description": "If you’re ready to bring your creativity, skills, and good vibes to Moddle 3D, we want to hear from you! Fill out the form below and show us what makes you extraordinary. Let’s create, collaborate, and have some fun along the way. The adventure starts now!"
     }
   },
   "careerForm": {

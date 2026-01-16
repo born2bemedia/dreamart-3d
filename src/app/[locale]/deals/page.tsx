@@ -5,14 +5,14 @@ import { DealsHero } from './components';
 import { Deals } from '@/featured/deals/ui/Deals/Deals';
 
 export const metadata: Metadata = {
-  title: 'Dreamart 3D Deals | Hot Discounts on 3D Models, Animations, and More',
+  title: 'Moddle 3D Deals | Hot Discounts on 3D Models, Animations, and More',
   description:
     'Check out our exclusive limited-time deals on 3D models, animations, and design services. Don’t miss out on these amazing offers!',
   openGraph: {
-    title: 'Dreamart 3D Deals | Hot Discounts on 3D Models, Animations, and More',
+    title: 'Moddle 3D Deals | Hot Discounts on 3D Models, Animations, and More',
     description:
       'Check out our exclusive limited-time deals on 3D models, animations, and design services. Don’t miss out on these amazing offers!',
-    images: 'https://dreamart3d.com/images/meta.png',
+    images: 'https://moddle3d.com/images/meta.png',
   },
 };
 

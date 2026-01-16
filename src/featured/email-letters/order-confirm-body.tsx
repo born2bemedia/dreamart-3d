@@ -16,7 +16,7 @@ export const orderConfirmBody = ({
   return htmlTemplate({
     body: `
       <div style="width: 595px; margin: 0 auto;">
-        <img style="display:block; border:0; outline:none; text-decoration:none; font-size:0; line-height:0;" src="https://dreamart3d.com/images/email/header.png" alt="full-logo" width="595" height="100" />
+        <img style="display:block; border:0; outline:none; text-decoration:none; font-size:0; line-height:0;" src="https://moddle3d.com/images/email/header.png" alt="full-logo" width="595" height="100" />
         <div class="wrapper">
           <div class="main">
             <p style="font-size: 24px; color: #fff; margin-bottom: 24px; font-weight: 600;">Your Order is On! Let’s Get This Party Started – <span style="color: #2583FF;">${orderNumber}</span></p>
@@ -49,12 +49,12 @@ export const orderConfirmBody = ({
               </tr>
             </table>
             <p class="text" style="color: #717173; margin-bottom: 16px;">To keep things running smoothly, please complete the payment as soon as possible. If you need anything or have any questions, we’re here to help!</p>
-            <p class="text" style="color: #717173; margin-bottom: 16px;">Thank you for trusting Dreamart 3D! We can’t wait to create something amazing for you!</p>
-            <p style="color: #fff; font-size: 20px; font-weight: 600;">Cheers, <br /><span style="color: #2583FF;">The Dreamart 3D Team</span></p>
+            <p class="text" style="color: #717173; margin-bottom: 16px;">Thank you for trusting Moddle 3D! We can’t wait to create something amazing for you!</p>
+            <p style="color: #fff; font-size: 20px; font-weight: 600;">Cheers, <br /><span style="color: #2583FF;">The Moddle 3D Team</span></p>
           </div>
         </div>
         <div>
-          <img src="https://dreamart3d.com/images/email/footer.png" alt="full-logo" width="595" height="100" />
+          <img src="https://moddle3d.com/images/email/footer.png" alt="full-logo" width="595" height="100" />
         </div>
       </div>
     `,

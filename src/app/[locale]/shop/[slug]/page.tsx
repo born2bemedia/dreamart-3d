@@ -18,27 +18,26 @@ export async function generateMetadata({
   const data = await getCategoryBySlug(slug, locale);
 
   return {
-    title:
-      data?.seo_title ?? 'Dreamart 3D Shop | Unique 3D Models for Printing, Animation, and More',
+    title: data?.seo_title ?? 'Moddle 3D Shop | Unique 3D Models for Printing, Animation, and More',
     description:
       data?.seo_description ??
-      'Welcome to Dreamart 3D, where we turn your creative ideas into reality! Explore our 3D models, animations, and UI/UX design solutions designed to make your projects stand out.',
+      'Welcome to Moddle 3D, where we turn your creative ideas into reality! Explore our 3D models, animations, and UI/UX design solutions designed to make your projects stand out.',
     openGraph: {
       title:
-        data?.seo_title ?? 'Dreamart 3D Shop | Unique 3D Models for Printing, Animation, and More',
+        data?.seo_title ?? 'Moddle 3D Shop | Unique 3D Models for Printing, Animation, and More',
       description:
         data?.seo_description ??
-        'Welcome to Dreamart 3D, where we turn your creative ideas into reality! Explore our 3D models, animations, and UI/UX design solutions designed to make your projects stand out.',
-      images: 'https://dreamart3d.com/images/meta.png',
+        'Welcome to Moddle 3D, where we turn your creative ideas into reality! Explore our 3D models, animations, and UI/UX design solutions designed to make your projects stand out.',
+      images: 'https://moddle3d.com/images/meta.png',
     },
     twitter: {
       card: 'summary_large_image',
       title:
-        data?.seo_title ?? 'Dreamart 3D Shop | Unique 3D Models for Printing, Animation, and More',
+        data?.seo_title ?? 'Moddle 3D Shop | Unique 3D Models for Printing, Animation, and More',
       description:
         data?.seo_description ??
-        'Welcome to Dreamart 3D, where we turn your creative ideas into reality! Explore our 3D models, animations, and UI/UX design solutions designed to make your projects stand out.',
-      images: 'https://dreamart3d.com/images/meta.png',
+        'Welcome to Moddle 3D, where we turn your creative ideas into reality! Explore our 3D models, animations, and UI/UX design solutions designed to make your projects stand out.',
+      images: 'https://moddle3d.com/images/meta.png',
     },
   };
 }

@@ -35,7 +35,7 @@ export const WhatWeDo = () => {
           <Text
             text={t('description', {
               fallback:
-                'At Dreamart 3D, we’re not just designers — we’re magicians. We craft everything from detailed 3D models to animations that make you say “WOW.” Need a digital experience that users won’t forget? We’ve got you covered with stunning UI/UX design. Think of us as the fairy godmothers of digital content, only way cooler.',
+                'At Moddle 3D, we’re not just designers — we’re magicians. We craft everything from detailed 3D models to animations that make you say “WOW.” Need a digital experience that users won’t forget? We’ve got you covered with stunning UI/UX design. Think of us as the fairy godmothers of digital content, only way cooler.',
             })}
           />
         </motion.div>

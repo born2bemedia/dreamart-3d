@@ -85,7 +85,7 @@ export const DesignFlow = () => {
         <p className={st.header__desc}>
           {t('desc', {
             fallback:
-              'At Dreamart 3D, our UI/UX design flow is all about making your users’ journey smooth, intuitive, and downright delightful. From brainstorming to final clicks, we ensure every step is a piece of the puzzle, creating a cohesive and unforgettable experience. Here’s how we do it:',
+              'At Moddle 3D, our UI/UX design flow is all about making your users’ journey smooth, intuitive, and downright delightful. From brainstorming to final clicks, we ensure every step is a piece of the puzzle, creating a cohesive and unforgettable experience. Here’s how we do it:',
           })}
         </p>
       </header>

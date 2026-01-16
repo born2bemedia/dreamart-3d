@@ -154,8 +154,8 @@ export const Footer = () => {
                   </p>
                 </div> */}
                 <div>
-                  <Link href="mailto:info@dreamart3d.com" className={styles.link}>
-                    info@dreamart3d.com
+                  <Link href="mailto:info@moddle3d.com" className={styles.link}>
+                    info@moddle3d.com
                   </Link>
                 </div>
                 {/* <div>
@@ -169,7 +169,7 @@ export const Footer = () => {
         </div>
         <div className={styles.footer__bottom}>
           <p>
-            © {year} [COMPANY]{' '}
+            © {year} Moddle sp z o o PL{' '}
             {t('copyright', {
               fallback: 'All Legal Rights Reserved.',
             })}

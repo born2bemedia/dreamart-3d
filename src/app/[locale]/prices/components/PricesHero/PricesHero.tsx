@@ -42,7 +42,7 @@ export const PricesHero = () => {
             dangerouslySetInnerHTML={{
               __html: t('description', {
                 fallback:
-                  'At Dreamart 3D, we offer flexible packages designed to fit your <br/>needs and budget. Whether you’re looking for animation, UI/UX <br/>design, or video production, we’ve got something for you. Here’s <br/>everything you get with each package!',
+                  'At Moddle 3D, we offer flexible packages designed to fit your <br/>needs and budget. Whether you’re looking for animation, UI/UX <br/>design, or video production, we’ve got something for you. Here’s <br/>everything you get with each package!',
               }),
             }}
           />

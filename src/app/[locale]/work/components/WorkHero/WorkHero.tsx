@@ -35,7 +35,7 @@ export const WorkHero = () => {
             dangerouslySetInnerHTML={{
               __html: t('description', {
                 fallback:
-                  'At Dreamart 3D, we don’t just complete projects — we transform concepts into immersive creations. From 3D models to captivating animations, our work is a blend of creativity, precision, and storytelling. Each project we take on is an opportunity to innovate, challenge norms, and exceed expectations.',
+                  'At Moddle 3D, we don’t just complete projects — we transform concepts into immersive creations. From 3D models to captivating animations, our work is a blend of creativity, precision, and storytelling. Each project we take on is an opportunity to innovate, challenge norms, and exceed expectations.',
               }),
             }}
           />

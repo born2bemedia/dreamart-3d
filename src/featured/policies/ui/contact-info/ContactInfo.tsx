@@ -16,9 +16,9 @@ export const ContactInfo = ({ description, title }: { title: string; description
     <section className={st.layout}>
       <h3 className={st.title}>{title}</h3>
       {description && <p className={st.description}>{description}</p>}
-      <Link href="mailto:info@dreamart3d.com" className={st.item}>
+      <Link href="mailto:info@moddle3d.com" className={st.item}>
         <MessageIcon />
-        <p>{t('email', { fallback: 'Email' })}: info@dreamart3d.com</p>
+        <p>{t('email', { fallback: 'Email' })}: info@moddle3d.com</p>
       </Link>
       {/* <span className={st.item}>
         <PhoneIcon />
@@ -28,7 +28,7 @@ export const ContactInfo = ({ description, title }: { title: string; description
         <LinkIcon />
         <p>
           {t('website', { fallback: 'Website' })}:{' '}
-          <a href="https://dreamart3d.com/contacts">www.dreamart3d.com/contacts</a>
+          <a href="https://moddle3d.com/contacts">www.moddle3d.com/contacts</a>
         </p>
       </span>
     </section>

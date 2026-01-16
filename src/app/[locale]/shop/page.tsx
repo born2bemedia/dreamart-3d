@@ -7,14 +7,14 @@ import { getProductCategories } from '@/featured/products/api/products';
 import { FeaturedCategories } from '@/featured/products/ui/FeaturedCategory/FeaturedCategory';
 
 export const metadata: Metadata = {
-  title: 'Dreamart 3D Shop | Unique 3D Models for Printing, Animation, and More',
+  title: 'Moddle 3D Shop | Unique 3D Models for Printing, Animation, and More',
   description:
     'Browse our collection of high-quality 3D models for printing, animation, and digital design. Shop now for exclusive creations to bring your ideas to life.',
   openGraph: {
-    title: 'Dreamart 3D Shop | Unique 3D Models for Printing, Animation, and More',
+    title: 'Moddle 3D Shop | Unique 3D Models for Printing, Animation, and More',
     description:
       'Browse our collection of high-quality 3D models for printing, animation, and digital design. Shop now for exclusive creations to bring your ideas to life.',
-    images: 'https://dreamart3d.com/images/meta.png',
+    images: 'https://moddle3d.com/images/meta.png',
   },
 };
 
@@ -37,7 +37,7 @@ export default async function ShopPage({ params }: { params: Promise<{ locale: s
         }
         description={t('description', {
           fallback:
-            'Welcome to Dreamart 3D’s playground, where your wildest ideas go from “just a thought” to “look at that!” in a few clicks. From quirky home decor to iconic movie characters, our 3D models are designed to bring your creative visions to life without the complexity. Browse through our collection, pick your favorite, and let’s turn those brilliant ideas into tangible prints.',
+            'Welcome to Moddle 3D’s playground, where your wildest ideas go from “just a thought” to “look at that!” in a few clicks. From quirky home decor to iconic movie characters, our 3D models are designed to bring your creative visions to life without the complexity. Browse through our collection, pick your favorite, and let’s turn those brilliant ideas into tangible prints.',
         })}
         label={t('label', {
           fallback: 'Who knew 3D printing could be this fun?',

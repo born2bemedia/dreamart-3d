@@ -41,7 +41,7 @@ export const Hero = () => {
           >
             {t('description', {
               fallback:
-                'Welcome to Dreamart 3D — the place where ideas turn into tangible reality, imagination is our superpower, and creativity is our secret weapon. We don’t just create 3D models, animations, and designs — we craft experiences that make your brand unforgettable.',
+                'Welcome to Moddle 3D — the place where ideas turn into tangible reality, imagination is our superpower, and creativity is our secret weapon. We don’t just create 3D models, animations, and designs — we craft experiences that make your brand unforgettable.',
             })}
           </motion.p>
         </div>

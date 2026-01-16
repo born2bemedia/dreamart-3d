@@ -57,7 +57,7 @@ export const RegistrationForm = () => {
   return (
     <form onSubmit={onSubmit} className={st.layout}>
       <section className={st.content}>
-        <h1>{t('title', { fallback: 'Join the Dreamart 3D Family!' })}</h1>
+        <h1>{t('title', { fallback: 'Join the Moddle 3D Family!' })}</h1>
         <p>
           {t('description', {
             fallback:
